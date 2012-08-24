@@ -11,6 +11,7 @@
  * @author Maciej Brencz <macbre@wikia-inc.com>
  * @author Jack Phoenix <jack@countervandalism.net>
  * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 3.0 or later
+ * @link https://www.mediawiki.org/wiki/Extension:Phalanx Documentation
  */
 
 if ( !defined( 'MEDIAWIKI' ) ) {
@@ -28,7 +29,7 @@ $wgExtensionCredits['antispam'][] = array(
 	),
 	'description' => 'Integrated spam control mechanism',
 	'descriptionmsg' => 'phalanx-description',
-	'url' => 'http://www.mediawiki.org/wiki/Extension:Phalanx',
+	'url' => 'https://www.mediawiki.org/wiki/Extension:Phalanx',
 );
 
 // Name of the database where Phalanx's database tables are
