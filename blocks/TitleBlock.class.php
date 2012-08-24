@@ -109,7 +109,7 @@ class TitleBlock {
 	static function spamPage( $match = false, $title = null ) {
 		global $wgOut;
 
-		$wgOut->setPageTitle( wfMsg( 'spamprotectiontitle' ) );
+		$wgOut->setPageTitle( wfMessage( 'spamprotectiontitle' )->text() );
 		$wgOut->setRobotPolicy( 'noindex,nofollow' );
 		$wgOut->setArticleRelated( false );
 

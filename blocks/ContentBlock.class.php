@@ -32,7 +32,7 @@ class ContentBlock {
 			foreach( $blocksData as $blockData ) {
 				$result = Phalanx::isBlocked( $summary, $blockData );
 				if ( $result['blocked'] ) {
-					$wgOut->setPageTitle( wfMsg( 'spamprotectiontitle' ) );
+					$wgOut->setPageTitle( wfMessage( 'spamprotectiontitle' )->text() );
 					$wgOut->setRobotPolicy( 'noindex,nofollow' );
 					$wgOut->setArticleRelated( false );
 					$wgOut->addHTML( '<div id="spamprotected_summary">' );
@@ -85,8 +85,8 @@ class ContentBlock {
 				foreach( $blocksData as $blockData ) {
 					$result = Phalanx::isBlocked( $reason, $blockData );
 					if ( $result['blocked'] ) {
-						$error .= wfMsgExt( 'phalanx-title-move-summary', 'parseinline' );
-						$error .= wfMsgExt( 'spamprotectionmatch', 'parseinline', "<nowiki>{$result['msg']}</nowiki>" );
+						$error .= wfMessage( 'phalanx-title-move-summary' )->parse();
+						$error .= wfMessage( 'spamprotectionmatch', "<nowiki>{$result['msg']}</nowiki>" )->parse();
 						wfDebugLog( 'Phalanx', __METHOD__ . ": block '{$result['msg']}' blocked '$reason'." );
 						wfProfileOut( __METHOD__ );
 						return false;
@@ -101,8 +101,8 @@ class ContentBlock {
 			foreach( $titleBlocksData as $blockData ) {
 				$result = Phalanx::isBlocked( $nt, $blockData );
 				if ( $result['blocked'] ) {
-					$error .= wfMsgExt( 'phalanx-title-move-summary', 'parseinline' );
-					$error .= wfMsgExt( 'spamprotectionmatch', 'parseinline', "<nowiki>{$result['msg']}</nowiki>" );
+					$error .= wfMessage( 'phalanx-title-move-summary' )->parse();
+					$error .= wfMessage( 'spamprotectionmatch', "<nowiki>{$result['msg']}</nowiki>" )->parse();
 					wfDebugLog( 'Phalanx', __METHOD__ . ": block '{$result['msg']}' blocked '$nt'." );
 					wfProfileOut( __METHOD__ );
 					return false;
@@ -147,8 +147,9 @@ class ContentBlock {
 
 		// TODO: add short memcache here?
 		if ( is_null( self::$whitelist ) ) {
-			$whitelist = wfMsgForContent( 'spam-whitelist' );
-			if ( wfEmptyMsg( 'spam-whitelist', $whitelist ) ) {
+			$whitelistObj = wfMessage( 'spam-whitelist' )->inContentLanguage();
+			$whitelist = $whitelistObj->plain();
+			if ( $whitelistObj->isBlank() ) {
 				wfProfileOut( __METHOD__ );
 				return $text;
 			}

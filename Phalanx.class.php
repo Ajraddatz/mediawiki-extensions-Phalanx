@@ -56,16 +56,16 @@ class Phalanx {
 	 * Get last filter change date
 	 */
 	public static function getLastUpdate() {
-		global $wgMemc, $wgSharedDB;
-		return $wgMemc->get( wfForeignMemcKey( $wgSharedDB, false, self::LAST_UPDATE_KEY ) );
+		global $wgMemc, $wgPhalanxDatabase, $wgPhalanxDatabasePrefix;
+		return $wgMemc->get( wfForeignMemcKey( $wgPhalanxDatabase, $wgPhalanxDatabasePrefix, self::LAST_UPDATE_KEY ) );
 	}
 
 	/**
 	 * Set the last changed date for a filter
 	 */
 	public static function setLastUpdate() {
-		global $wgMemc, $wgSharedDB;
-		return $wgMemc->set( wfForeignMemcKey( $wgSharedDB, false, self::LAST_UPDATE_KEY ), wfTimestampNow() );
+		global $wgMemc, $wgPhalanxDatabase, $wgPhalanxDatabasePrefix;
+		return $wgMemc->set( wfForeignMemcKey( $wgPhalanxDatabase, $wgPhalanxDatabasePrefix, self::LAST_UPDATE_KEY ), wfTimestampNow() );
 	}
 
 	/**

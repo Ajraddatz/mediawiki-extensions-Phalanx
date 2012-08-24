@@ -93,9 +93,9 @@ class UserBlock {
 	}
 
 	private static function getCacheKey( $user ) {
-		global $wgSharedDB;
+		global $wgPhalanxDatabase, $wgPhalanxDatabasePrefix;
 		// Wikia version uses the custom global function wfSharedMemcKey here
-		return wfForeignMemcKey( $wgSharedDB, false, 'phalanx', self::CACHE_KEY, $user->getTitleKey() );
+		return wfForeignMemcKey( $wgPhalanxDatabase, $wgPhalanxDatabasePrefix, 'phalanx', self::CACHE_KEY, $user->getTitleKey() );
 	}
 
 	protected static function getBlockFromCache( $user, $isCurrentUser ) {
@@ -160,20 +160,20 @@ class UserBlock {
 			// a reason was given
 			$reason = $blockData['reason'];
 			if ( $blockData['exact'] ) {
-				$user->mBlockreason = wfMsg( 'phalanx-user-block-withreason-exact', $reason );
+				$user->mBlockreason = wfMessage( 'phalanx-user-block-withreason-exact', $reason )->parse();
 			} elseif ( $isBlockIP ) {
-				$user->mBlockreason = wfMsg( 'phalanx-user-block-withreason-ip', $reason );
+				$user->mBlockreason = wfMessage( 'phalanx-user-block-withreason-ip', $reason )->parse();
 			} else {
-				$user->mBlockreason = wfMsg( 'phalanx-user-block-withreason-similar', $reason );
+				$user->mBlockreason = wfMessage( 'phalanx-user-block-withreason-similar', $reason )->parse();
 			}
 		} else {
 			// no reason in block data, so use preexisting no-param worded versions
 			if ( $blockData['exact'] ) {
-				$user->mBlockreason = wfMsgExt( 'phalanx-user-block-reason-exact', 'parsemag' );
+				$user->mBlockreason = wfMessage( 'phalanx-user-block-reason-exact' )->parse();
 			} elseif ( $isBlockIP ) {
-				$user->mBlockreason = wfMsgExt( 'phalanx-user-block-reason-ip', 'parsemag' );
+				$user->mBlockreason = wfMessage( 'phalanx-user-block-reason-ip' )->parse();
 			} else {
-				$user->mBlockreason = wfMsgExt( 'phalanx-user-block-reason-similar', 'parsemag' );
+				$user->mBlockreason = wfMessage( 'phalanx-user-block-reason-similar' )->parse();
 			}
 		}
 
@@ -247,7 +247,7 @@ class UserBlock {
 		$blocksData = Phalanx::getFromFilter( self::TYPE );
 		$state = self::blockCheckInternal( $user, $blocksData, $text, false, true );
 		if ( !$state ) {
-			$abortError = wfMsg( 'phalanx-user-block-new-account' );
+			$abortError = wfMessage( 'phalanx-user-block-new-account' )->text();
 			return false;
 		}
 		// Check if e-mail is blocked
@@ -257,7 +257,7 @@ class UserBlock {
 			foreach ( $emailBlocksData as $emailBlockData ) {
 				$result = Phalanx::isBlocked( $userEmail, $emailBlockData, true );
 				if ( $result['blocked'] ) {
-					$abortError = wfMsg( 'phalanx-user-block-new-account' );
+					$abortError = wfMessage( 'phalanx-user-block-new-account' )->text();
 					return false;
 				}
 			}
@@ -276,7 +276,7 @@ class UserBlock {
 		$user = User::newFromName( $userName );
 		$message = '';
 		if ( !$user || !self::onAbortNewAccount( $user, $message ) ) {
-			$abortError = wfMsg( 'phalanx-user-block-new-account' );
+			$abortError = wfMessage( 'phalanx-user-block-new-account' )->text();
 			return false;
 		}
 		return true;

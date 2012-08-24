@@ -31,6 +31,17 @@ $wgExtensionCredits['antispam'][] = array(
 	'url' => 'http://www.mediawiki.org/wiki/Extension:Phalanx',
 );
 
+// Name of the database where Phalanx's database tables are
+// Used in memcache keys and whatnot
+// Set this to $wgSharedDB if you're running a wiki farm
+$wgPhalanxDatabase = false;
+
+// Database prefix of the DB where Phalanx's database tables are
+// Used in memcache keys and whatnot
+// Set this to $wgSharedPrefix if you're running a wiki farm and that variable
+// is set
+$wgPhalanxDatabasePrefix = false;
+
 // users immune to Phalanx
 $wgAvailableRights[] = 'phalanxexempt';
 $wgGroupPermissions['staff']['phalanxexempt'] = true;
@@ -116,7 +127,7 @@ function efPhalanxInit() {
 		return;
 	}
 
-	// allow for per wiki disable the content checks 
+	// allow for per wiki disable the content checks
 	if( empty( $wgPhalanxDisableContent ) ) {
 		// former SpamRegex (TYPE_SUMMARY and TYPE_CONTENT)
 		$wgHooks['EditFilter'][] = 'ContentBlock::onEditFilter';

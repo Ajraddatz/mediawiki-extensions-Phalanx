@@ -18,7 +18,7 @@ class UserCookieBlock extends UserBlock {
 		global $wgUser, $wgMemc;
 		wfProfileIn( __METHOD__ );
 
-		// dependancy -- if this doesn't exist, quit early
+		// dependency -- if this doesn't exist, quit early
 		if ( !class_exists( 'AccountCreationTracker' ) ) {
 			wfProfileOut( __METHOD__ );
 			return true;
