@@ -354,9 +354,9 @@ class PhalanxHelper {
 
 				$output .= Xml::openElement( 'ul' );
 
-				$unblockLink = wfMessage( 'phalanx-link-unblock' );
-				$modifyLink = wfMessage( 'phalanx-link-modify' );
-				$statsLink = wfMessage( 'phalanx-link-stats' );
+				$unblockLink = wfMessage( 'phalanx-link-unblock' )->plain();
+				$modifyLink = wfMessage( 'phalanx-link-modify' )->plain();
+				$statsLink = wfMessage( 'phalanx-link-stats' )->plain();
 
 				foreach ( $data[$module] as $match ) {
 					// uses escapeFullURL() for XHTML compliance (encoded ampersands)
