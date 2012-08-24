@@ -19,23 +19,25 @@ class SpecialPhalanx extends SpecialPage {
 	 */
 	public function execute( $par ) {
 		wfProfileIn( __METHOD__ );
-		global $wgOut, $wgUser;
+
+		$out = $this->getOutput();
+		$user = $this->getUser();
 
 		// Check restrictions
-		if ( !$this->userCanExecute( $wgUser ) ) {
+		if ( !$this->userCanExecute( $user ) ) {
 			$this->displayRestrictionError();
 			return;
 		}
 
 		// Can't use the special page if database is locked...
 		if ( wfReadOnly() ) {
-			$wgOut->readOnlyPage();
+			$out->readOnlyPage();
 			return;
 		}
 
 		// No access for blocked users
-		if ( $wgUser->isBlocked() ) {
-			$wgOut->blockedPage();
+		if ( $user->isBlocked() ) {
+			$out->blockedPage();
 			return;
 		}
 
@@ -43,8 +45,8 @@ class SpecialPhalanx extends SpecialPage {
 		$this->setHeaders();
 
 		// Add CSS & JS
-		$wgOut->addModuleStyles( 'ext.phalanx' );
-		$wgOut->addModuleScripts( 'ext.phalanx' );
+		$out->addModuleStyles( 'ext.phalanx' );
+		$out->addModuleScripts( 'ext.phalanx' );
 
 		require_once( 'templates/phalanx.tmpl.php' );
 		$template = new PhalanxTemplate();
@@ -62,50 +64,50 @@ class SpecialPhalanx extends SpecialPage {
 		$template->set( 'expiries', Phalanx::getExpireValues() );
 		$template->set( 'listing', $listing );
 		$template->set( 'data', $data );
-		$template->set( 'showEmail', $wgUser->isAllowed( 'phalanxemailblock' ) );
+		$template->set( 'showEmail', $user->isAllowed( 'phalanxemailblock' ) );
 
-		$wgOut->addTemplate( $template );
+		$out->addTemplate( $template );
 
 		wfProfileOut( __METHOD__ );
 	}
 
 	function prefillForm() {
-		global $wgRequest;
+		$request = $this->getRequest();
 
 		$data = array();
 
-		$id = $wgRequest->getInt( 'id' );
+		$id = $request->getInt( 'id' );
 		if ( $id ) {
 			$data = Phalanx::getFromId( $id );
 			$data['type'] = Phalanx::getTypeNames( $data['type'] );
 			$data['checkBlocker'] = '';
 			$data['typeFilter'] = array();
 		} else {
-			$data['type'] = array_fill_keys( $wgRequest->getArray( 'type', array() ), true );
-			$data['checkBlocker'] = $wgRequest->getText( 'wpPhalanxCheckBlocker', '' );
-			$data['typeFilter'] = array_fill_keys( $wgRequest->getArray( 'wpPhalanxTypeFilter', array() ), true );
+			$data['type'] = array_fill_keys( $request->getArray( 'type', array() ), true );
+			$data['checkBlocker'] = $request->getText( 'wpPhalanxCheckBlocker', '' );
+			$data['typeFilter'] = array_fill_keys( $request->getArray( 'wpPhalanxTypeFilter', array() ), true );
 		}
 
 		$data['checkId'] = ( $id ? $id : null );
 
-		$data['text'] = $wgRequest->getText( 'ip' );
-		$data['text'] = $wgRequest->getText( 'target', $data['text'] );
-		$data['text'] = $wgRequest->getText( 'text', $data['text'] );
+		$data['text'] = $request->getText( 'ip' );
+		$data['text'] = $request->getText( 'target', $data['text'] );
+		$data['text'] = $request->getText( 'text', $data['text'] );
 
 		$data['text'] = self::decodeValue( $data['text'] );
 
-		$data['case'] = $wgRequest->getCheck( 'case' );
-		$data['regex'] = $wgRequest->getCheck( 'regex' );
-		$data['exact'] = $wgRequest->getCheck( 'exact' );
+		$data['case'] = $request->getCheck( 'case' );
+		$data['regex'] = $request->getCheck( 'regex' );
+		$data['exact'] = $request->getCheck( 'exact' );
 
-		$data['expire'] = $wgRequest->getText( 'expire', $this->mDefaultExpire );
+		$data['expire'] = $request->getText( 'expire', $this->mDefaultExpire );
 
-		$data['lang'] = $wgRequest->getText( 'lang', 'all' );
+		$data['lang'] = $request->getText( 'lang', 'all' );
 
-		$data['reason'] = self::decodeValue( $wgRequest->getText( 'reason' ) );
+		$data['reason'] = self::decodeValue( $request->getText( 'reason' ) );
 
 		// test form input
-		$data['test'] = self::decodeValue( $wgRequest->getText( 'test' ) );
+		$data['test'] = self::decodeValue( $request->getText( 'test' ) );
 
 		return $data;
 	}
@@ -118,14 +120,14 @@ class SpecialPhalanx extends SpecialPage {
 
 class PhalanxPager extends ReverseChronologicalPager {
 	public function __construct() {
-		global $wgRequest;
+		$request = $this->getRequest();
 
 		parent::__construct();
 		$this->mDb = wfGetDB( DB_SLAVE );
 
-		$this->mSearchText = $wgRequest->getText( 'wpPhalanxCheckBlocker', null );
-		$this->mSearchFilter = $wgRequest->getArray( 'wpPhalanxTypeFilter' );
-		$this->mSearchId = $wgRequest->getInt( 'id' );
+		$this->mSearchText = $request->getText( 'wpPhalanxCheckBlocker', null );
+		$this->mSearchFilter = $request->getArray( 'wpPhalanxTypeFilter' );
+		$this->mSearchId = $request->getInt( 'id' );
 	}
 
 	function getQueryInfo() {
@@ -164,10 +166,10 @@ class PhalanxPager extends ReverseChronologicalPager {
 	}
 
 	function formatRow( $row ) {
-		global $wgLang, $wgUser;
+		$lang = $this->getLanguage();
 
 		// hide e-mail filters
-		if ( $row->p_type & Phalanx::TYPE_EMAIL && !$wgUser->isAllowed( 'phalanxemailblock' ) ) {
+		if ( $row->p_type & Phalanx::TYPE_EMAIL && !$this->getUser()->isAllowed( 'phalanxemailblock' ) ) {
 			return '';
 		}
 
@@ -183,32 +185,36 @@ class PhalanxPager extends ReverseChronologicalPager {
 		$html .= '<b>' . htmlspecialchars( $row->p_text ) . '</b> (' ;
 
 		$list = array(
-			( $row->p_regex ? wfMsg( 'phalanx-list-regex' ) : wfMsg( 'phalanx-plain-text' ) )
+			( $row->p_regex ? $this->msg( 'phalanx-list-regex' )->text() :
+				$this->msg( 'phalanx-plain-text' )->text() )
 		);
 		if( $row->p_case ) {
-			$list[] = wfMsg( 'phalanx-format-case' );
+			$list[] = $this->msg( 'phalanx-format-case' )->text();
 		}
 		if( $row->p_exact ) {
-			$list[] = wfMsg( 'phalanx-format-exact' );
+			$list[] = $this->msg( 'phalanx-format-exact' )->text();
 		}
-		$html .= $wgLang->commaList( $list );
+		$html .= $lang->commaList( $list );
 
 		$html .= ') ';
 
 		// control links
-		$html .= " &bull; <a class=\"unblock\" href=\"{$phalanxUrl}\">" . wfMsg( 'phalanx-link-unblock' ) . '</a>';
-		$html .= " &bull; <a class=\"modify\" href=\"{$phalanxUrl}\">" . wfMsg( 'phalanx-link-modify' ) . '</a>';
-		$html .= " &bull; <a class=\"stats\" href=\"{$statsUrl}\">" . wfMsg( 'phalanx-link-stats' ) . '</a>';
+		$html .= " &bull; <a class=\"unblock\" href=\"{$phalanxUrl}\">" .
+			$this->msg( 'phalanx-link-unblock' )->text() . '</a>';
+		$html .= " &bull; <a class=\"modify\" href=\"{$phalanxUrl}\">" .
+			$this->msg( 'phalanx-link-modify' )->text() . '</a>';
+		$html .= " &bull; <a class=\"stats\" href=\"{$statsUrl}\">" .
+			$this->msg( 'phalanx-link-stats' )->text() . '</a>';
 
 		// types
-		$html .= '<br /> ' . wfMsg( 'phalanx-display-row-blocks', implode( ', ', Phalanx::getTypeNames( $row->p_type ) ) );
+		$html .= '<br /> ' . $this->msg( 'phalanx-display-row-blocks',
+			implode( ', ', Phalanx::getTypeNames( $row->p_type ) ) )->text();
 
-		$html .= ' &bull; ' . wfMsgExt(
+		$html .= ' &bull; ' . $this->msg(
 			'phalanx-display-row-created',
-			'parseinline',
 			$authorName,
-			$wgLang->timeanddate( $row->p_timestamp )
-		);
+			$lang->timeanddate( $row->p_timestamp )
+		)->parse();
 
 		$html .= '</li>';
 

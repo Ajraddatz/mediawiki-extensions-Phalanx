@@ -15,31 +15,33 @@ class PhalanxStats extends UnlistedSpecialPage {
 	 * @param $par Mixed: parameter passed to the special page or null
 	 */
 	public function execute( $par ) {
-		global $wgOut, $wgUser, $wgLang, $wgRequest;
+		$out = $this->getOutput();
+		$user = $this->getUser();
+		$request = $this->getRequest();
 
 		// Check restrictions
-		if ( !$this->userCanExecute( $wgUser ) ) {
+		if ( !$this->userCanExecute( $user ) ) {
 			$this->displayRestrictionError();
 			return;
 		}
 
 		// No access for blocked users
-		if ( $wgUser->isBlocked() ) {
-			$wgOut->blockedPage();
+		if ( $user->isBlocked() ) {
+			$out->blockedPage();
 			return;
 		}
 
 		if ( empty( $par ) ) {
-			$par = $wgRequest->getInt( 'blockId' );
+			$par = $request->getInt( 'blockId' );
 		}
 
 		// Set the page title, robot policies, etc.
 		$this->setHeaders();
 
 		// Add CSS
-		$wgOut->addModuleStyles( 'ext.phalanx' );
+		$out->addModuleStyles( 'ext.phalanx' );
 
-		$wikiId = $wgRequest->getInt( 'wikiId' );
+		$wikiId = $request->getInt( 'wikiId' );
 
 		// show block ID or blocks for wiki
 		if ( strpos( $par, 'wiki' ) !== false ) {
@@ -66,55 +68,59 @@ class PhalanxStats extends UnlistedSpecialPage {
 	}
 
 	private function blockStats( $par ) {
-		global $wgOut, $wgLang, $wgUser, $wgRequest;
+		$lang = $this->getLanguage();
+		$out = $this->getOutput();
+		$user = $this->getUser();
 
 		// We have a valid ID, change the title to use it
-		$wgOut->setPageTitle( wfMsg( 'phalanxstats' ) . ' #' . $par );
+		$out->setPageTitle( $this->msg( 'phalanxstats' )->text() . ' #' . $par );
 
 		$block = array();
 		$block = Phalanx::getFromId( intval( $par ) );
 
 		if ( empty( $block ) ) {
-			$wgOut->addWikiMsg( 'phalanx-stats-block-notfound', $par );
+			$out->addWikiMsg( 'phalanx-stats-block-notfound', $par );
 			return true;
 		}
 
+		$yes = $this->msg( 'phalanx-yes' )->text();
+		$no = $this->msg( 'phalanx-no' )->text();
 		// process block data for display
 		$data = array();
 		$data['id'] = $block['id'];
 		$data['author_id'] = User::newFromId( $block['author_id'] )->getName();
 		$data['type'] = implode( ', ', Phalanx::getTypeNames( $block['type'] ) );
 
-		$data['timestamp'] = $wgLang->timeanddate( $block['timestamp'] );
+		$data['timestamp'] = $lang->timeanddate( $block['timestamp'] );
 		if ( $block['expire'] == null ) {
-			$data['expire'] = wfMsg( 'infiniteblock' );
+			$data['expire'] = $this->msg( 'infiniteblock' )->text();
 		} else {
-			$data['expire'] = $wgLang->timeanddate( $block['expire'] );
+			$data['expire'] = $lang->timeanddate( $block['expire'] );
 		}
-		$data['regex'] = $block['regex'] ? wfMsg( 'phalanx-yes' ) : wfMsg( 'phalanx-no' );
-		$data['case'] = $block['case'] ? wfMsg( 'phalanx-yes' ) : wfMsg( 'phalanx-no' );
-		$data['exact'] = $block['exact'] ? wfMsg( 'phalanx-yes' ) : wfMsg( 'phalanx-no' );
+		$data['regex'] = $block['regex'] ? $yes : $no;
+		$data['case'] = $block['case'] ? $yes : $no;
+		$data['exact'] = $block['exact'] ? $yes : $no;
 		$data['lang'] = empty( $block['lang'] ) ? '*' : $block['lang'];
 
 		// Pull these out of the array, so they don't get used in the top rows
-		if ( $block['type'] & Phalanx::TYPE_EMAIL && !$wgUser->isAllowed( 'phalanxemailblock' ) ) {
-			// hide email from non-privildged users
-			$data2['text'] = wfMsg( 'phalanx-email-filter-hidden' );
+		if ( $block['type'] & Phalanx::TYPE_EMAIL && !$user->isAllowed( 'phalanxemailblock' ) ) {
+			// hide e-mail from non-privileged users
+			$data2['text'] = $this->msg( 'phalanx-email-filter-hidden' );
 		} else {
 			$data2['text'] = $block['text'];
 		}
 		$data2['reason'] = $block['reason'];
 
 		$headers = array(
-			wfMsg( 'phalanx-stats-table-id' ),
-			wfMsg( 'phalanx-stats-table-user' ),
-			wfMsg( 'phalanx-stats-table-type' ),
-			wfMsg( 'phalanx-stats-table-create' ),
-			wfMsg( 'phalanx-stats-table-expire' ),
-			wfMsg( 'phalanx-stats-table-regex' ),
-			wfMsg( 'phalanx-stats-table-case' ),
-			wfMsg( 'phalanx-stats-table-exact' ),
-			wfMsg( 'phalanx-stats-table-language' ),
+			$this->msg( 'phalanx-stats-table-id' )->text(),
+			$this->msg( 'phalanx-stats-table-user' )->text(),
+			$this->msg( 'phalanx-stats-table-type' )->text(),
+			$this->msg( 'phalanx-stats-table-create' )->text(),
+			$this->msg( 'phalanx-stats-table-expire' )->text(),
+			$this->msg( 'phalanx-stats-table-regex' )->text(),
+			$this->msg( 'phalanx-stats-table-case' )->text(),
+			$this->msg( 'phalanx-stats-table-exact' )->text(),
+			$this->msg( 'phalanx-stats-table-language' )->text(),
 		);
 
 		$html = '';
@@ -130,10 +136,10 @@ class PhalanxStats extends UnlistedSpecialPage {
 		// Rip off bottom
 		$table = str_replace( '</table>', '', $table );
 		// Add some stuff
-		$table .= '<tr><th>' . wfMsg( 'phalanx-stats-table-text' ) .
+		$table .= '<tr><th>' . $this->msg( 'phalanx-stats-table-text' )->text() .
 			'</th><td colspan="8">' . htmlspecialchars( $data2['text'] ) .
 			'</td></tr>';
-		$table .= '<tr><th>' . wfMsg( 'phalanx-stats-table-reason' ) .
+		$table .= '<tr><th>' . $this->msg( 'phalanx-stats-table-reason' )->text() .
 			"</th><td colspan=\"8\">{$data2['reason']}</td></tr>";
 		// Seal it back up
 		$table .= '</table>';
@@ -142,9 +148,9 @@ class PhalanxStats extends UnlistedSpecialPage {
 
 		$phalanxURL = SpecialPage::getTitleFor( 'Phalanx' )->getFullURL( array( 'id' => $block['id'] ) );
 		$html .= " &bull; <a class=\"modify\" href=\"{$phalanxURL}\">" .
-			wfMsg( 'phalanx-link-modify' ) . "</a><br />\n";
+			$this->msg( 'phalanx-link-modify' )->text() . "</a><br />\n";
 		$html .= "<br />\n";
-		$wgOut->addHTML( $html );
+		$out->addHTML( $html );
 
 		$pager = new PhalanxStatsPager( $par );
 
@@ -153,11 +159,11 @@ class PhalanxStats extends UnlistedSpecialPage {
 		$html .= $pager->getBody();
 		$html .= $pager->getNavigationBar();
 
-		$wgOut->addHTML( $html );
+		$out->addHTML( $html );
 	}
 
 	private function blockWiki( $par ) {
-		global $wgOut, $wgLang, $wgUser, $wgRequest;
+		$out = $this->getOutput();
 
 		if ( !is_numeric( $par ) ) {
 			return false;
@@ -166,21 +172,21 @@ class PhalanxStats extends UnlistedSpecialPage {
 		$sitename = self::getSitename( $par );
 
 		// We have a valid ID, change the title to use it
-		$wgOut->setPageTitle( wfMsg( 'phalanxstats' ) . ': ' . $url );
+		$out->setPageTitle( $this->msg( 'phalanxstats' )->text() . ': ' . $url );
 
 		// process block data for display
 		$data['wiki_id'] = $par;
 		$data['sitename'] = $sitename;
 		$data['url'] = $url;
-		//$data['last_timestamp'] = $wgLang->timeanddate( $oWiki->city_last_timestamp );
+		//$data['last_timestamp'] = $this->getLanguage()->timeanddate( $oWiki->city_last_timestamp );
 
 		$html = '';
 
 		$headers = array(
-			wfMsg( 'phalanx-stats-table-wiki-id' ),
-			wfMsg( 'phalanx-stats-table-wiki-name' ),
-			wfMsg( 'phalanx-stats-table-wiki-url' ),
-			//wfMsg( 'phalanx-stats-table-wiki-last-edited' ),
+			$this->msg( 'phalanx-stats-table-wiki-id' )->text(),
+			$this->msg( 'phalanx-stats-table-wiki-name' )->text(),
+			$this->msg( 'phalanx-stats-table-wiki-url' )->text(),
+			//$this->msg( 'phalanx-stats-table-wiki-last-edited' )->text(),
 		);
 
 		$tableAttribs = array(
@@ -193,7 +199,7 @@ class PhalanxStats extends UnlistedSpecialPage {
 		$table = Xml::buildTable( array( $data ), $tableAttribs, $headers );
 		$html .= $table . "<br />\n";
 
-		$wgOut->addHTML( $html );
+		$out->addHTML( $html );
 
 		$pager = new PhalanxWikiStatsPager( $par );
 
@@ -202,7 +208,7 @@ class PhalanxStats extends UnlistedSpecialPage {
 		$html .= $pager->getBody();
 		$html .= $pager->getNavigationBar();
 
-		$wgOut->addHTML( $html );
+		$out->addHTML( $html );
 	}
 
 	/**
@@ -250,38 +256,40 @@ class PhalanxStats extends UnlistedSpecialPage {
 	 * if no parameters were passed
 	 */
 	private function showForms() {
-		global $wgLang, $wgOut;
+		$out = $this->getOutput();
 
 		$statsURL = SpecialPage::getTitleFor( 'PhalanxStats' )->getFullURL();
 
 		$formParam = array( 'method' => 'get', 'action' => $statsURL );
+
+		$loadBtn = $this->msg( 'phalanx-stats-load-btn' )->text();
 
 		$content = '';
 		$content .= Xml::openElement( 'form', $formParam ) . "\n";
 		$content .= wfMsg( 'phalanx-stats-id',
 			Xml::input( 'blockId', 5, '', array() )
 		);
-		$content .= Xml::submitButton( wfMsg( 'phalanx-stats-load-btn' ) ) . "\n";
+		$content .= Xml::submitButton( $loadBtn ) . "\n";
 		$content .= Xml::closeElement( 'form' ) . "\n";
-		$content .= wfMsg( 'phalanx-stats-example' ) . "\n<ul>\n";
+		$content .= $this->msg( 'phalanx-stats-example' )->text() . "\n<ul>\n";
 		$content .= '<li>' . SpecialPage::getTitleFor( 'PhalanxStats', '123456' )->getFullURL() . "</li>\n";
 		$content .= '<li>' . SpecialPage::getTitleFor( 'PhalanxStats' )->getFullURL( array( 'blockId' => '123456' ) ) . "</li>\n";
 		$content .= "</ul>\n";
 
-		$wgOut->addHTML( Xml::fieldset( wfMsg( 'phalanx-stats-recent-triggers' ), $content, array() ) );
+		$out->addHTML( Xml::fieldset( $this->msg( 'phalanx-stats-recent-triggers' )->text(), $content, array() ) );
 
 		$formParam = array( 'method' => 'get', 'action' => $statsURL );
 
 		$content = '';
 		$content .= Xml::openElement( 'form', $formParam ) . "\n";
 		$content .= wfMsg( 'phalanx-stats-id', Xml::input( 'wikiId', 5, '', array() ) );
-		$content .= Xml::submitButton( wfMsg( 'phalanx-stats-load-btn' ) ) . "\n";
+		$content .= Xml::submitButton( $loadBtn ) . "\n";
 		$content .= Xml::closeElement( 'form' ) . "\n";
-		$content .= wfMsg( 'phalanx-stats-example' ) . "\n<ul>\n";
+		$content .= $this->msg( 'phalanx-stats-example' )->text() . "\n<ul>\n";
 		$content .= '<li>' . SpecialPage::getTitleFor( 'PhalanxStats', 'wiki/123456' )->getFullURL() . "</li>\n";
 		$content .= "</ul>\n";
 
-		$wgOut->addHTML( Xml::fieldset( wfMsg( 'phalanx-stats-recent-blocks' ), $content, array() ) );
+		$out->addHTML( Xml::fieldset( $this->msg( 'phalanx-stats-recent-blocks' )->text(), $content, array() ) );
 
 		return;
 	}
@@ -330,11 +338,9 @@ class PhalanxStatsPager extends ReverseChronologicalPager {
 	}
 
 	function formatRow( $row ) {
-		global $wgLang;
-
 		$type = implode( Phalanx::getTypeNames( $row->ps_blocker_type ) );
 		$username = $row->ps_blocked_user;
-		$timestamp = $wgLang->timeanddate( $row->ps_timestamp );
+		$timestamp = $this->getLanguage()->timeanddate( $row->ps_timestamp );
 		$wikiNumber = $row->ps_wiki_id;
 		$url = self::getFSD( $wikiNumber );
 
@@ -414,13 +420,11 @@ class PhalanxWikiStatsPager extends ReverseChronologicalPager {
 	}
 
 	function formatRow( $row ) {
-		global $wgLang;
-
 		$type = implode( Phalanx::getTypeNames( $row->ps_blocker_type ) );
 
 		$username = $row->ps_blocked_user;
 
-		$timestamp = $wgLang->timeanddate( $row->ps_timestamp );
+		$timestamp = $this->getLanguage()->timeanddate( $row->ps_timestamp );
 
 		$blockId = (int) $row->ps_blocker_id;
 
@@ -435,7 +439,7 @@ class PhalanxWikiStatsPager extends ReverseChronologicalPager {
 		// stats
 		$statsURL = Linker::link(
 			$this->mTitleStats,
-			wfMsg( 'phalanx-link-stats' ),
+			wfMessage( 'phalanx-link-stats' )->text(),
 			array(),
 			array( 'blockId' => $blockId )
 		);

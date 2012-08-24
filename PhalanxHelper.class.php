@@ -117,7 +117,10 @@ class PhalanxHelper {
 		// validation
 		if ( empty( $filter ) || empty( $typemask ) ) {
 			wfProfileOut( __METHOD__ );
-			return array( 'error' => true, 'text' => wfMsg( 'phalanx-block-failure' ) );
+			return array(
+				'error' => true,
+				'text' => wfMessage( 'phalanx-block-failure' )->text()
+			);
 		}
 
 		if ( $lang == 'all' ) {
@@ -150,11 +153,11 @@ class PhalanxHelper {
 
 		if( !$id ) {
 			$status = PhalanxHelper::save( $data );
-			$reason = $status ? wfMsg( 'phalanx-block-success' ) : wfMsg( 'phalanx-block-failure' );
+			$reason = $status ? wfMessage( 'phalanx-block-success' )->text() : wfMessage( 'phalanx-block-failure' )->text();
 		} else {
 			$data['id'] = $id;
 			$status = PhalanxHelper::update( $data );
-			$reason = $status ? wfMsg( 'phalanx-modify-success' ) : wfMsg( 'phalanx-block-failure' );
+			$reason = $status ? wfMessage( 'phalanx-modify-success' )->text() : wfMessage( 'phalanx-block-failure' )->text();
 		}
 
 		wfProfileOut( __METHOD__ );
@@ -184,8 +187,8 @@ class PhalanxHelper {
 			'data' => $data,
 			'error' => false,
 			'time' => $time,
-			'button' => wfMsg( 'phalanx-edit-block' ),
-			'text' => wfMsg( 'phalanx-modify-warning', $data['id'] )
+			'button' => wfMessage( 'phalanx-edit-block' )->text(),
+			'text' => wfMessage( 'phalanx-modify-warning', $data['id'] )->parse()
 		);
 	}
 
@@ -198,7 +201,7 @@ class PhalanxHelper {
 		$id = $wgRequest->getVal( 'id' );
 		return array(
 			'error' => self::removeFilter( $id ),
-			'text' => wfMsg( 'phalanx-unblock-message', $id )
+			'text' => wfMessage( 'phalanx-unblock-message', $id )->text()
 		);
 	}
 
@@ -233,7 +236,7 @@ class PhalanxHelper {
 
 		$result = array(
 			'error' => false,
-			'text' => wfMsg( 'phalanx-unblock-message', $data['id'] ),
+			'text' => wfMessage( 'phalanx-unblock-message', $data['id'] )->text(),
 		);
 
 		wfProfileOut( __METHOD__ );
@@ -351,15 +354,19 @@ class PhalanxHelper {
 
 				$output .= Xml::openElement( 'ul' );
 
+				$unblockLink = wfMessage( 'phalanx-link-unblock' );
+				$modifyLink = wfMessage( 'phalanx-link-modify' );
+				$statsLink = wfMessage( 'phalanx-link-stats' );
+
 				foreach ( $data[$module] as $match ) {
 					// uses escapeFullURL() for XHTML compliance (encoded ampersands)
 					$phalanxUrl = SpecialPage::getTitleFor( 'Phalanx' )->escapeFullURL( array( 'id' => $match['id'] ) );
 					$statsUrl = SpecialPage::getTitleFor( 'PhalanxStats', $match['id'] )->getFullURL();
 
 					$line = htmlspecialchars( $match['text'] ) . ' &bull; ' .
-						Xml::element( 'a', array( 'href' => $phalanxUrl, 'class' => 'unblock' ), wfMsg( 'phalanx-link-unblock' ) ) . ' &bull; ' .
-						Xml::element( 'a', array( 'href' => $phalanxUrl, 'class' => 'modify' ), wfMsg( 'phalanx-link-modify' ) ) . ' &bull; ' .
-						Xml::element( 'a', array( 'href' => $statsUrl ), wfMsg( 'phalanx-link-stats' ) );
+						Xml::element( 'a', array( 'href' => $phalanxUrl, 'class' => 'unblock' ), $unblockLink ) . ' &bull; ' .
+						Xml::element( 'a', array( 'href' => $phalanxUrl, 'class' => 'modify' ), $modifyLink ) . ' &bull; ' .
+						Xml::element( 'a', array( 'href' => $statsUrl ), $statsLink );
 					$output .= Xml::tags( 'li', null, $line );
 				}
 
@@ -368,7 +375,7 @@ class PhalanxHelper {
 		}
 
 		if ( empty( $output ) ) {
-			$output = wfMsg( 'phalanx-no-matches' );
+			$output = wfMessage( 'phalanx-no-matches' )->text();
 		}
 
 		return $output;
@@ -400,13 +407,12 @@ class PhalanxHelper {
 		$log->addEntry(
 			$action,
 			$title,
-			wfMsgExt(
+			wfMessage(
 				'phalanx-rule-log-details',
-				array( 'parsemag', 'content' ),
 				$data['text'],
 				$types,
 				$data['reason']
-			)
+			)->inContentLanguage()->parse()
 		);
 		// Workaround lack of automatic commit in AJAX requests
 		$dbw = wfGetDB( DB_MASTER );
@@ -421,7 +427,7 @@ class PhalanxHelper {
 	 * @return Array: array( 'langcode' => 'langcode - Local language name' )
 	 */
 	public static function getSupportedLanguages() {
-		$allArray = array( 'all' => wfMsg( 'phalanx-all-languages' ) );
+		$allArray = array( 'all' => wfMessage( 'phalanx-all-languages' )->text() );
 
 		// Support all languages that MediaWiki supports in Phalanx UI
 		// Code lifted from Preferences::profilePreferences -- because
