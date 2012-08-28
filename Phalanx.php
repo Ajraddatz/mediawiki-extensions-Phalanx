@@ -27,8 +27,8 @@ $wgExtensionCredits['antispam'][] = array(
 		'Maciej Błaszkowski', 'Maciej Brencz', 'Łukasz Garczewski',
 		'Bartek Łapiński', 'Jack Phoenix'
 	),
-	'description' => 'Integrated spam control mechanism',
-	'descriptionmsg' => 'phalanx-description',
+
+	'descriptionmsg' => 'phalanx-desc',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:Phalanx',
 );
 
