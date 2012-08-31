@@ -1023,6 +1023,8 @@ $messages['hsb'] = array(
 	'phalanx-block-failure' => 'Při přidawanju blokowanja je zmylk wustupił',
 	'phalanx-modify-success' => 'Blokowanje je so wuspěšnje změniło',
 	'phalanx-modify-failure' => 'Při měnjenju blokowanja je zmylk wustupił',
+	'phalanx-modify-warning' => 'Wobdźěłuješ ID blokowanja čo. $1. Klikń na "{{int:phalanx-edit-block}}", zo by swoje změny składował.',
+	'phalanx-test-description' => 'Testuj podaty tekst přećiwo aktualnym blokowanjam.',
 	'phalanx-test-submit' => 'Test',
 	'phalanx-content-spam-summary' => 'Tekst je so w zjeću strony namakał.',
 	'phalanx-link-unblock' => 'wotblokować',
@@ -1043,6 +1045,7 @@ $messages['hsb'] = array(
 	'phalanx-test-results-legend' => 'Testowe wuslědki',
 	'phalanx-no-matches' => 'Žane wotpowědniki namakane.',
 	'phalanxstats' => 'Phalanx - statistika',
+	'phalanx-email-filter-hidden' => 'E-mejlowy filter je schowany. Nimaš prawo, sej tekst wobhladać.',
 	'phalanx-yes' => 'Haj',
 	'phalanx-no' => 'Ně',
 	'phalanx-stats-table-id' => 'ID blokowanja',
@@ -1056,6 +1059,7 @@ $messages['hsb'] = array(
 	'phalanx-stats-table-case' => 'Wulko- a małopisanje',
 	'phalanx-stats-table-reason' => 'Přičina',
 	'phalanx-stats-table-language' => 'Rěč',
+	'phalanx-stats-entry' => '<b>$4</b> filtrowy typ <b>$1</b> zablokowany wužiwar <b>$2</b> na <a href="http://$3.shoutwiki.com/">$3</a>',
 	'phalanx-stats-block-notfound' => 'ID blokowanja njenamakany',
 	'phalanx-stats-table-wiki-id' => 'ID wikija',
 	'phalanx-stats-table-wiki-name' => 'Wikimjeno',
@@ -1074,6 +1078,7 @@ $messages['hsb'] = array(
 	'phalanx-rule-log-delete' => 'Prawidło Phalanx zhašane: $1',
 	'phalanx-rule-log-details' => 'Filter: "$1", typ: "$2", přičina: "$3"',
 	'right-phalanx' => 'Wšelake spamowe filtry přidać, změnić a wotstronić',
+	'right-phalanxemailblock' => 'Móže blokowanja na zakładźe e-mejle wutworić, sej wobhladać a zrjadować',
 );
 
 /** Hungarian (magyar)
@@ -2532,16 +2537,17 @@ $messages['tt-cyrl'] = array(
 
 /** Ukrainian (українська)
  * @author A1
+ * @author Olvin
  * @author Тест
  */
 $messages['uk'] = array(
 	'phalanx-desc' => 'Phalanx - комплексний механізм виявлення спаму',
 	'phalanx-type-content' => 'зміст сторінки',
 	'phalanx-type-summary' => 'стислий опис сторінки',
-	'phalanx-type-title' => 'Назва сторінки',
-	'phalanx-type-user' => 'користувач',
-	'phalanx-type-answers-question-title' => 'назва запитання',
-	'phalanx-type-answers-recent-questions' => 'нові запитання',
+	'phalanx-type-title' => 'назва сторінки',
+	'phalanx-type-user' => 'дописувач',
+	'phalanx-type-answers-question-title' => 'заголовок питання',
+	'phalanx-type-answers-recent-questions' => 'останні запитання',
 	'phalanx-type-wiki-creation' => 'створення вікі',
 	'phalanx-add-block' => 'Застосувати блок',
 	'phalanx-edit-block' => 'Зберегти блок',
@@ -2555,27 +2561,27 @@ $messages['uk'] = array(
 	'phalanx-view-blocks' => 'Пошукові фільтри',
 	'phalanx-view-id' => 'Використовувати фільтр за ID:',
 	'phalanx-view-id-submit' => 'Отримати фільтр',
-	'phalanx-format-text' => 'Простий текст',
-	'phalanx-format-regex' => 'регулярно',
+	'phalanx-format-text' => 'Звичайний текст',
+	'phalanx-format-regex' => 'регулярний вираз',
 	'phalanx-format-case' => 'з урахуванням регістру',
 	'phalanx-format-exact' => 'точно',
-	'phalanx-tab-main' => 'Фільтри',
+	'phalanx-tab-main' => 'Керування фільтрами',
 	'phalanx-tab-secondary' => 'Випробувати фільтр',
 	'phalanx-block-success' => 'Блок успішно додано',
-	'phalanx-block-failure' => 'Помилка при додаванні блоку',
+	'phalanx-block-failure' => 'Помилка під час додавання блоку',
 	'phalanx-modify-success' => 'Блок успішно змінено',
-	'phalanx-modify-failure' => 'Помилка при зміні блоку',
+	'phalanx-modify-failure' => 'Сталася помилка під час зміни блоку',
 	'phalanx-test-submit' => 'Тест',
 	'phalanx-link-unblock' => 'розблокувати',
 	'phalanx-link-modify' => 'змінити',
 	'phalanx-link-stats' => 'статистика',
 	'phalanx-legend-input' => 'Створити або змінити фільтр',
 	'phalanx-legend-listing' => 'Поточні фільтри',
-	'phalanx-unblock-message' => 'Блок ID # $1  успішно вилучено',
-	'phalanx-help-type-content' => 'Якщо зміст відповідає будь-якому слову з чорного списку фраз, то фільтр забороняє збереження після редагування.',
-	'phalanx-user-block-new-account' => "Це ім'я користувача не доступно для реєстрації. Будь ласка, виберіть інше.",
+	'phalanx-unblock-message' => 'Блок ID #$1  успішно вилучено',
+	'phalanx-help-type-content' => 'Цей фільтр запобігає збереженню змін, зміст яких відповідає якій-небудь із заборонених фраз.',
+	'phalanx-user-block-new-account' => "Це ім'я користувача не доступно для реєстрації. Будь ласка, оберіть інше.",
 	'phalanx-display-row-blocks' => 'блоки: $1',
-	'phalanx-display-row-created' => 'створив [[User:$1|$1]] на $2',
+	'phalanx-display-row-created' => 'створено [[User:$1|$1]]  $2',
 	'phalanx-test-results-legend' => 'Результати тесту',
 );
 
