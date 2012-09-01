@@ -146,11 +146,12 @@ Please [[Special:Contact|contact us]] about the problem.<br />The blocker also g
 );
 
 /** Message documentation (Message documentation)
+ * @author Kghbln
  * @author Shirayuki
  */
 $messages['qqq'] = array(
 	'phalanx' => 'Special page title, shown on Special:SpecialPages',
-	'phalanx-ui-description' => 'Extension description, shown on Special:Version',
+	'phalanx-ui-description' => ' Extension description, shown on Special:Version',
 	'phalanx-all-languages' => 'Drop-down menu item on Special:Phalanx; if a user wants to block something for all languages (as opposed to blocking for one specific language), they will select this option',
 	'phalanx-type-content' => 'Keep this short! This is used to indicate that a filter blocks something in an article (i.e. prevents that word or phrase from being added into an article)',
 	'phalanx-type-summary' => 'Keep this short! This is used to indicate that a filter blocks an edit summary or a page move summary.',
@@ -213,7 +214,7 @@ $messages['qqq'] = array(
 	'phalanx-title-move-summary' => 'Error message shown to the user if they tried to move a page and the move summary contained a phrase that has been blocked via Phalanx.',
 	'phalanx-plain-text' => 'Used in the PhalanxStats special page; keep this short! Used when a filter has the "plain text" option (as opposed to the "regex" option) checked',
 	'phalanx-list-regex' => 'Used in the PhalanxStats special page; keep this short! "Regex" refers to [[wikipedia:Regular expression|regular expressions]]',
-	'phalanx-display-row-blocks' => '$1 is the filter type, one or more of the following (comma-separated if multiple): [[MediaWiki:Phalanx-type-content]], [[MediaWiki:Phalanx-type-summary]], [[MediaWiki:Phalanx-type-title]], [[MediaWiki:Phalanx-type-user]], [[MediaWiki:Phalanx-type-user-email]], [[MediaWiki:Phalanx-type-answers-question-title]], [[MediaWiki:Phalanx-type-answers-recent-questions]], [[MediaWiki:Phalanx-type-wiki-creation]',
+	'phalanx-display-row-blocks' => '$1 is the filter type, one or more of the following (comma-separated if multiple): {{msg-mw|Phalanx-type-content]], {{msg-mw|Phalanx-type-summary}}, {{msg-mw|Phalanx-type-title}}, {{msg-mw|Phalanx-type-user}}, {{msg-mw|Phalanx-type-user-email}}, {{msg-mw|Phalanx-type-answers-question-title}}, {{msg-mw|Phalanx-type-answers-recent-questions}}, {{msg-mw|Phalanx-type-wiki-creation}}',
 	'phalanx-display-row-created' => '$1 is a user name, $2 is a timestamp',
 	'phalanx-test-results-legend' => 'Shown in the testing interface',
 	'phalanx-no-matches' => "Shown in the testing interface when the given text does not trigger any of Phalanx's filters",
@@ -233,7 +234,7 @@ $messages['qqq'] = array(
 	'phalanx-stats-table-reason' => 'Used on the table in Special:PhalanxStats; refer to the [[:File:Phalanx MediaWiki extension - statistics interface for a given block.png|extension screenshot]] for details',
 	'phalanx-stats-table-language' => 'Used on the table in Special:PhalanxStats; refer to the [[:File:Phalanx MediaWiki extension - statistics interface for a given block.png|extension screenshot]] for details',
 	'phalanx-stats-entry' => 'Entry on Special:PhalanxStats/some-block-ID-goes-here
-* $1 is the filter type, such as "content" ([[MediaWiki:Phalanx-type-content]])
+* $1 is the filter type, such as "content" ({{msg-mw|Phalanx-type-content}})
 * $2 is the user name or IP address who triggered the filter
 * $3 is the wiki\'s subdomain
 * $4 is the timestamp (time and date)',
@@ -247,11 +248,11 @@ $messages['qqq'] = array(
 	'phalanx-stats-recent-blocks' => 'Legend text, shown on Special:PhalanxStats when that special page is accessed without parameters',
 	'phalanx-stats-example' => 'Shown on Special:PhalanxStats when that special page is accessed without parameters. Used in two different places on the page, but in similar context: always followed by a list of URLs.',
 	'phalanx-stats-row-per-wiki' => "Shown on the PhalanxStats special page when wikiId is defined (i.e. we're viewing recent blocks on a certain wiki, as opposed to recent triggers of a certain block).
-* $1 is the filter type, one of the following: [[MediaWiki:Phalanx-type-content]], [[MediaWiki:Phalanx-type-summary]], [[MediaWiki:Phalanx-type-title]], [[MediaWiki:Phalanx-type-user]], [[MediaWiki:Phalanx-type-user-email]], [[MediaWiki:Phalanx-type-answers-question-title]], [[MediaWiki:Phalanx-type-answers-recent-questions]], [[MediaWiki:Phalanx-type-wiki-creation]]
+* $1 is the filter type, one of the following: {{msg-mw|Phalanx-type-content}}, {{msg-mw|Phalanx-type-summary}}, {{msg-mw|Phalanx-type-title}}, {{msg-mw|Phalanx-type-user}}, {{msg-mw|Phalanx-type-user-email}}, {{msg-mw|Phalanx-type-answers-question-title}}, {{msg-mw|Phalanx-type-answers-recent-questions}}, {{msg-mw|Phalanx-type-wiki-creation}}
 * $2 is the user name or IP address who triggered the filter
 * $3 is the ID number of the Phalanx filter that was triggered; it also contains a link to the Special:Phalanx special page
 * $4 is the timestamp (time and date)
-* $5 is [[MediaWiki:Phalanx-link-stats]], containing a link to ''Special:PhalanxStats/$3''",
+* $5 is {{msg-mw|Phalanx-link-stats}}, containing a link to ''Special:PhalanxStats/$3''",
 	'phalanx-rule-log-name' => 'Title of the private Phalanx log, shown on Special:Log',
 	'phalanx-rule-log-header' => 'Explanation text, shown on Special:Log/phalanx',
 	'phalanx-email-rule-log-name' => 'Title of the private Phalanx e-mail log, shown on Special:Log',
@@ -259,9 +260,9 @@ $messages['qqq'] = array(
 	'phalanx-rule-log-add' => 'Log entry; $1 is something like Special:PhalanxStats/123 (Filter: "127.0.0.1", type: "user", reason: "spamming on foo")',
 	'phalanx-rule-log-edit' => 'Log entry; $1 is something like Special:PhalanxStats/123 (Filter: "127.0.0.1", type: "user", reason: "spamming on foo")',
 	'phalanx-rule-log-delete' => 'Log entry; $1 is something like Special:PhalanxStats/123 (Filter: "127.0.0.1", type: "user", reason: "spamming on foo")',
-	'phalanx-rule-log-details' => 'Part of log entries ([[MediaWiki:Phalanx-rule-log-add]], [[MediaWiki:Phalanx-rule-log-edit]], [[MediaWiki:Phalanx-rule-log-delete]]).
+	'phalanx-rule-log-details' => 'Part of log entries ({{msg-mw|Phalanx-rule-log-add]], {{msg-mw|Phalanx-rule-log-edit}}, {{msg-mw|Phalanx-rule-log-delete}}).
 * $1 is what is being filtered (a user name, an IP address, a spam phrase...)
-* $2 is the filter type, one or more of the following (comma-separated if multiple): [[MediaWiki:Phalanx-type-content]], [[MediaWiki:Phalanx-type-summary]], [[MediaWiki:Phalanx-type-title]], [[MediaWiki:Phalanx-type-user]], [[MediaWiki:Phalanx-type-user-email]], [[MediaWiki:Phalanx-type-answers-question-title]], [[MediaWiki:Phalanx-type-answers-recent-questions]], [[MediaWiki:Phalanx-type-wiki-creation]]
+* $2 is the filter type, one or more of the following (comma-separated if multiple): {{msg-mw|Phalanx-type-content}}, {{msg-mw|Phalanx-type-summary}}, {{msg-mw|Phalanx-type-title}}, {{msg-mw|Phalanx-type-user}}, {{msg-mw|Phalanx-type-user-email}}, {{msg-mw|Phalanx-type-answers-question-title}}, {{msg-mw|Phalanx-type-answers-recent-questions}}, {{msg-mw|Phalanx-type-wiki-creation}}
 * $3 is the user-supplied reason why this is being blocked',
 	'action-phalanx' => '{{Doc-action|phalanx}}
 Shown if someone without the <code>phalanx</code> user right tries to access Phalanx special pages.',
@@ -347,100 +348,94 @@ $messages['br'] = array(
  * @author DaSch
  * @author Geitost
  * @author George Animal
+ * @author Kghbln
  * @author LWChris
  * @author Metalhead64
  * @author PtM
  * @author SVG
  */
 $messages['de'] = array(
-	'phalanx' => 'Phalanx – Integrierter Spam-Verteidigungs-Mechanismus',
-	'phalanx-desc' => 'Phalanx ist ein integrierter Spam-Verteidigungs-Mechanismus',
-	'phalanx-ui-description' => 'Spamverteidigungsmechanismus-Verwaltungsoberfläche',
+	'phalanx' => 'Phalanx – integrierter Spamverteidigungsmechanismus',
+	'phalanx-desc' => 'Ermöglicht Phalanx – einen integrierten Spamverteidigungsmechanismus',
+	'phalanx-ui-description' => 'Verwaltungsoberfläche des Spamverteidigungsmechanismus',
 	'phalanx-all-languages' => 'Alle Sprachen',
 	'phalanx-type-content' => 'Seiteninhalt',
 	'phalanx-type-summary' => 'Zusammenfassung',
 	'phalanx-type-title' => 'Seitentitel',
 	'phalanx-type-user' => 'Benutzer',
 	'phalanx-type-user-email' => 'E-Mail',
-	'phalanx-type-answers-question-title' => 'Frage-Titel',
-	'phalanx-type-answers-recent-questions' => 'Kürzliche Fragen',
-	'phalanx-type-wiki-creation' => 'Wiki-Erstellung',
+	'phalanx-type-answers-question-title' => 'Fragetitel',
+	'phalanx-type-answers-recent-questions' => 'Aktuelle Fragen',
+	'phalanx-type-wiki-creation' => 'Wikierstellung',
 	'phalanx-add-block' => 'Sperre anwenden',
 	'phalanx-edit-block' => 'Sperre speichern',
 	'phalanx-label-filter' => 'Filter:',
 	'phalanx-label-reason' => 'Grund:',
 	'phalanx-label-expiry' => 'Sperrdauer:',
-	'phalanx-label-type' => 'Typ:',
+	'phalanx-label-type' => 'Art:',
 	'phalanx-label-lang' => 'Sprache:',
-	'phalanx-view-type' => 'Art der Sperre...',
+	'phalanx-view-type' => 'Art der Sperre …',
 	'phalanx-view-blocker' => 'Suche nach Filtertext:',
 	'phalanx-view-blocks' => 'Suchfilter',
-	'phalanx-view-id' => 'Filter nach ID:',
-	'phalanx-view-id-submit' => 'Hole Filter',
+	'phalanx-view-id' => 'Filter nach Kennnummer:',
+	'phalanx-view-id-submit' => 'Filter abrufen',
 	'phalanx-expire-durations' => '1 Stunde,2 Stunden,4 Stunden,6 Stunden,1 Tag,3 Tage,1 Woche,2 Wochen,1 Monat,3 Monate,6 Monate,unbeschränkt',
 	'phalanx-format-text' => 'Klartext',
 	'phalanx-format-regex' => 'regex',
-	'phalanx-format-case' => 'Groß- und Kleinschreibung',
+	'phalanx-format-case' => 'schreibungsabhängig',
 	'phalanx-format-exact' => 'genau',
 	'phalanx-tab-main' => 'Filter verwalten',
 	'phalanx-tab-secondary' => 'Filter testen',
-	'phalanx-block-success' => 'Die Sperre wurde erfolgreich hinzugefügt',
-	'phalanx-block-failure' => 'Es gab einen Fehler beim Hinzufügen der Sperre',
-	'phalanx-modify-success' => 'Die Sperre wurde erfolgreich geändert',
-	'phalanx-modify-failure' => 'Es gab einen Fehler beim Ändern der Sperre',
-	'phalanx-modify-warning' => 'Du bearbeitest die Sperre mit der ID #$1.
-Ein Klick auf „{{int:phalanx-edit-block}}“ speichert deine Änderungen!',
-	'phalanx-test-description' => 'Teste gegebenen Text mit aktuellen Sperren.',
-	'phalanx-test-submit' => 'Test',
+	'phalanx-block-success' => 'Die Sperre wurde erfolgreich hinzugefügt.',
+	'phalanx-block-failure' => 'Beim Hinzufügen der Sperre ist ein Fehler aufgetreten.',
+	'phalanx-modify-success' => 'Die Sperre wurde erfolgreich geändert.',
+	'phalanx-modify-failure' => 'Beim Ändern der Sperre ist ein Fehler aufgetreten.',
+	'phalanx-modify-warning' => 'Du bearbeitest die Sperre mit der Kennnummer $1. Klicke auf „{{int:phalanx-edit-block}}“, um deine Änderungen zu speichern.',
+	'phalanx-test-description' => 'Teste die aktuellen Sperrfilter mit dem angegebenen Text:',
+	'phalanx-test-submit' => 'Testen',
 	'phalanx-content-spam-summary' => 'Der Text wurde in der Zusammenfassung gefunden.',
 	'phalanx-link-unblock' => 'entsperren',
 	'phalanx-link-modify' => 'ändern',
 	'phalanx-link-stats' => 'Statistiken',
-	'phalanx-reset-form' => 'Formular leeren',
+	'phalanx-reset-form' => 'Formular zurücksetzen',
 	'phalanx-legend-input' => 'Filter erstellen oder ändern',
-	'phalanx-legend-listing' => 'Derzeit angewandte Filter',
-	'phalanx-unblock-message' => 'Die Sperre mit der ID #$1 wurde erfolgreich entfernt',
-	'phalanx-help-type-content' => 'Dieser Filter verhindert das Speichern einer Bearbeitung, falls ihr Inhalt auf einen Eintrag in der schwarzen Liste passt.',
-	'phalanx-help-type-summary' => 'Dieser Filter verhindert das Speichern einer Bearbeitung, falls die Zusammenfassung auf einen Eintrag in der schwarzen Liste passt.',
-	'phalanx-help-type-title' => 'Dieser Filter verhindert das Erstellen einer Seite, falls ihr Name auf einen Eintrag in der schwarzen Liste passt.
+	'phalanx-legend-listing' => 'Derzeit aktive Filter',
+	'phalanx-unblock-message' => 'Die Sperre mit der Kennnummer $1 wurde erfolgreich entfernt.',
+	'phalanx-help-type-content' => 'Dieser Filter verhindert das Speichern einer Bearbeitung, sofern ihr Inhalt mit einem der Einträge in der Negativliste übereinstimmt.',
+	'phalanx-help-type-summary' => 'Dieser Filter verhindert das Speichern einer Bearbeitung, sofern die angegebene Zusammenfassung mit einem der Einträge in der Negativliste übereinstimmt.',
+	'phalanx-help-type-title' => 'Dieser Filter verhindert das Erstellen einer Seite, sofern ihr Name mit einem der Einträge in der Negativliste übereinstimmt.
 
-Er verhindert nicht die Bearbeitung einer bereits vorhandenen Seite.',
-	'phalanx-help-type-user' => 'Dieser Filter blockiert einen Benutzer (genauso wie eine lokale MediaWiki-Sperre), wenn der Name oder die IP-Adresse mit einem Eintrag in der schwarzen Liste übereinstimmt.',
-	'phalanx-help-type-wiki-creation' => 'Dieser Filter verhindert die Erstellung eines Wikis, falls sein Name oder seine URL auf einen Eintrag in der schwarzen Liste passt.',
-	'phalanx-help-type-answers-question-title' => 'Dieser Filter verhindert die Erstellung einer Frage (Seite), falls ihr Titel auf einen Eintrag in der schwarzen Liste passt.
+Hinweis: Er verhindert allerdings nicht die Bearbeitung einer bereits vorhandenen Seite.',
+	'phalanx-help-type-user' => 'Dieser Filter sperrt einen Benutzer (dies entspricht einer lokale Benutzersperre), sofern der Name oder die IP-Adresse mit einem der Einträge in der Negativliste übereinstimmt.',
+	'phalanx-help-type-wiki-creation' => 'Dieser Filter verhindert die Erstellung eines Wikis, sofern der Name oder die URL mit einem der Einträge in der Negativliste übereinstimmt.',
+	'phalanx-help-type-answers-question-title' => 'Dieser Filter verhindert die Erstellung einer Frage (Seite), sofern ihr Titel mit einem der Einträge in der Negativliste übereinstimmt.
 
-Anmerkung: funktioniert nur für Wikis vom Typ Answers.',
-	'phalanx-help-type-answers-recent-questions' => 'Dieser Filter verhindert die Anzeige einer Frage (Seite) in einer Anzahl von Ausgängen (Widgets, Listen, Tag-generierte Auflistungen).
+Hinweis: Er funktioniert nur bei Wikis vom Typ Antworten.',
+	'phalanx-help-type-answers-recent-questions' => 'Dieser Filter verhindert die Anzeige einer Frage (Seite) bei einer Vielzahl von Anzeigemöglichkeiten (Widgets, Listen, Tag-generierte Auflistungen).
 
-Anmerkung: funktioniert nur für Wikis vom Typ Answers.',
-	'phalanx-help-type-user-email' => 'Dieser Filter verhindert die Kontoerstellung über eine blockierte E-Mail-Adresse.',
-	'phalanx-user-block-new-account' => 'Dieser Benutzername ist zur Registrierung nicht verfügbar. Bitte wähle einen anderen.',
-	'phalanx-user-block-reason-ip' => 'Aufgrund von Vandalismus oder anderem Fehlverhalten durch dich oder jemanden, der deine IP-Adresse mitnutzt, wurde dieser IP-Adresse das Schreibrecht entzogen. Dies gilt für das gesamte Netzwerk.
-Wenn du denkst, dass es sich hierbei um einen Fehler handelt, [[Special:Contact|kontaktieren Sie uns]]!',
-	'phalanx-user-block-reason-exact' => 'Diesem Benutzernamen oder dieser IP-Adresse ist das Schreiben – aufgrund von Vandalismus oder anderem Fehlverhalten – im gesamten Netzwerk verboten worden.
-Wenn du denkst, dass es sich hierbei um einen Fehler handelt, dann [[Special:Contact|kontaktieren Sie uns]]!',
-	'phalanx-user-block-reason-similar' => 'Aufgrund von Ähnlichkeit mit dem Benutzernamen eines für Vandalismus oder anderes Fehlverhalten gesperrten Benutzers wurde auch diesem Benutzerkonto das Schreibrecht im gesamten Netzwerk entzogen.
-Bitte [[Special:Contact|kontaktieren Sie uns]] im Falle eines Versehens!',
-	'phalanx-user-block-withreason-ip' => 'Aufgrund von Vandalismus oder anderem Fehlverhalten durch dich oder jemanden, der deine IP-Adresse mitnutzt, wurde dieser IP-Adresse das Schreibrecht entzogen. Dies gilt für das gesamte Netzwerk.
-Wenn du denkst, dass es sich hierbei um einen Fehler handelt, [[Special:Contact|kontaktieren Sie uns]]!<br />Als Sperrgrund wurde Folgendes angegeben: $1',
-	'phalanx-user-block-withreason-exact' => 'Diesem Benutzernamen oder dieser IP-Adresse ist das Schreiben – aufgrund von Vandalismus oder anderem Fehlverhalten – im gesamten Netzwerk verboten worden.
-Wenn du denkst, dass es sich hierbei um einen Fehler handelt, dann [[Special:Contact|kontaktieren Sie uns]]!<br />Als Sperrgrund wurde Folgendes angegeben: $1',
-	'phalanx-user-block-withreason-similar' => 'Aufgrund von Ähnlichkeit mit dem Benutzernamen eines für Vandalismus oder anderes Fehlverhalten gesperrten Benutzers wurde auch diesem Benutzerkonto das Schreibrecht im gesamten Netzwerk entzogen.
-Bitte [[Special:Contact|kontaktieren Sie uns]] im Falle eines Versehens!<br />Als Sperrgrund wurde Folgendes angegeben: $1',
-	'phalanx-blacklisted-email' => 'Schwarzgelistete E-Mail-Adresse',
-	'phalanx-blacklisted-email-text' => 'Deine E-Mail-Adresse ist derzeit auf der schwarzen Liste zum Versenden von E-Mails an andere Benutzer.',
+Hinweise: Er funktioniert nur bei Wikis vom Typ Antworten und er verhindert nicht das Erstellen einer neuen Seite.',
+	'phalanx-help-type-user-email' => 'Dieser Filter verhindert die Kontoerstellung bei der eine gesperrte E-Mail-Adresse angegeben wird.',
+	'phalanx-user-block-new-account' => 'Mit diesem Benutzernamen kann man sich nicht registrieren. Bitte wähle einen anderen aus.',
+	'phalanx-user-block-reason-ip' => 'Aufgrund von Vandalismus oder anderem Fehlverhalten durch dich oder jemanden, der diese IP-Adresse mitbenutzt, wurde dieser IP-Adresse das Schreibrecht entzogen. [[Special:Contact|Kontaktiere uns]] bitte, sofern du denkst, dass es sich hierbei um einen Fehler handelt.',
+	'phalanx-user-block-reason-exact' => 'Aufgrund von Vandalismus oder anderem Fehlverhalten wurde diesem Benutzernamen oder dieser IP-Adresse das Schreibrecht entzogen. [[Special:Contact|Kontaktiere uns]] bitte, sofern du denkst, dass es sich hierbei um einen Fehler handelt.',
+	'phalanx-user-block-reason-similar' => 'Aufgrund von Vandalismus oder anderem Fehlverhalten durch einen Benutzer mit einem ähnlichen Benutzernamen, wurde diesem Benutzernamen das Schreibrecht entzogen. Bitte erstelle entweder ein Benutzerkonto mit einem anderen Benutzernamen oder [[Special:Contact|kontaktiere uns]] bezüglich dieses Problems.',
+	'phalanx-user-block-withreason-ip' => 'Aufgrund von Vandalismus oder anderem Fehlverhalten durch dich oder jemanden, der diese IP-Adresse mitbenutzt, wurde dieser IP-Adresse das Schreibrecht entzogen. [[Special:Contact|Kontaktiere uns]] bitte, sofern du denkst, dass es sich hierbei um einen Fehler handelt.<br />Als Grund für die Sperrung wurde Folgendes angegeben: $1.',
+	'phalanx-user-block-withreason-exact' => 'Aufgrund von Vandalismus oder anderem Fehlverhalten wurde diesem Benutzernamen oder dieser IP-Adresse das Schreibrecht entzogen. [[Special:Contact|Kontaktiere uns]] bitte, sofern du denkst, dass es sich hierbei um einen Fehler handelt.<br />Als Grund für die Sperrung wurde Folgendes angegeben: $1.',
+	'phalanx-user-block-withreason-similar' => 'Aufgrund von Vandalismus oder anderem Fehlverhalten durch einen Benutzer mit einem ähnlichen Benutzernamen, wurde diesem Benutzernamen das Schreibrecht entzogen. Bitte erstelle entweder ein Benutzerkonto mit einem anderen Benutzernamen oder [[Special:Contact|kontaktiere uns]] bezüglich dieses Problems.<br />Als Grund für die Sperrung wurde Folgendes angegeben: $1.',
+	'phalanx-blacklisted-email' => 'E-Mail-Adresse auf der Negativliste',
+	'phalanx-blacklisted-email-text' => 'Deine E-Mail-Adresse befindet sich derzeit auf der Negativliste zum Versenden von E-Mails an andere Benutzer.',
 	'phalanx-title-move-summary' => 'Der von dir eingegebene Grund enthält eine gesperrte Phrase.',
 	'phalanx-plain-text' => 'Klartext',
 	'phalanx-list-regex' => 'regex',
 	'phalanx-display-row-blocks' => 'Sperren: $1',
 	'phalanx-display-row-created' => 'erstellt von [[User:$1|$1]] um $2',
 	'phalanx-test-results-legend' => 'Testergebnisse',
-	'phalanx-no-matches' => 'Keine Treffer.',
-	'phalanxstats' => 'Phalanx Statistik',
-	'phalanx-email-filter-hidden' => 'E-Mail Filter ausgeblendet. Keine Berechtigung zum Anzeigen des Textes.',
+	'phalanx-no-matches' => 'Es wurden keine Übereinstimmungen gefunden.',
+	'phalanxstats' => 'Phalanx-Statistik',
+	'phalanx-email-filter-hidden' => 'Der E-Mail-Filter wird nicht angezeigt. Du hast nicht die Berechtigung ihn zu sehen.',
 	'phalanx-yes' => 'Ja',
 	'phalanx-no' => 'Nein',
-	'phalanx-stats-table-id' => 'Sperr-ID',
+	'phalanx-stats-table-id' => 'Sperrkennnummer',
 	'phalanx-stats-table-user' => 'Hinzugefügt von',
 	'phalanx-stats-table-type' => 'Art',
 	'phalanx-stats-table-text' => 'Text',
@@ -448,40 +443,51 @@ Bitte [[Special:Contact|kontaktieren Sie uns]] im Falle eines Versehens!<br />Al
 	'phalanx-stats-table-expire' => 'Gültig bis',
 	'phalanx-stats-table-exact' => 'Genau',
 	'phalanx-stats-table-regex' => 'Regex',
-	'phalanx-stats-table-case' => 'Groß-/Kleinschreibung',
+	'phalanx-stats-table-case' => 'Schreibungsabhängig',
 	'phalanx-stats-table-reason' => 'Grund',
 	'phalanx-stats-table-language' => 'Sprache',
 	'phalanx-stats-entry' => '<b>$4</b> Filtertyp <b>$1</b> gesperrter Benutzer <b>$2</b> auf <a href="http://$3.shoutwiki.com/">$3</a>',
-	'phalanx-stats-block-notfound' => 'Sperr-ID nicht gefunden',
-	'phalanx-stats-table-wiki-id' => 'Wiki-ID',
+	'phalanx-stats-block-notfound' => 'Die Sperrkennnummer wurde nicht gefunden.',
+	'phalanx-stats-table-wiki-id' => 'Wikikennnummer',
 	'phalanx-stats-table-wiki-name' => 'Wikiname',
 	'phalanx-stats-table-wiki-url' => 'Wiki-URL',
 	'phalanx-stats-load-btn' => 'Lade',
-	'phalanx-stats-id' => 'Kennung: $1',
+	'phalanx-stats-id' => 'Kennnummer: $1',
 	'phalanx-stats-recent-triggers' => 'Aktuelle Auslöser einer Sperre',
 	'phalanx-stats-recent-blocks' => 'Aktuelle Sperren auf einem Wiki',
 	'phalanx-stats-example' => 'Beispiel:',
-	'phalanx-stats-row-per-wiki' => "Benutzer '''$2''' wurde am '''$4''' von Filter ID '''$3''' ($5) geblockt (Typ: '''$1''')",
-	'phalanx-rule-log-name' => 'Phalanx Regel-Log',
-	'phalanx-rule-log-header' => 'Dies ist ein Logbuch der Änderungen an Phalanx Regeln.',
-	'phalanx-email-rule-log-name' => 'Phalanx-Mailregeln-Logbuch',
-	'phalanx-email-rule-log-header' => 'Dies ist ein Logbuch zu Änderungen der Phalanx-Regeln des Typs E-Mail.',
-	'phalanx-rule-log-add' => 'Phalanx Regel hinzugefügt: $1',
-	'phalanx-rule-log-edit' => 'Phalanx Regel bearbeitet: $1',
-	'phalanx-rule-log-delete' => 'Phalanx Regel gelöscht: $1',
-	'phalanx-rule-log-details' => 'Filter: "$1", Typ: "$2", Grund: "$3"',
-	'action-phalanx' => 'den integrierten Spam-Verteidigungs-Mechanismus zu verwenden.',
+	'phalanx-stats-row-per-wiki' => "Benutzer '''$2''' wurde am '''$4''' von Filter mit der Kennnummer '''$3''' ($5) gesperrt (Art: '''$1''')",
+	'phalanx-rule-log-name' => 'Phalanx Regeln-Logbuch',
+	'phalanx-rule-log-header' => 'Dies ist ein Logbuch der Änderungen an Phalanx-Regeln.',
+	'phalanx-email-rule-log-name' => 'Phalanx E-Mail-Regeln-Logbuch',
+	'phalanx-email-rule-log-header' => 'Dies ist ein Logbuch zu Änderungen an Phalanx-Regeln für E-Mails.',
+	'phalanx-rule-log-add' => 'Phalanx-Regel hinzugefügt: $1',
+	'phalanx-rule-log-edit' => 'Phalanx-Regel bearbeitet: $1',
+	'phalanx-rule-log-delete' => 'Phalanx-Regel gelöscht: $1',
+	'phalanx-rule-log-details' => 'Filter: "$1", Art: "$2", Grund: "$3"',
+	'action-phalanx' => 'den integrierten Spamverteidigungsmechanismus zu verwenden',
 	'right-phalanx' => 'Kann globale Benutzersperren und Spamfilter verwalten',
-	'right-phalanxexempt' => 'Von Phalanx-Regelungen ausgenommen',
+	'right-phalanxexempt' => 'Von Phalanx-Spamfiltern ausgenommen',
 	'right-phalanxemailblock' => 'Kann E-Mail-bezogene Sperren ordnen, einsehen und bearbeiten',
 );
 
 /** German (formal address) (‪Deutsch (Sie-Form)‬)
  * @author Geitost
+ * @author Kghbln
  */
 $messages['de-formal'] = array(
-	'phalanx-modify-warning' => 'Sie bearbeiten die Sperre mit der ID #$1.
-Ein Klick auf „{{int:phalanx-edit-block}}“ speichert Ihre Änderungen!',
+	'phalanx-modify-warning' => 'Sie bearbeiten die Sperre mit der Kennnummer $1. Klicken Sie auf „{{int:phalanx-edit-block}}“, um Ihre Änderungen zu speichern.',
+	'phalanx-test-description' => 'Testen Sie die aktuellen Sperrfilter mit dem angegebenen Text:',
+	'phalanx-user-block-new-account' => 'Mit diesem Benutzernamen kann man sich nicht registrieren. Bitte wählen Sie einen anderen aus.',
+	'phalanx-user-block-reason-ip' => 'Aufgrund von Vandalismus oder anderem Fehlverhalten durch Sie oder jemanden, der diese IP-Adresse mitbenutzt, wurde dieser IP-Adresse das Schreibrecht entzogen. [[Special:Contact|Kontaktieren Sie uns]] bitte, sofern Sie denken, dass es sich hierbei um einen Fehler handelt.',
+	'phalanx-user-block-reason-exact' => 'Aufgrund von Vandalismus oder anderem Fehlverhalten wurde diesem Benutzernamen oder dieser IP-Adresse das Schreibrecht entzogen. [[Special:Contact|Kontaktieren Sie uns]] bitte, sofern Sie denken, dass es sich hierbei um einen Fehler handelt.',
+	'phalanx-user-block-reason-similar' => 'Aufgrund von Vandalismus oder anderem Fehlverhalten durch einen Benutzer mit einem ähnlichen Benutzernamen, wurde diesem Benutzernamen das Schreibrecht entzogen. Bitte erstellen Sie entweder ein Benutzerkonto mit einem anderen Benutzernamen oder [[Special:Contact|kontaktieren Sie uns]] bezüglich dieses Problems.',
+	'phalanx-user-block-withreason-ip' => 'Aufgrund von Vandalismus oder anderem Fehlverhalten durch Sie oder jemanden, der diese IP-Adresse mitbenutzt, wurde dieser IP-Adresse das Schreibrecht entzogen. [[Special:Contact|Kontaktieren Sie uns]] bitte, sofern Sie denken, dass es sich hierbei um einen Fehler handelt.<br />Als Grund für die Sperrung wurde Folgendes angegeben: $1.',
+	'phalanx-user-block-withreason-exact' => 'Aufgrund von Vandalismus oder anderem Fehlverhalten wurde diesem Benutzernamen oder dieser IP-Adresse das Schreibrecht entzogen. [[Special:Contact|Kontaktieren Sie uns]] bitte, sofern Sie denken, dass es sich hierbei um einen Fehler handelt.<br />Als Grund für die Sperrung wurde Folgendes angegeben: $1.',
+	'phalanx-user-block-withreason-similar' => 'Aufgrund von Vandalismus oder anderem Fehlverhalten durch einen Benutzer mit einem ähnlichen Benutzernamen, wurde diesem Benutzernamen das Schreibrecht entzogen. Bitte erstellen Sie entweder ein Benutzerkonto mit einem anderen Benutzernamen oder [[Special:Contact|kontaktieren Sie uns]] bezüglich dieses Problems.<br />Als Grund für die Sperrung wurde Folgendes angegeben: $1.',
+	'phalanx-blacklisted-email-text' => 'Ihre E-Mail-Adresse befindet sich derzeit auf der Negativliste zum Versenden von E-Mails an andere Benutzer.',
+	'phalanx-title-move-summary' => 'Der von Ihnen eingegebene Grund enthält eine gesperrte Phrase.',
+	'phalanx-email-filter-hidden' => 'Der E-Mail-Filter wird nicht angezeigt. Sie haben nicht die Berechtigung ihn zu sehen.',
 );
 
 /** Zazaki (Zazaki)
@@ -624,6 +630,7 @@ Si crees que es un error, por favor [[Special:Contact|contacto nosotros]].<br />
 
 /** Finnish (suomi)
  * @author Jack Phoenix <jack@countervandalism.net>
+ * @author Nike
  */
 $messages['fi'] = array(
 	'phalanx' => 'Phalanx - integroitu spämmintorjuntajärjestelmä',
@@ -694,10 +701,10 @@ Jos uskot tämän olevan virhe, [[Special:Contact|ota meihin yhteyttä]].<br />E
 Jos uskot tämän olevan virhe, [[Special:Contact|ota meihin yhteyttä]].<br />Eston tekijä antoi myös tämän lisäsyyn: $1.',
 	'phalanx-user-block-withreason-similar' => 'Muokkaaminen tältä käyttäjätunnukselta on estetty vandalismin tai muun häiriköinnin vuoksi, jonka on tehnyt käyttäjä, jolla on samankaltainen käyttäjänimi.
 [[Special:Contact|Ota meihin yhteyttä]] tästä ongelmasta.<br />Eston tekijä antoi myös tämän lisäsyyn: $1.',
-	'phalanx-blacklisted-email' => 'Mustalistattu sähköpostiosoite',
+	'phalanx-blacklisted-email' => 'Estolistalla oleva Sähköpostiosoite',
 	'phalanx-blacklisted-email-text' => 'Sähköpostiosoitteesi on tällä hetkellä estolistalla, joten et voi lähettää sähköpostia toisille käyttäjille.',
-	'phalanx-title-move-summary' => 'Antamasi syy sisälsi estetyn lausekkeen',
-	'phalanx-plain-text' => 'pelkkä teksti',
+	'phalanx-title-move-summary' => 'Antamasi syy sisälsi estetyn ilmauksen.',
+	'phalanx-plain-text' => 'muotoilematon teksti',
 	'phalanx-list-regex' => 'säännöllinen lauseke',
 	'phalanx-display-row-blocks' => 'estää: $1',
 	'phalanx-display-row-created' => 'luonut [[User:$1|$1]] $2',
@@ -711,18 +718,18 @@ Jos uskot tämän olevan virhe, [[Special:Contact|ota meihin yhteyttä]].<br />E
 	'phalanx-stats-table-user' => 'Lisääjä',
 	'phalanx-stats-table-type' => 'Tyyppi',
 	'phalanx-stats-table-text' => 'Teksti',
-	'phalanx-stats-table-create' => 'Luomisaika',
-	'phalanx-stats-table-expire' => 'Päättymisaika',
+	'phalanx-stats-table-create' => 'Luotu',
+	'phalanx-stats-table-expire' => 'Vanhentuu',
 	'phalanx-stats-table-exact' => 'Täsmälleen',
 	'phalanx-stats-table-regex' => 'Säännöllinen lauseke',
-	'phalanx-stats-table-case' => 'Kirjainkokoriippuvainen',
+	'phalanx-stats-table-case' => 'Kirjainkoko merkityksellinen',
 	'phalanx-stats-table-reason' => 'Syy',
 	'phalanx-stats-table-language' => 'Kieli',
 	'phalanx-stats-entry' => '<b>$4</b> suodatintyyppi <b>$1</b> esti käyttäjän <b>$2</b> wikissä <a href="http://$3.shoutwiki.com/">$3</a>',
 	'phalanx-stats-block-notfound' => 'Antamallasi ID-numerolla ei löytynyt estoa',
 	'phalanx-stats-table-wiki-id' => 'Wikin ID',
 	'phalanx-stats-table-wiki-name' => 'Wikin nimi',
-	'phalanx-stats-table-wiki-url' => 'Wikin URL',
+	'phalanx-stats-table-wiki-url' => 'Wikin verkko-osoite',
 	'phalanx-stats-load-btn' => 'Lataa',
 	'phalanx-stats-recent-triggers' => 'Tuoreet eston laukaisijat',
 	'phalanx-stats-recent-blocks' => 'Tuoreet estot wikissä',
@@ -735,10 +742,10 @@ Jos uskot tämän olevan virhe, [[Special:Contact|ota meihin yhteyttä]].<br />E
 	'phalanx-rule-log-add' => 'Phalanx-sääntö lisätty: $1',
 	'phalanx-rule-log-edit' => 'Phalanx-sääntöä muokattu: $1',
 	'phalanx-rule-log-delete' => 'Phalanx-sääntö poistettu: $1',
-	'phalanx-rule-log-details' => 'Suodatin: "$1", tyyppi: "$2", syy: "$3"',
-	'right-phalanx' => 'Lisätä, muokata ja poistaa erilaisia spämmisuodattimia',
-	'right-phalanxexempt' => 'Erivapaus Phalanx-spämmisuodattimesta',
-	'right-phalanxemailblock' => 'Voi luoda, katsoa ja hallita sähköpostipohjaisia estoja',
+	'phalanx-rule-log-details' => 'Suodatin: ”$1”, tyyppi: ”$2”, syy: ”$3”',
+	'right-phalanx' => 'Lisätä, muokata ja poistaa erilaisia roskapostisuodattimia',
+	'right-phalanxexempt' => 'Erivapaus Phalanx-roskapostisuodattimesta',
+	'right-phalanxemailblock' => 'Luoda, katsoa ja hallita sähköpostipohjaisia estoja',
 );
 
 /** French (français)
