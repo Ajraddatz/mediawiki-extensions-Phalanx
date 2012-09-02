@@ -755,6 +755,7 @@ Jos uskot tämän olevan virhe, [[Special:Contact|ota meihin yhteyttä]].<br />E
  * @author Gomoko
  * @author Iketsi
  * @author McDutchie
+ * @author Nicolas NALLET
  * @author Od1n
  * @author Urhixidur
  * @author Verdy p
@@ -841,6 +842,8 @@ Veuillez [[Special:Contact|contactez-nous]] à propos de ce problème.<br />La p
 	'phalanx-test-results-legend' => 'Résultats des essais',
 	'phalanxstats' => 'Statistiques Phalanx',
 	'phalanx-email-filter-hidden' => "Filtre de courriel caché. Vous n'avez pas le droit de voir son contenu.",
+	'phalanx-yes' => 'Oui',
+	'phalanx-no' => 'Non',
 	'phalanx-stats-table-id' => 'Identifiant de bloc',
 	'phalanx-stats-table-user' => 'Ajouté par',
 	'phalanx-stats-table-type' => 'Type',
@@ -977,6 +980,7 @@ Se pensa que se trata dun erro, [[Special:Contact|póñase en contacto con Wikia
 	'phalanx-stats-table-wiki-url' => 'URL do wiki',
 	'phalanx-stats-load-btn' => 'Cargar',
 	'phalanx-stats-id' => 'ID: $1',
+	'phalanx-stats-recent-triggers' => 'Activacións recentes dun bloqueo',
 	'phalanx-stats-recent-blocks' => 'Bloqueos recentes feitos nun wiki',
 	'phalanx-stats-example' => 'Exemplo:',
 	'phalanx-stats-row-per-wiki' => "o usuario '''$2''' foi bloqueado en '''$4''' polo filtro co identificador '''$3''' ($5) (tipo: '''$1''')",
@@ -1041,6 +1045,7 @@ $messages['hsb'] = array(
 	'phalanx-legend-input' => 'Filter wutworić abo změnić',
 	'phalanx-legend-listing' => 'Tuchwilu nałožene filtry',
 	'phalanx-unblock-message' => 'ID blokowanja čo. $1 je so wuspěšnje wotstronił',
+	'phalanx-help-type-user-email' => 'Tutón filter zdadźěwa załoženju konta z pomocu zablokowanej e-mejlowej adresu.',
 	'phalanx-user-block-new-account' => 'Wužiwarske mjeno za registrowanje k dispoziciji njesteji. prošu wubjer druhe.',
 	'phalanx-blacklisted-email' => 'E-mejlowa adresa w čornej lisćinje',
 	'phalanx-blacklisted-email-text' => 'Twoja e-mejlowa adresa je tuchwilu w čornej lisćinje a tohodla za słanje e-mejlow do druhich wužiwarjow zablokowana.',
@@ -1802,9 +1807,9 @@ Vennligst [[Special:Contact|kontakt oss]] om problemet.<br />Blokkereren la i ti
  * @author Siebrand
  */
 $messages['nl'] = array(
-	'phalanx' => 'Phalanx - Geïntegreerd spam verdedigings mechanisme',
+	'phalanx' => 'Phalanx - Geïntegreerd spamverdedigingsmechanisme',
 	'phalanx-desc' => 'Geïntegreerd spamcontrolemechanisme',
-	'phalanx-ui-description' => 'Beheer interface van geïntegreerd spam controle mechanisme',
+	'phalanx-ui-description' => 'Beheerinterface van geïntegreerd spamcontrolemechanisme',
 	'phalanx-all-languages' => 'Alle talen',
 	'phalanx-type-content' => 'pagina-inhoud',
 	'phalanx-type-summary' => 'bewerkingssamenvatting',
@@ -1901,7 +1906,7 @@ Kies een andere gebruikersnaam of [[Special:Contact|neem contact met ons op]] ov
 	'phalanx-stats-table-case' => 'Zaak',
 	'phalanx-stats-table-reason' => 'Reden',
 	'phalanx-stats-table-language' => 'Taal',
-	'phalanx-stats-entry' => '<b>$4</b> filter type <b>$1</b> heeft gebruiker <b>$2</b> geblokkeerd op wiki <a href="http://$3.shoutwiki.com/">$3</a>',
+	'phalanx-stats-entry' => '<b>$4</b> filtertype <b>$1</b> heeft gebruiker <b>$2</b> geblokkeerd op wiki <a href="http://$3.shoutwiki.com/">$3</a>',
 	'phalanx-stats-block-notfound' => 'Blokkadenummer niet gevonden',
 	'phalanx-stats-table-wiki-id' => 'Wiki-ID',
 	'phalanx-stats-table-wiki-name' => 'Wikinaam',
@@ -1921,8 +1926,8 @@ Kies een andere gebruikersnaam of [[Special:Contact|neem contact met ons op]] ov
 	'phalanx-rule-log-delete' => 'Phalanx-regel verwijderd: $1',
 	'phalanx-rule-log-details' => 'Filter: "$1", type: "$2", reden: "$3"',
 	'action-phalanx' => 'het Integrated Spam Defense Mechanism te gebruiken',
-	'right-phalanx' => 'Verschillende spam filters toevoegen, aanpassen of verwijderen',
-	'right-phalanxexempt' => 'Uitzonderen van Phalanx spam filter',
+	'right-phalanx' => 'Spamfilters toevoegen, aanpassen of verwijderen',
+	'right-phalanxexempt' => 'Vrijgesteld van Phalanx spamfilter',
 	'right-phalanxemailblock' => 'Kan e-mailgebaseerde blokkades toevoegen, bekijken en beheren',
 );
 
