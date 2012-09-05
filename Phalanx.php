@@ -4,7 +4,7 @@
  *
  * @file
  * @ingroup Extensions
- * @version 1.2 (r57731)
+ * @version 1.3 (r57731)
  * @author Bartek Łapiński <bartek@wikia-inc.com>
  * @author Łukasz Garczewski <tor@wikia-inc.com>
  * @author Maciej Błaszkowski <marooned@wikia-inc.com>
@@ -22,7 +22,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 $wgExtensionCredits['antispam'][] = array(
 	'path' => __FILE__,
 	'name' => 'Phalanx',
-	'version' => '1.2',
+	'version' => '1.3',
 	'author' => array(
 		'Maciej Błaszkowski', 'Maciej Brencz', 'Łukasz Garczewski',
 		'Bartek Łapiński', 'Jack Phoenix'
