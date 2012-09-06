@@ -757,6 +757,7 @@ Jos uskot tämän olevan virhe, [[Special:Contact|ota meihin yhteyttä]].<br />E
  * @author McDutchie
  * @author Nicolas NALLET
  * @author Od1n
+ * @author Tititou36
  * @author Urhixidur
  * @author Verdy p
  * @author Wyz
@@ -859,6 +860,7 @@ Veuillez [[Special:Contact|contactez-nous]] à propos de ce problème.<br />La p
 	'phalanx-stats-table-wiki-id' => 'ID du wiki',
 	'phalanx-stats-table-wiki-name' => 'Nom du wiki',
 	'phalanx-stats-table-wiki-url' => 'URL du wiki',
+	'phalanx-stats-example' => 'Exemple :',
 	'phalanx-stats-row-per-wiki' => "L'utilisateur '''$2''' a été bloqué sur '''$4''' par le filtre d'identifiant '''$3''' ($5) (type: '''$1''')",
 	'phalanx-rule-log-name' => 'Journal des règles Phalanx',
 	'phalanx-rule-log-header' => 'Ceci est un journal des changements de règles de Phalanx.',
@@ -2405,9 +2407,9 @@ Anmärkning: fungerar endast på Svar-typ wikier.',
  * @author Veeven
  */
 $messages['te'] = array(
-	'phalanx-type-content' => 'పుట విషయం',
-	'phalanx-type-summary' => 'పుట సారాంశం',
-	'phalanx-type-title' => 'పుట శీర్షిక',
+	'phalanx-type-content' => 'వ్యాసపు విషయం',
+	'phalanx-type-summary' => 'వ్యాసపు సారాంశం',
+	'phalanx-type-title' => 'వ్యాసపు శీర్షిక',
 	'phalanx-type-user' => 'వాడుకరి',
 	'phalanx-type-answers-recent-questions' => 'ఇటీవలి ప్రశ్నలు',
 	'phalanx-label-reason' => 'కారణం:',
