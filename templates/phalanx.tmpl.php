@@ -3,7 +3,7 @@
  * @file
  * @ingroup Templates
  */
-if( !defined( 'MEDIAWIKI' ) ) {
+if ( !defined( 'MEDIAWIKI' ) ) {
 	die( -1 );
 }
 

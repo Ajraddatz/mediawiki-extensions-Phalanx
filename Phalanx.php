@@ -60,13 +60,13 @@ $wgGroupPermissions['staff']['phalanxemailblock'] = true;
 $wgResourceModules['ext.phalanx'] = array(
 	'styles' => 'css/Phalanx.css',
 	'scripts' => 'js/Phalanx.js',
-	'localBasePath' => dirname( __FILE__ ),
+	'localBasePath' => __DIR__,
 	'remoteExtPath' => 'Phalanx',
 	'position' => 'top' // available since r85616
 );
 
 // Autoload classes
-$dir = dirname( __FILE__ ) . '/';
+$dir = __DIR__ . '/';
 
 $wgAutoloadClasses['Phalanx'] = $dir . 'Phalanx.class.php';
 
@@ -129,7 +129,7 @@ function efPhalanxInit() {
 	}
 
 	// allow for per wiki disable the content checks
-	if( empty( $wgPhalanxDisableContent ) ) {
+	if ( empty( $wgPhalanxDisableContent ) ) {
 		// former SpamRegex (TYPE_SUMMARY and TYPE_CONTENT)
 		$wgHooks['EditFilter'][] = 'ContentBlock::onEditFilter';
 		$wgHooks['AbortMove'][] = 'ContentBlock::onAbortMove';

@@ -120,10 +120,10 @@ class Phalanx {
 			$closestTimestamp = 0;
 			$dbr = wfGetDB( $master ? DB_MASTER : DB_SLAVE );
 
-			if( !empty( $moduleId ) && is_numeric( $moduleId ) ) {
+			if ( !empty( $moduleId ) && is_numeric( $moduleId ) ) {
 				$cond[] = "p_type & $moduleId = $moduleId";
 			}
-			if( !empty( $lang ) && Language::isValidCode( $lang ) ) {
+			if ( !empty( $lang ) && Language::isValidCode( $lang ) ) {
 				$cond[] = "(p_lang = '$lang' OR p_lang IS NULL)";
 			} else {
 				$cond[] = 'p_lang IS NULL';
@@ -186,7 +186,7 @@ class Phalanx {
 			__METHOD__
 		);
 
-		if( is_object( $row ) ) {
+		if ( is_object( $row ) ) {
 			$block = array(
 				'id' => $row->p_id,
 				'author_id' => $row->p_author_id,

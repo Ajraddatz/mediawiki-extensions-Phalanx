@@ -14,7 +14,7 @@ class PhalanxHelper {
 	 */
 	public static function convertDataToDB( $data ) {
 		$db_data = array();
-		foreach( $data as $key => $field ) {
+		foreach ( $data as $key => $field ) {
 			$db_data['p_' . $key] = $field;
 		}
 
@@ -110,7 +110,7 @@ class PhalanxHelper {
 		$lang = $wgRequest->getVal( 'wpPhalanxLanguages', null );
 
 		$typemask = 0;
-		foreach( $types as $type ) {
+		foreach ( $types as $type ) {
 			$typemask |= $type;
 		}
 
@@ -151,7 +151,7 @@ class PhalanxHelper {
 			'type' => $typemask
 		);
 
-		if( !$id ) {
+		if ( !$id ) {
 			$status = PhalanxHelper::save( $data );
 			$reason = $status ? wfMessage( 'phalanx-block-success' )->text() : wfMessage( 'phalanx-block-failure' )->text();
 		} else {
@@ -177,7 +177,7 @@ class PhalanxHelper {
 		global $wgLang;
 
 		$data = Phalanx::getFromId( $id );
-		if( empty( $data ) ) {
+		if ( empty( $data ) ) {
 			return array( 'error' => true );
 		}
 
@@ -342,7 +342,7 @@ class PhalanxHelper {
 				continue;
 			}
 
-			foreach( $filters as $filter ) {
+			foreach ( $filters as $filter ) {
 				$result = Phalanx::isBlocked( $text, $filter );
 				if ( $result['blocked'] == true ) {
 					$data[$module][] = $filter;

@@ -12,7 +12,7 @@ include( 'Phalanx.class.php' );
  * Set the correct include path for PHP so that we can run this script from
  * $IP/extensions/Phalanx/ and we don't need to move this file to $IP/maintenance/.
  */
-ini_set( 'include_path', dirname( __FILE__ ) . '/../../maintenance' );
+ini_set( 'include_path', __DIR__ . '/../../maintenance' );
 
 require_once( 'Maintenance.php' );
 
@@ -26,8 +26,8 @@ class ClearPhalanxCache extends Maintenance {
 		global $wgMemc;
 
 		$supportedLanguages = PhalanxHelper::getSupportedLanguages();
-		foreach( Phalanx::$typeNames as $module => $modName ) {
-			foreach( $supportedLanguages as $lang => $langName ) {
+		foreach ( Phalanx::$typeNames as $module => $modName ) {
+			foreach ( $supportedLanguages as $lang => $langName ) {
 				$key = 'phalanx:' . $module . ':' . $lang;
 
 				$this->output( "Deleting $key..." );

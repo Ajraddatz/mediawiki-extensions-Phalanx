@@ -188,10 +188,10 @@ class PhalanxPager extends ReverseChronologicalPager {
 			( $row->p_regex ? $this->msg( 'phalanx-list-regex' )->text() :
 				$this->msg( 'phalanx-plain-text' )->text() )
 		);
-		if( $row->p_case ) {
+		if ( $row->p_case ) {
 			$list[] = $this->msg( 'phalanx-format-case' )->text();
 		}
-		if( $row->p_exact ) {
+		if ( $row->p_exact ) {
 			$list[] = $this->msg( 'phalanx-format-exact' )->text();
 		}
 		$html .= $lang->commaList( $list );

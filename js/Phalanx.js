@@ -12,7 +12,7 @@ Phalanx.ajax = function( method, data, callback ) {
 };
 
 Phalanx.getSingleBlockData = function( e ) {
-	if( e ) {
+	if ( e ) {
 		e.preventDefault();
 	}
 
@@ -25,18 +25,18 @@ Phalanx.getSingleBlockData = function( e ) {
 	var placeholder = jQuery( '#phalanx-check-results' );
 	var id = jQuery( e.target ).attr( 'href' ).split( 'id=' ).pop();
 
-	Phalanx.ajax( 'getOneBlock', {id: id}, function( response ) {
+	Phalanx.ajax( 'getOneBlock', { id: id }, function( response ) {
 		if ( !response.error ) {
 			Phalanx.loadBlockData( response );
 		} else {
 			placeholder.html( 'error' );
 		}
-	});
+	} );
 	return false;
 };
 
 Phalanx.removeSingleBlock = function( e ) {
-	if( e ) {
+	if ( e ) {
 		e.preventDefault();
 	}
 
@@ -46,14 +46,14 @@ Phalanx.removeSingleBlock = function( e ) {
 	var placeholder = jQuery( '#phalanx-feedback-msg' );
 	var id = jQuery( e.target ).attr( 'href' ).split( 'id=' ).pop();
 
-	Phalanx.ajax( 'removeSingleBlock', {id: id}, function( response ) {
+	Phalanx.ajax( 'removeSingleBlock', { id: id }, function( response ) {
 		if ( !response.error ) {
 			placeholder.html( response.text );
 			window.location.reload();
 		} else {
 			placeholder.html( 'error' );
 		}
-	});
+	} );
 	return false;
 };
 
@@ -66,63 +66,63 @@ Phalanx.loadBlockData = function( response ) {
 	// fill form
 	// decodeURIComponent() is needed not to die horribly when a regex contains a single quote
 	jQuery( '#wpPhalanxFilter' ).attr( 'value', decodeURIComponent( response.data.text ) );
-	if( response.data.regex == 1 ) {
+	if ( response.data.regex == 1 ) {
 		jQuery( '#wpPhalanxFormatRegex' ).attr( 'checked', 'checked' );
 	}
-	if( response.data['case'] == 1 ) { // case is a reserved word in JS
+	if ( response.data['case'] == 1 ) { // case is a reserved word in JS
 		jQuery( '#wpPhalanxFormatCase' ).attr( 'checked', 'checked' );
 	}
-	if( response.data.exact == 1 ) {
+	if ( response.data.exact == 1 ) {
 		jQuery( '#wpPhalanxFormatExact' ).attr( 'checked', 'checked' );
 	}
 	// todo for timestamp - show current, give option for 'don't change', then all normal ones
 	var type = response.data.type;
 
-	if( response.data.expire === null ) {
+	if ( response.data.expire === null ) {
 		jQuery( '#wpPhalanxExpire' ).attr( 'value', 'infinite' );
 		jQuery( '#phalanx-expire-old' ).html( 'Infinite' );
 	} else {
 		jQuery( '#phalanx-expire-old' ).html( response.time );
 	}
 
-	if( type & 1 ) {
+	if ( type & 1 ) {
 		jQuery( '#wpPhalanxTypeContent' ).attr( 'checked', 'checked' );
 	}
-	if( type & 2 ) {
+	if ( type & 2 ) {
 		jQuery( '#wpPhalanxTypeSummary' ).attr( 'checked', 'checked' );
 	}
-	if( type & 4 ) {
+	if ( type & 4 ) {
 		jQuery( '#wpPhalanxTypeTitle' ).attr( 'checked', 'checked' );
 	}
-	if( type & 8 ) {
+	if ( type & 8 ) {
 		jQuery( '#wpPhalanxTypeUser' ).attr( 'checked', 'checked' );
 	}
-	if( type & 16 ) {
+	if ( type & 16 ) {
 		jQuery( '#wpPhalanxTypeQuestion' ).attr( 'checked', 'checked' );
 	}
-	if( type & 32 ) {
+	if ( type & 32 ) {
 		jQuery( '#wpPhalanxTypeFilterWords' ).attr( 'checked', 'checked' );
 	}
-	if( type & 64 ) {
+	if ( type & 64 ) {
 		jQuery( '#wpPhalanxTypeCreation' ).attr( 'checked', 'checked' );
 	}
-	if( type & 256  ) {
+	if ( type & 256  ) {
 		jQuery( '#wpPhalanxTypeEmail' ).attr( 'checked', 'checked' );
 	}
 
-	if( Phalanx.mode == 'add' ) {
+	if ( Phalanx.mode == 'add' ) {
 		Phalanx.mode = 'edit';
-		if( Phalanx.editMsg === '' ) {
+		if ( Phalanx.editMsg === '' ) {
 			Phalanx.editMsg = response.button;
 		}
 		jQuery( '#wpPhalanxSubmit' ).attr( 'value', Phalanx.editMsg );
 	}
 
-	if( response.data.reason !== '' ) {
+	if ( response.data.reason !== '' ) {
 		jQuery( '#wpPhalanxReason' ).attr( 'value', response.data.reason );
 	}
 
-	if( response.data.lang !== null ) {
+	if ( response.data.lang !== null ) {
 		jQuery( '#wpPhalanxLanguages' ).attr( 'value', response.data.lang );
 	}
 
@@ -136,7 +136,7 @@ Phalanx.postForm = function( e ) {
 	var form = jQuery( '#phalanx-block' );
 	var postfix = '';
 	if ( form.length > 0 ) {
-		if( Phalanx.mode == 'edit' ) {
+		if ( Phalanx.mode == 'edit' ) {
 			postfix = '&id=' + Phalanx.blockId;
 		}
 
@@ -145,7 +145,7 @@ Phalanx.postForm = function( e ) {
 
 			// reload the page when block is added
 			document.location.reload();
-		});
+		} );
 	}
 };
 
@@ -165,7 +165,7 @@ Phalanx.postTestForm = function( e ) {
 
 	var blockText = jQuery.trim( jQuery( '#phalanx-block-text' ).val() );
 	if ( blockText !== '' ) {
-		Phalanx.ajax( 'testBlock', {text: blockText}, Phalanx.postTestFormCallback );
+		Phalanx.ajax( 'testBlock', { text: blockText }, Phalanx.postTestFormCallback );
 	} else {
 		// TODO: add i18n
 		//jQuery.showModal( 'Phalanx', 'Provide some text!' );
@@ -209,7 +209,7 @@ jQuery( function() {
 	jQuery( '#phalanx-nav-area' ).find( 'a' ).bind( 'click', function( e ) {
 		e.preventDefault();
 		Phalanx.selectTab( jQuery( this ).blur().parent().attr( 'id' ) );
-	});
+	} );
 
 	jQuery( '#phalanx-block-test' ).bind( 'submit', Phalanx.postTestForm );
 
@@ -224,4 +224,4 @@ jQuery( function() {
 			Phalanx.selectTab( id );
 		}
 	}
-});
+} );
