@@ -175,7 +175,7 @@ function PhalanxAjax() {
 
 	// check permissions
 	if ( !$wgUser->isAllowed( 'phalanx' ) ) {
-		$data = array( 'error' => 1, 'text' => wfMsg( 'badaccess' ) );
+		$data = array( 'error' => 1, 'text' => wfMessage( 'badaccess' )->text() );
 	} elseif ( method_exists( 'PhalanxAjax', $method ) ) { // call selected method
 		$data = PhalanxAjax::$method();
 	} else {

@@ -32,7 +32,7 @@ class Phalanx {
 	 * @return Array
 	 */
 	public static function getExpireValues() {
-		$expiry_values = explode( ',', wfMsg( 'phalanx-expire-durations' ) );
+		$expiry_values = explode( ',', wfMessage( 'phalanx-expire-durations' )->plain() );
 		$expiry_text = array(
 			'1 hour',
 			'2 hours',

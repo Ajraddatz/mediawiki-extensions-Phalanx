@@ -266,9 +266,9 @@ class PhalanxStats extends UnlistedSpecialPage {
 
 		$content = '';
 		$content .= Xml::openElement( 'form', $formParam ) . "\n";
-		$content .= wfMsg( 'phalanx-stats-id',
+		$content .= $this->msg( 'phalanx-stats-id',
 			Xml::input( 'blockId', 5, '', array() )
-		);
+		)->text();
 		$content .= Xml::submitButton( $loadBtn ) . "\n";
 		$content .= Xml::closeElement( 'form' ) . "\n";
 		$content .= $this->msg( 'phalanx-stats-example' )->text() . "\n<ul>\n";
@@ -282,7 +282,7 @@ class PhalanxStats extends UnlistedSpecialPage {
 
 		$content = '';
 		$content .= Xml::openElement( 'form', $formParam ) . "\n";
-		$content .= wfMsg( 'phalanx-stats-id', Xml::input( 'wikiId', 5, '', array() ) );
+		$content .= $this->msg( 'phalanx-stats-id', Xml::input( 'wikiId', 5, '', array() ) )->text();
 		$content .= Xml::submitButton( $loadBtn ) . "\n";
 		$content .= Xml::closeElement( 'form' ) . "\n";
 		$content .= $this->msg( 'phalanx-stats-example' )->text() . "\n<ul>\n";
@@ -344,10 +344,10 @@ class PhalanxStatsPager extends ReverseChronologicalPager {
 		$wikiNumber = $row->ps_wiki_id;
 		$url = self::getFSD( $wikiNumber );
 
-		$html = '<li>' . wfMsg(
+		$html = '<li>' . $this->msg(
 			'phalanx-stats-entry',
 			$type, $username, $url, $timestamp
-		) . '</li>';
+		)->parse() . '</li>';
 
 		return $html;
 	}
@@ -439,21 +439,21 @@ class PhalanxWikiStatsPager extends ReverseChronologicalPager {
 		// stats
 		$statsURL = Linker::link(
 			$this->mTitleStats,
-			wfMessage( 'phalanx-link-stats' )->text(),
+			$this->msg( 'phalanx-link-stats' )->escaped(),
 			array(),
 			array( 'blockId' => $blockId )
 		);
 
 		$html = '<li>';
-		$html .= wfMsgExt(
-			'phalanx-stats-row-per-wiki',
-			array( 'parseinline', 'replaceafter' ),
+		$html .= wfMessage(
+			'phalanx-stats-row-per-wiki'
+		)->rawParams(
 			$type,
 			$username,
 			$phalanxURL,
 			$timestamp,
 			$statsURL
-		);
+		)->parse();
 		$html .= '</li>';
 
 		return $html;
