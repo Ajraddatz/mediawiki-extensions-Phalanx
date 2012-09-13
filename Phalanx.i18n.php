@@ -2105,6 +2105,7 @@ Prosimy [[Special:Contact|skontaktuj się z nami]] w sprawie problemu.<br />Blok
  * @author Ahmed-Najib-Biabani-Ibrahimkhel
  */
 $messages['ps'] = array(
+	'phalanx-all-languages' => 'ټولې ژبې',
 	'phalanx-type-content' => 'د مخ منځپانګه',
 	'phalanx-type-summary' => 'د مخ لنډيز',
 	'phalanx-type-title' => 'د مخ سرليک',
@@ -2117,6 +2118,8 @@ $messages['ps'] = array(
 	'phalanx-label-lang' => 'ژبه:',
 	'phalanx-test-submit' => 'آزمېښت',
 	'phalanx-test-results-legend' => 'آزمېښت پايلې',
+	'phalanx-yes' => 'هو',
+	'phalanx-no' => 'نه',
 	'phalanx-stats-table-text' => 'متن',
 	'phalanx-stats-table-create' => 'جوړ شو',
 	'phalanx-stats-table-reason' => 'سبب',
