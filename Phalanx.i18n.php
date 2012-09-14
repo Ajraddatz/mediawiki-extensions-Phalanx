@@ -1385,6 +1385,47 @@ $messages['ja'] = array(
 	'right-phalanxemailblock' => 'メール ベースのブロックを申請/閲覧/管理',
 );
 
+/** Georgian (ქართული)
+ * @author David1010
+ */
+$messages['ka'] = array(
+	'phalanx-all-languages' => 'ყველა ენა',
+	'phalanx-type-title' => 'სტატიის სათაური',
+	'phalanx-type-user' => 'მომხმარებელი',
+	'phalanx-type-user-email' => 'ელ. ფოსტა',
+	'phalanx-add-block' => 'ბლოკის გამოყენება',
+	'phalanx-edit-block' => 'ბლოკის შენახვა',
+	'phalanx-label-filter' => 'ფილტრი:',
+	'phalanx-label-reason' => 'მიზეზი:',
+	'phalanx-label-expiry' => 'ვადის გასვლა:',
+	'phalanx-label-type' => 'ტიპი:',
+	'phalanx-label-lang' => 'ენა:',
+	'phalanx-view-type' => 'ბლოკირების ტიპი...',
+	'phalanx-expire-durations' => '1 საათი,2 საათი,4 საათი,6 საათი,1 დღე,3 დღე,1 კვირა,2 კვირა,1 თვე,3 თვე,6 თვე,1 წელი,უსასრულო',
+	'phalanx-tab-secondary' => 'ფილტრების შემოწმება',
+	'phalanx-block-success' => 'ბლოკირება წარმატებით განხორციელდა',
+	'phalanx-block-failure' => 'ბლოკირებისას მოხდა შეცდომა',
+	'phalanx-modify-success' => 'ბლოკირება წარმატებით შეიცვალა',
+	'phalanx-modify-failure' => 'ბლოკირების შეცვლისას მოხდა შეცდომა',
+	'phalanx-modify-warning' => 'თქვენ შეცვალეთ ბლოკის ID #$1. ცვლილებების შესანახად დააჭირეთ „{{int:phalanx-edit-block}}“.',
+	'phalanx-test-submit' => 'ტესტი',
+	'phalanx-link-unblock' => 'განბლოკვა',
+	'phalanx-link-modify' => 'შეცვლა',
+	'phalanx-link-stats' => 'სტატისტიკა',
+	'phalanx-stats-table-create' => 'შექმნილია',
+	'phalanx-stats-table-reason' => 'მიზეზი',
+	'phalanx-stats-table-language' => 'ენა',
+	'phalanx-stats-entry' => '<b>$4</b> ფილტრის ტიპი <b>$1</b> დაბლოკილი მომხმარებელი <b>$2</b> <a href="http://$3.shoutwiki.com/">$3</a>-ზე',
+	'phalanx-stats-block-notfound' => 'ბლოკის ID ვერ მოიძებნა',
+	'phalanx-stats-table-wiki-id' => 'ვიკი ID',
+	'phalanx-stats-table-wiki-name' => 'ვიკი სახელი',
+	'phalanx-stats-table-wiki-url' => 'ვიკი URL',
+	'phalanx-stats-load-btn' => 'ჩატვირთვა',
+	'phalanx-stats-id' => 'ID: $1',
+	'phalanx-stats-example' => 'მაგალითი:',
+	'phalanx-rule-log-details' => 'ფილტრი: "$1", ტიპი: "$2", მიზეზი: "$3"',
+);
+
 /** Khmer (ភាសាខ្មែរ)
  * @author គីមស៊្រុន
  */
@@ -1435,6 +1476,7 @@ $messages['lb'] = array(
 	'phalanx-type-summary' => 'Resumé vum Artikel',
 	'phalanx-type-title' => 'Titel vum Artikel',
 	'phalanx-type-user' => 'Benotzer',
+	'phalanx-type-user-email' => 'E-Mail',
 	'phalanx-type-answers-question-title' => 'Titel vun der Fro',
 	'phalanx-type-answers-recent-questions' => 'Rezent Froen',
 	'phalanx-edit-block' => 'Spär späicheren',
@@ -1448,12 +1490,16 @@ $messages['lb'] = array(
 	'phalanx-test-submit' => 'Test',
 	'phalanx-link-unblock' => 'Spär ophiewen',
 	'phalanx-link-modify' => 'änneren',
+	'phalanx-link-stats' => 'Statistiken',
+	'phalanx-blacklisted-email' => 'Gespaart Mail-Adressen',
 	'phalanx-display-row-blocks' => 'Spären: $1',
+	'phalanx-test-results-legend' => 'Testresultater',
 	'phalanxstats' => 'Phalanx Statistiken',
 	'phalanx-yes' => 'Jo',
 	'phalanx-no' => 'Neen',
 	'phalanx-stats-table-type' => 'Typ',
 	'phalanx-stats-table-text' => 'Text:',
+	'phalanx-stats-table-expire' => 'Gülteg bis',
 	'phalanx-stats-table-reason' => 'Grond',
 	'phalanx-stats-table-language' => 'Sprooch',
 	'phalanx-stats-table-wiki-name' => 'Numm vun der Wiki',
