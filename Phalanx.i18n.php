@@ -2488,6 +2488,30 @@ $messages['sr-ec'] = array(
 	'phalanx-stats-table-language' => 'Језик',
 );
 
+/** Serbian (Latin script) (srpski (latinica)‎) */
+$messages['sr-el'] = array(
+	'phalanx-type-content' => 'sadržaj stranice',
+	'phalanx-type-summary' => 'opis stranice',
+	'phalanx-type-title' => 'naslov stranice',
+	'phalanx-type-user' => 'korisnik',
+	'phalanx-type-answers-recent-questions' => 'skorašnja pitanja',
+	'phalanx-add-block' => 'Primeni zabranu',
+	'phalanx-edit-block' => 'Sačuvaj zabranu',
+	'phalanx-label-filter' => 'Filter:',
+	'phalanx-label-expiry' => 'Istek:',
+	'phalanx-label-type' => 'Vrsta:',
+	'phalanx-label-lang' => 'Jezik:',
+	'phalanx-view-type' => 'Vrsta zabrane...',
+	'phalanx-view-blocks' => 'Pretraži filtere',
+	'phalanx-format-text' => 'čist tekst',
+	'phalanx-link-modify' => 'izmeni',
+	'phalanx-stats-table-user' => 'Dodao:',
+	'phalanx-stats-table-type' => 'Vrsta',
+	'phalanx-stats-table-text' => 'Tekst',
+	'phalanx-stats-table-reason' => 'Razlog',
+	'phalanx-stats-table-language' => 'Jezik',
+);
+
 /** Swedish (svenska)
  * @author VickyC
  * @author WikiPhoenix
@@ -2786,5 +2810,26 @@ $messages['zh-hans'] = array(
 	'phalanx-stats-table-wiki-id' => '维基 ID',
 	'phalanx-stats-table-wiki-name' => '维基名字',
 	'phalanx-stats-table-wiki-url' => '维基 URL',
+);
+
+/** Traditional Chinese (中文（繁體）‎) */
+$messages['zh-hant'] = array(
+	'phalanx-type-title' => '頁面標題',
+	'phalanx-type-user' => '用戶',
+	'phalanx-type-answers-question-title' => '問題標題',
+	'phalanx-type-answers-recent-questions' => '最新問題',
+	'phalanx-label-reason' => '原因：',
+	'phalanx-label-expiry' => '截止日期：',
+	'phalanx-label-type' => '類型：',
+	'phalanx-label-lang' => '語言：',
+	'phalanx-stats-table-type' => '類型',
+	'phalanx-stats-table-text' => '文字',
+	'phalanx-stats-table-create' => '以創造',
+	'phalanx-stats-table-expire' => '到期',
+	'phalanx-stats-table-reason' => '原因',
+	'phalanx-stats-table-language' => '語言',
+	'phalanx-stats-table-wiki-id' => '維基 ID',
+	'phalanx-stats-table-wiki-name' => '維基名字',
+	'phalanx-stats-table-wiki-url' => '維基 URL',
 );
 
