@@ -629,6 +629,7 @@ Si crees que es un error, por favor [[Special:Contact|contacto nosotros]].<br />
 );
 
 /** Finnish (suomi)
+ * @author Crt
  * @author Jack Phoenix <jack@countervandalism.net>
  * @author Nike
  */
@@ -666,7 +667,7 @@ $messages['fi'] = array(
 	'phalanx-block-failure' => 'Estoa lisätessä tapahtui virhe',
 	'phalanx-modify-success' => 'Estoa muokattiin onnistuneesti',
 	'phalanx-modify-failure' => 'Estoa muokattaessa tapahtui virhe',
-	'phalanx-modify-warning' => 'MUOKKAAT ESTOA, JONKA ID ON $1. "{{int:phalanx-edit-block}}" -PAINIKKEEN PAINAMINEN TALLENTAA MUUTOKSESI',
+	'phalanx-modify-warning' => 'Muokkaat estoa, jonka tunniste on $1. Tallenna muutoksesi napsauttamalla {{int:phalanx-edit-block}}.',
 	'phalanx-test-description' => 'Testaa annettua tekstiä tämänhetkisiä suodattimia vastaan.',
 	'phalanx-test-submit' => 'Kokeile',
 	'phalanx-content-spam-summary' => 'Teksti löytyi sivun yhteenvedosta.',
@@ -676,7 +677,7 @@ $messages['fi'] = array(
 	'phalanx-reset-form' => 'Tyhjennä lomake',
 	'phalanx-legend-input' => 'Luo tai muokkaa suodatinta',
 	'phalanx-legend-listing' => 'Tällä hetkellä sovelletut suodattimet',
-	'phalanx-unblock-message' => 'Esto, jonka ID on $1, poistettiin onnistuneesti',
+	'phalanx-unblock-message' => 'Esto, jonka tunniste on $1, poistettiin onnistuneesti',
 	'phalanx-help-type-content' => 'Tämä suodatin estää muokkauksen tallentamisen, jos sen sisältö täsmää mihin tahansa mustalistattuun lausekkeeseen.',
 	'phalanx-help-type-summary' => 'Tämä suodatin estää muokkauksen tallentamisen, jos sen yhteenveto täsmää mihin tahansa mustalistattuun lausekkeeseen.',
 	'phalanx-help-type-title' => 'Tämä suodatin estää sivun luomisen, jos sen otsikko täsmää mihin tahansa mustalistattuun lausekkeeseen.
@@ -714,7 +715,7 @@ Jos uskot tämän olevan virhe, [[Special:Contact|ota meihin yhteyttä]].<br />E
 	'phalanx-email-filter-hidden' => 'Sähköpostisuodatin piilotettu. Sinulla ei ole oikeuksia katsoa sen tekstiä.',
 	'phalanx-yes' => 'Kyllä',
 	'phalanx-no' => 'Ei',
-	'phalanx-stats-table-id' => 'Eston ID',
+	'phalanx-stats-table-id' => 'Eston tunniste',
 	'phalanx-stats-table-user' => 'Lisääjä',
 	'phalanx-stats-table-type' => 'Tyyppi',
 	'phalanx-stats-table-text' => 'Teksti',
@@ -726,11 +727,12 @@ Jos uskot tämän olevan virhe, [[Special:Contact|ota meihin yhteyttä]].<br />E
 	'phalanx-stats-table-reason' => 'Syy',
 	'phalanx-stats-table-language' => 'Kieli',
 	'phalanx-stats-entry' => '<b>$4</b> suodatintyyppi <b>$1</b> esti käyttäjän <b>$2</b> wikissä <a href="http://$3.shoutwiki.com/">$3</a>',
-	'phalanx-stats-block-notfound' => 'Antamallasi ID-numerolla ei löytynyt estoa',
-	'phalanx-stats-table-wiki-id' => 'Wikin ID',
+	'phalanx-stats-block-notfound' => 'Antamallasi tunnisteella ei löytynyt estoa',
+	'phalanx-stats-table-wiki-id' => 'Wikin tunniste',
 	'phalanx-stats-table-wiki-name' => 'Wikin nimi',
 	'phalanx-stats-table-wiki-url' => 'Wikin verkko-osoite',
 	'phalanx-stats-load-btn' => 'Lataa',
+	'phalanx-stats-id' => 'Tunniste: $1',
 	'phalanx-stats-recent-triggers' => 'Tuoreet eston laukaisijat',
 	'phalanx-stats-recent-blocks' => 'Tuoreet estot wikissä',
 	'phalanx-stats-example' => 'Esimerkiksi:',
@@ -745,7 +747,7 @@ Jos uskot tämän olevan virhe, [[Special:Contact|ota meihin yhteyttä]].<br />E
 	'phalanx-rule-log-details' => 'Suodatin: ”$1”, tyyppi: ”$2”, syy: ”$3”',
 	'right-phalanx' => 'Lisätä, muokata ja poistaa erilaisia roskapostisuodattimia',
 	'right-phalanxexempt' => 'Erivapaus Phalanx-roskapostisuodattimesta',
-	'right-phalanxemailblock' => 'Luoda, katsoa ja hallita sähköpostipohjaisia estoja',
+	'right-phalanxemailblock' => 'Luoda, tarkastella ja hallinnoida sähköpostipohjaisia estoja',
 );
 
 /** French (français)
