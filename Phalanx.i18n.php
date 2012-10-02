@@ -471,7 +471,7 @@ Hinweise: Er funktioniert nur bei Wikis vom Typ Antworten und er verhindert nich
 	'right-phalanxemailblock' => 'Kann E-Mail-bezogene Sperren ordnen, einsehen und bearbeiten',
 );
 
-/** German (formal address) (‪Deutsch (Sie-Form)‬)
+/** German (formal address) (Deutsch (Sie-Form)‎)
  * @author Geitost
  * @author Kghbln
  */
@@ -1784,7 +1784,7 @@ Perhatian: Berkesan di wiki jenis Soal Jawab (Answers) sahaja.',
 	'right-phalanxemailblock' => 'Boleh memfailkan, melihat dan mengurus sekatan berasaskan e-mel',
 );
 
-/** Norwegian Bokmål (‪norsk (bokmål)‬)
+/** Norwegian Bokmål (norsk (bokmål)‎)
  * @author Audun
  * @author Nghtwlkr
  */
@@ -2464,7 +2464,7 @@ $messages['ru'] = array(
 	'right-phalanxemailblock' => 'Можно обратиться, просмотреть и управлять e-mail на основе блоков',
 );
 
-/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (српски (ћирилица)‎)
  * @author Rancher
  */
 $messages['sr-ec'] = array(
@@ -2793,7 +2793,7 @@ $messages['uk'] = array(
 	'phalanx-test-results-legend' => 'Результати тесту',
 );
 
-/** Simplified Chinese (‪中文（简体）‬) */
+/** Simplified Chinese (中文（简体）‎) */
 $messages['zh-hans'] = array(
 	'phalanx-type-title' => '页面标题',
 	'phalanx-type-user' => '用户',
