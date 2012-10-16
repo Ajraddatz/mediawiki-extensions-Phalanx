@@ -29,7 +29,7 @@ class ContentBlock {
 		$summary = $editpage->summary;
 		if ( !empty( $blocksData ) && $summary != '' ) {
 			$summary = self::applyWhitelist( $summary );
-			foreach( $blocksData as $blockData ) {
+			foreach ( $blocksData as $blockData ) {
 				$result = Phalanx::isBlocked( $summary, $blockData );
 				if ( $result['blocked'] ) {
 					$wgOut->setPageTitle( wfMessage( 'spamprotectiontitle' )->text() );
@@ -53,7 +53,7 @@ class ContentBlock {
 		$textbox = $editpage->textbox1;
 		if ( !empty( $blocksData ) && $textbox != '' ) {
 			$textbox = self::applyWhitelist( $textbox );
-			foreach( $blocksData as $blockData ) {
+			foreach ( $blocksData as $blockData ) {
 				$result = Phalanx::isBlocked( $textbox, $blockData );
 				if ( $result['blocked'] ) {
 					$editpage->spamPageWithContent( $result['msg'] );
@@ -82,7 +82,7 @@ class ContentBlock {
 		if ( !empty( $blocksData ) ) {
 			if ( $reason != '' ) {
 				$reason = self::applyWhitelist( $reason );
-				foreach( $blocksData as $blockData ) {
+				foreach ( $blocksData as $blockData ) {
 					$result = Phalanx::isBlocked( $reason, $blockData );
 					if ( $result['blocked'] ) {
 						$error .= wfMessage( 'phalanx-title-move-summary' )->parse();
@@ -98,7 +98,7 @@ class ContentBlock {
 			// @author Jack Phoenix <jack@shoutwiki.com>
 			$nt = $newTitle->getFullText();
 			$titleBlocksData = Phalanx::getFromFilter( Phalanx::TYPE_TITLE );
-			foreach( $titleBlocksData as $blockData ) {
+			foreach ( $titleBlocksData as $blockData ) {
 				$result = Phalanx::isBlocked( $nt, $blockData );
 				if ( $result['blocked'] ) {
 					$error .= wfMessage( 'phalanx-title-move-summary' )->parse();
@@ -125,7 +125,7 @@ class ContentBlock {
 		$blocksData = Phalanx::getFromFilter( Phalanx::TYPE_CONTENT );
 		if ( !empty( $blocksData ) && $content != '' ) {
 			$content = self::applyWhitelist( $content );
-			foreach( $blocksData as $blockData ) {
+			foreach ( $blocksData as $blockData ) {
 				$result = Phalanx::isBlocked( $content, $blockData );
 				if ( $result['blocked'] ) {
 					wfDebugLog( 'Phalanx', __METHOD__ . ": block '{$result['msg']}' blocked '$content'." );

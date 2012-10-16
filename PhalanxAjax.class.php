@@ -9,7 +9,7 @@ class PhalanxAjax {
 		global $wgRequest;
 		$id = $wgRequest->getInt( 'id' );
 
-		if( empty( $id ) ) {
+		if ( empty( $id ) ) {
 			return false;
 		}
 
@@ -37,7 +37,7 @@ class PhalanxAjax {
 		global $wgRequest;
 		$id = $wgRequest->getInt( 'id' );
 
-		if( empty( $id ) ) {
+		if ( empty( $id ) ) {
 			return false;
 		}
 
