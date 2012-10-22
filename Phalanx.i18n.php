@@ -151,7 +151,7 @@ Please [[Special:Contact|contact us]] about the problem.<br />The blocker also g
  */
 $messages['qqq'] = array(
 	'phalanx' => 'Special page title, shown on Special:SpecialPages',
-	'phalanx-ui-description' => ' Extension description, shown on Special:Version',
+	'phalanx-ui-description' => ' Extension description, shown on Special:Version', # Fuzzy
 	'phalanx-all-languages' => 'Drop-down menu item on Special:Phalanx; if a user wants to block something for all languages (as opposed to blocking for one specific language), they will select this option',
 	'phalanx-type-content' => 'Keep this short! This is used to indicate that a filter blocks something in an article (i.e. prevents that word or phrase from being added into an article)',
 	'phalanx-type-summary' => 'Keep this short! This is used to indicate that a filter blocks an edit summary or a page move summary.',
@@ -269,15 +269,6 @@ Shown if someone without the <code>phalanx</code> user right tries to access Pha
 	'right-phalanx' => '{{doc-right|phalanx}}',
 	'right-phalanxexempt' => '{{doc-right|phalanxexempt}}',
 	'right-phalanxemailblock' => '{{doc-right|phalanxemailblock}}',
-);
-
-/** ꢱꣃꢬꢵꢯ꣄ꢡ꣄ꢬꢵ (ꢱꣃꢬꢵꢯ꣄ꢡ꣄ꢬꢵ)
- * @author MooRePrabu
- */
-$messages['saz'] = array(
-	'phalanx-type-user' => 'ꢮꢮ꣄ꢬꢸꢥꢵꢬ꣄',
-	'phalanx-label-filter' => 'ꢏꢜ꣄ꢗꢶ',
-	'phalanx-stats-table-language' => 'ꢩꢵꢰꣁ',
 );
 
 /** Arabic (العربية)
@@ -1481,12 +1472,14 @@ $messages['lb'] = array(
 	'phalanx-type-user-email' => 'E-Mail',
 	'phalanx-type-answers-question-title' => 'Titel vun der Fro',
 	'phalanx-type-answers-recent-questions' => 'Rezent Froen',
+	'phalanx-add-block' => 'Spär uwenden',
 	'phalanx-edit-block' => 'Spär späicheren',
 	'phalanx-label-filter' => 'Filter:',
 	'phalanx-label-reason' => 'Grond:',
 	'phalanx-label-type' => 'Typ:',
 	'phalanx-label-lang' => 'Sprooch:',
 	'phalanx-format-exact' => 'genee',
+	'phalanx-tab-secondary' => 'Filteren testen',
 	'phalanx-block-success' => "D'Spär gouf derbäigesat",
 	'phalanx-modify-success' => "D'Spär gouf geännert",
 	'phalanx-modify-failure' => 'Beim Änere vun der Spär ass e Feeler geschitt',
@@ -1496,6 +1489,7 @@ $messages['lb'] = array(
 	'phalanx-link-modify' => 'änneren',
 	'phalanx-link-stats' => 'Statistiken',
 	'phalanx-reset-form' => 'Formulair zurécksetzen',
+	'phalanx-legend-input' => 'Filteren uleeën oder änneren',
 	'phalanx-legend-listing' => 'Filteren, déi elo benotzt ginn',
 	'phalanx-user-block-new-account' => 'De Benotzernumm kann net benotzt ginn. Sicht Iech w.e.g. een Aneren.',
 	'phalanx-blacklisted-email' => 'Gespaart Mail-Adressen',
@@ -2472,6 +2466,15 @@ $messages['ru'] = array(
 	'right-phalanxemailblock' => 'Можно обратиться, просмотреть и управлять e-mail на основе блоков',
 );
 
+/** ꢱꣃꢬꢵꢯ꣄ꢡ꣄ꢬꢵ (ꢱꣃꢬꢵꢯ꣄ꢡ꣄ꢬꢵ)
+ * @author MooRePrabu
+ */
+$messages['saz'] = array(
+	'phalanx-type-user' => 'ꢮꢮ꣄ꢬꢸꢥꢵꢬ꣄',
+	'phalanx-label-filter' => 'ꢏꢜ꣄ꢗꢶ',
+	'phalanx-stats-table-language' => 'ꢩꢵꢰꣁ',
+);
+
 /** Serbian (Cyrillic script) (српски (ћирилица)‎)
  * @author Rancher
  */
@@ -2498,7 +2501,8 @@ $messages['sr-ec'] = array(
 	'phalanx-stats-table-language' => 'Језик',
 );
 
-/** Serbian (Latin script) (srpski (latinica)‎) */
+/** Serbian (Latin script) (srpski (latinica)‎)
+ */
 $messages['sr-el'] = array(
 	'phalanx-type-content' => 'sadržaj stranice',
 	'phalanx-type-summary' => 'opis stranice',
@@ -2801,7 +2805,8 @@ $messages['uk'] = array(
 	'phalanx-test-results-legend' => 'Результати тесту',
 );
 
-/** Simplified Chinese (中文（简体）‎) */
+/** Simplified Chinese (中文（简体）‎)
+ */
 $messages['zh-hans'] = array(
 	'phalanx-type-title' => '页面标题',
 	'phalanx-type-user' => '用户',
@@ -2822,7 +2827,8 @@ $messages['zh-hans'] = array(
 	'phalanx-stats-table-wiki-url' => '维基 URL',
 );
 
-/** Traditional Chinese (中文（繁體）‎) */
+/** Traditional Chinese (中文（繁體）‎)
+ */
 $messages['zh-hant'] = array(
 	'phalanx-type-title' => '頁面標題',
 	'phalanx-type-user' => '用戶',
@@ -2842,4 +2848,3 @@ $messages['zh-hant'] = array(
 	'phalanx-stats-table-wiki-name' => '維基名字',
 	'phalanx-stats-table-wiki-url' => '維基 URL',
 );
-
