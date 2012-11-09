@@ -1294,6 +1294,20 @@ Nota: functiona solmente in wikis del typo Answers.',
 	'right-phalanxemailblock' => 'Pote submitter, vider e gerer blocadas a base de e-mail',
 );
 
+/** Italian (italiano)
+ * @author Gianfranco
+ */
+$messages['it'] = array(
+	'phalanx-all-languages' => 'Tutte le lingue',
+	'phalanx-type-user' => 'utente',
+	'phalanx-type-user-email' => 'e-mail',
+	'phalanx-type-wiki-creation' => 'creazione wiki',
+	'phalanx-label-lang' => 'Lingua:',
+	'phalanx-format-exact' => 'esatto',
+	'phalanx-test-submit' => 'Test',
+	'phalanx-link-stats' => 'statistiche',
+);
+
 /** Japanese (日本語)
  * @author Shirayuki
  */
