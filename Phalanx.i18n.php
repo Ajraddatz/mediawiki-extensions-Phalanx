@@ -1005,6 +1005,16 @@ Se pensa que se trata dun erro, [[Special:Contact|póñase en contacto con Wikia
 	'right-phalanxemailblock' => 'Pode arquivar, ollar e xestionar os bloqueos baseados en correos electrónicos',
 );
 
+/** Hebrew (עברית)
+ * @author חיים
+ */
+$messages['he'] = array(
+	'phalanx-label-filter' => 'מסנן:',
+	'phalanx-reset-form' => 'אפס טופס',
+	'phalanx-yes' => 'כן',
+	'phalanx-no' => 'לא',
+);
+
 /** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
