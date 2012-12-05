@@ -2793,15 +2793,18 @@ $messages['tt-cyrl'] = array(
 
 /** Ukrainian (українська)
  * @author A1
+ * @author Base
  * @author Olvin
  * @author Тест
  */
 $messages['uk'] = array(
 	'phalanx-desc' => 'Phalanx - комплексний механізм виявлення спаму',
+	'phalanx-all-languages' => 'Усі мови',
 	'phalanx-type-content' => 'зміст сторінки',
 	'phalanx-type-summary' => 'стислий опис сторінки',
 	'phalanx-type-title' => 'назва сторінки',
 	'phalanx-type-user' => 'дописувач',
+	'phalanx-type-user-email' => 'e-mail',
 	'phalanx-type-answers-question-title' => 'заголовок питання',
 	'phalanx-type-answers-recent-questions' => 'останні запитання',
 	'phalanx-type-wiki-creation' => 'створення вікі',
@@ -2817,6 +2820,7 @@ $messages['uk'] = array(
 	'phalanx-view-blocks' => 'Пошукові фільтри',
 	'phalanx-view-id' => 'Використовувати фільтр за ID:',
 	'phalanx-view-id-submit' => 'Отримати фільтр',
+	'phalanx-expire-durations' => '1 година,2 години,4 години,6 годин,1 день,3 дні,1 тиждень,2 тижні,1 місяць,3 місяці,6 місяців,1 рік,назавжди',
 	'phalanx-format-text' => 'Звичайний текст',
 	'phalanx-format-regex' => 'регулярний вираз',
 	'phalanx-format-case' => 'з урахуванням регістру',
@@ -2831,14 +2835,38 @@ $messages['uk'] = array(
 	'phalanx-link-unblock' => 'розблокувати',
 	'phalanx-link-modify' => 'змінити',
 	'phalanx-link-stats' => 'статистика',
+	'phalanx-reset-form' => 'Скинути форму',
 	'phalanx-legend-input' => 'Створити або змінити фільтр',
 	'phalanx-legend-listing' => 'Поточні фільтри',
 	'phalanx-unblock-message' => 'Блок ID #$1  успішно вилучено',
 	'phalanx-help-type-content' => 'Цей фільтр запобігає збереженню змін, зміст яких відповідає якій-небудь із заборонених фраз.',
 	'phalanx-user-block-new-account' => "Це ім'я користувача не доступно для реєстрації. Будь ласка, оберіть інше.",
+	'phalanx-plain-text' => 'звичайний текст',
+	'phalanx-list-regex' => 'регулярний вираз',
 	'phalanx-display-row-blocks' => 'блоки: $1',
 	'phalanx-display-row-created' => 'створено [[User:$1|$1]]  $2',
 	'phalanx-test-results-legend' => 'Результати тесту',
+	'phalanx-no-matches' => 'Не знайдено збігів.',
+	'phalanxstats' => 'Статистика Phalanx',
+	'phalanx-yes' => 'Так',
+	'phalanx-no' => 'Ні',
+	'phalanx-stats-table-id' => 'ID блокування',
+	'phalanx-stats-table-user' => 'Додано',
+	'phalanx-stats-table-type' => 'Тип',
+	'phalanx-stats-table-text' => 'Текст',
+	'phalanx-stats-table-create' => 'Створено',
+	'phalanx-stats-table-expire' => 'Завершується',
+	'phalanx-stats-table-exact' => 'Точно',
+	'phalanx-stats-table-regex' => 'Регулярний вираз',
+	'phalanx-stats-table-case' => 'У разі',
+	'phalanx-stats-table-reason' => 'Причина',
+	'phalanx-stats-table-language' => 'Мова',
+	'phalanx-stats-block-notfound' => 'ID блокування не знайдено',
+	'phalanx-stats-table-wiki-id' => 'ID вікі',
+	'phalanx-stats-table-wiki-name' => 'Назва вікі',
+	'phalanx-stats-table-wiki-url' => 'URL-адреса вікі',
+	'phalanx-stats-load-btn' => 'Завантажити',
+	'phalanx-stats-id' => 'ID: $1',
 );
 
 /** Simplified Chinese (中文（简体）‎)
