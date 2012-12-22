@@ -620,6 +620,66 @@ Si crees que es un error, por favor [[Special:Contact|contacto nosotros]].<br />
 	'right-phalanxemailblock' => 'Crear, ver y administrar bloqueos de correos',
 );
 
+/** Estonian (eesti)
+ * @author Avjoska
+ */
+$messages['et'] = array(
+	'phalanx-all-languages' => 'Kõik keeled',
+	'phalanx-type-content' => 'artikli sisu',
+	'phalanx-type-summary' => 'artikli kokkuvõtte',
+	'phalanx-type-title' => 'artikli pealkiri',
+	'phalanx-type-user' => 'kasutaja',
+	'phalanx-type-user-email' => 'e-post',
+	'phalanx-label-reason' => 'Põhjus:',
+	'phalanx-label-expiry' => 'Aegumistähtaeg:',
+	'phalanx-label-type' => 'Tüüp:',
+	'phalanx-label-lang' => 'Keel:',
+	'phalanx-expire-durations' => '1 tund,2 tundi,4 tundi,6 tundi,1 päev,3 päeva,1 nädal,2 nädalat,1 kuu,3 kuud,6 kuud,1 aasta,igavene',
+	'phalanx-format-exact' => 'täpne',
+	'phalanx-link-unblock' => 'lõpeta blokeerimine',
+	'phalanx-link-modify' => 'muuda',
+	'phalanx-link-stats' => 'statistika',
+	'phalanx-yes' => 'Jah',
+	'phalanx-no' => 'Ei',
+	'phalanx-stats-table-id' => 'Blokeeri',
+	'phalanx-stats-table-type' => 'Tüüp',
+	'phalanx-stats-table-text' => 'Tekst',
+	'phalanx-stats-table-create' => 'Loodud',
+	'phalanx-stats-table-expire' => 'Aegumistähtaeg',
+	'phalanx-stats-table-exact' => 'Täpne',
+	'phalanx-stats-table-reason' => 'Põhjus',
+	'phalanx-stats-table-language' => 'Keel',
+);
+
+/** Persian (فارسی)
+ * @author Mjbmr
+ */
+$messages['fa'] = array(
+	'phalanx-type-title' => 'عنوان مقاله',
+	'phalanx-type-user' => 'کاربر',
+	'phalanx-label-reason' => 'دلیل:',
+	'phalanx-label-expiry' => 'زمان سرآمدن:',
+	'phalanx-label-type' => 'نوع:',
+	'phalanx-format-regex' => 'عبارت باقاعده',
+	'phalanx-test-submit' => 'آزمایش',
+	'phalanx-link-unblock' => 'آزادسازی',
+	'phalanx-link-modify' => 'تغییر',
+	'phalanx-reset-form' => 'بازنشانی فرم',
+	'phalanx-plain-text' => 'متن ساده',
+	'phalanx-list-regex' => 'عبارت باقاعده',
+	'phalanx-yes' => 'بله',
+	'phalanx-no' => 'خیر',
+	'phalanx-stats-table-type' => 'نوع',
+	'phalanx-stats-table-text' => 'متن',
+	'phalanx-stats-table-regex' => 'عبارت باقاعده',
+	'phalanx-stats-table-reason' => 'دلیل',
+	'phalanx-stats-table-language' => 'زبان',
+	'phalanx-stats-table-wiki-id' => 'شناسهٔ ویکی',
+	'phalanx-stats-table-wiki-name' => 'نام ویکی',
+	'phalanx-stats-table-wiki-url' => 'نشانی ویکی',
+	'phalanx-stats-load-btn' => 'بارگیری',
+);
+
 /** Finnish (suomi)
  * @author Crt
  * @author Jack Phoenix <jack@countervandalism.net>
@@ -1442,6 +1502,10 @@ $messages['ka'] = array(
 	'phalanx-link-unblock' => 'განბლოკვა',
 	'phalanx-link-modify' => 'შეცვლა',
 	'phalanx-link-stats' => 'სტატისტიკა',
+	'phalanx-yes' => 'დიახ',
+	'phalanx-no' => 'არა',
+	'phalanx-stats-table-type' => 'ტიპი',
+	'phalanx-stats-table-text' => 'ტექსტი',
 	'phalanx-stats-table-create' => 'შექმნილია',
 	'phalanx-stats-table-reason' => 'მიზეზი',
 	'phalanx-stats-table-language' => 'ენა',
@@ -2510,6 +2574,45 @@ $messages['saz'] = array(
 	'phalanx-type-user' => 'ꢮꢮ꣄ꢬꢸꢥꢵꢬ꣄',
 	'phalanx-label-filter' => 'ꢏꢜ꣄ꢗꢶ',
 	'phalanx-stats-table-language' => 'ꢩꢵꢰꣁ',
+);
+
+/** Sinhala (සිංහල)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['si'] = array(
+	'phalanx-all-languages' => 'සියලුම භාෂාවන්',
+	'phalanx-type-summary' => 'ලිපි සාරාංශය',
+	'phalanx-type-title' => 'ලිපි ශීර්ෂය',
+	'phalanx-type-user' => 'පරිශීලක',
+	'phalanx-type-user-email' => 'විද්‍යුත්-තැපෑල',
+	'phalanx-type-wiki-creation' => 'විකි තැනුම',
+	'phalanx-label-filter' => 'පෙරහන:',
+	'phalanx-label-reason' => 'හේතුව:',
+	'phalanx-label-expiry' => 'කල් ඉකුත්වීම:',
+	'phalanx-label-type' => 'වර්ගය:',
+	'phalanx-label-lang' => 'භාෂාව:',
+	'phalanx-view-blocks' => 'පෙරහන් සොයන්න',
+	'phalanx-view-id-submit' => 'පෙරහන ගන්න',
+	'phalanx-tab-main' => 'පෙරහන් කළමනාකරණය කරන්න',
+	'phalanx-tab-secondary' => 'පෙරහන් පරික්ෂා කරන්න',
+	'phalanx-test-submit' => 'පරීක්ෂණය',
+	'phalanx-link-unblock' => 'ආවාරණය',
+	'phalanx-link-modify' => 'වෙනස් කරන්න',
+	'phalanx-plain-text' => 'සාමාන්‍ය පෙළ',
+	'phalanx-test-results-legend' => 'පරීක්ෂණ ප්‍රතිඑල',
+	'phalanx-yes' => 'ඔව්',
+	'phalanx-no' => 'නැත',
+	'phalanx-stats-table-type' => 'වර්ගය',
+	'phalanx-stats-table-text' => 'පෙළ',
+	'phalanx-stats-table-create' => 'තනන ලද',
+	'phalanx-stats-table-expire' => 'ඉකුත් වන්නේ',
+	'phalanx-stats-table-reason' => 'හේතුව',
+	'phalanx-stats-table-language' => 'භාෂාව',
+	'phalanx-stats-table-wiki-name' => 'විකි නාමය',
+	'phalanx-stats-table-wiki-url' => 'විකි URL',
+	'phalanx-stats-load-btn' => 'පූරණය',
+	'phalanx-stats-id' => 'ID: $1',
+	'phalanx-stats-example' => 'නිදසුන:',
 );
 
 /** Serbian (Cyrillic script) (српски (ћирилица)‎)
