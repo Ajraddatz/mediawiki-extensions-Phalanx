@@ -300,12 +300,21 @@ $messages['az'] = array(
 
 /** Bulgarian (български)
  * @author DCLXVI
+ * @author පසිඳු කාවින්ද
  */
 $messages['bg'] = array(
+	'phalanx-type-user' => 'потребител',
+	'phalanx-label-filter' => 'Филтър:',
 	'phalanx-label-reason' => 'Причина:',
+	'phalanx-label-type' => 'Вид:',
 	'phalanx-label-lang' => 'Език:',
+	'phalanx-yes' => 'Да',
+	'phalanx-no' => 'Не',
+	'phalanx-stats-table-type' => 'Тип',
+	'phalanx-stats-table-text' => 'Текст',
 	'phalanx-stats-table-reason' => 'Причина',
 	'phalanx-stats-table-language' => 'Език',
+	'phalanx-stats-example' => 'Пример:',
 );
 
 /** Breton (brezhoneg)
@@ -622,6 +631,7 @@ Si crees que es un error, por favor [[Special:Contact|contacto nosotros]].<br />
 
 /** Estonian (eesti)
  * @author Avjoska
+ * @author Pikne
  */
 $messages['et'] = array(
 	'phalanx-all-languages' => 'Kõik keeled',
@@ -641,7 +651,7 @@ $messages['et'] = array(
 	'phalanx-link-stats' => 'statistika',
 	'phalanx-yes' => 'Jah',
 	'phalanx-no' => 'Ei',
-	'phalanx-stats-table-id' => 'Blokeeri',
+	'phalanx-stats-table-id' => 'Blokeeringu ID',
 	'phalanx-stats-table-type' => 'Tüüp',
 	'phalanx-stats-table-text' => 'Tekst',
 	'phalanx-stats-table-create' => 'Loodud',
@@ -1365,7 +1375,23 @@ Nota: functiona solmente in wikis del typo Answers.',
 	'right-phalanxemailblock' => 'Pote submitter, vider e gerer blocadas a base de e-mail',
 );
 
+/** Indonesian (Bahasa Indonesia)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['id'] = array(
+	'phalanx-label-reason' => 'Alasan:',
+	'phalanx-label-type' => 'Tipe:',
+	'phalanx-label-lang' => 'Bahasa:',
+	'phalanx-yes' => 'Ya',
+	'phalanx-no' => 'Tidak',
+	'phalanx-stats-table-type' => 'Tipe',
+	'phalanx-stats-table-text' => 'Teks',
+	'phalanx-stats-table-reason' => 'Alasan',
+	'phalanx-stats-example' => 'Contoh:',
+);
+
 /** Italian (italiano)
+ * @author F. Cosoleto
  * @author Gianfranco
  */
 $messages['it'] = array(
@@ -1377,6 +1403,10 @@ $messages['it'] = array(
 	'phalanx-format-exact' => 'esatto',
 	'phalanx-test-submit' => 'Test',
 	'phalanx-link-stats' => 'statistiche',
+	'phalanx-user-block-new-account' => 'Nome utente non è disponibile per la registrazione.',
+	'phalanx-user-block-reason-ip' => "A questo indirizzo IP è impedito di compiere modifiche a causa di vandalismo o altri atti di disturbo, riconducibili a te o a qualcuno con cui si condivide l'indirizzo IP. In caso questo sia un errore, potete [[Special:Contact|contattarci]]",
+	'phalanx-blacklisted-email' => 'Indirizzo email bloccato',
+	'phalanx-blacklisted-email-text' => "Questo indirizzo email è attualmente bloccato per l'invio di email ad altri utenti.",
 );
 
 /** Japanese (日本語)
@@ -2600,6 +2630,7 @@ $messages['si'] = array(
 	'phalanx-link-modify' => 'වෙනස් කරන්න',
 	'phalanx-plain-text' => 'සාමාන්‍ය පෙළ',
 	'phalanx-test-results-legend' => 'පරීක්ෂණ ප්‍රතිඑල',
+	'phalanx-no-matches' => 'කිසිදු ගැලපුමක් සමුනොවිනි.',
 	'phalanx-yes' => 'ඔව්',
 	'phalanx-no' => 'නැත',
 	'phalanx-stats-table-type' => 'වර්ගය',
@@ -2899,6 +2930,7 @@ $messages['tt-cyrl'] = array(
  * @author A1
  * @author Base
  * @author Olvin
+ * @author Steve.rusyn
  * @author Тест
  */
 $messages['uk'] = array(
@@ -2971,6 +3003,7 @@ $messages['uk'] = array(
 	'phalanx-stats-table-wiki-url' => 'URL-адреса вікі',
 	'phalanx-stats-load-btn' => 'Завантажити',
 	'phalanx-stats-id' => 'ID: $1',
+	'phalanx-stats-example' => 'Приклад:',
 );
 
 /** Simplified Chinese (中文（简体）‎)
