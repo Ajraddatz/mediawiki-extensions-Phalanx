@@ -148,11 +148,12 @@ Please [[Special:Contact|contact us]] about the problem.<br />The blocker also g
 /** Message documentation (Message documentation)
  * @author Kghbln
  * @author Shirayuki
+ * @author Siebrand
  */
 $messages['qqq'] = array(
 	'phalanx' => 'Special page title, shown on Special:SpecialPages',
 	'phalanx-desc' => '{{desc|name=Phalanx|url=http://www.mediawiki.org/wiki/Extension:Phalanx}}',
-	'phalanx-ui-description' => ' Extension description, shown on Special:Version', # Fuzzy
+	'phalanx-ui-description' => '{{desc}}',
 	'phalanx-all-languages' => 'Drop-down menu item on Special:Phalanx; if a user wants to block something for all languages (as opposed to blocking for one specific language), they will select this option',
 	'phalanx-type-content' => 'Keep this short! This is used to indicate that a filter blocks something in an article (i.e. prevents that word or phrase from being added into an article)',
 	'phalanx-type-summary' => 'Keep this short! This is used to indicate that a filter blocks an edit summary or a page move summary.',
@@ -296,6 +297,44 @@ $messages['az'] = array(
 	'phalanx-stats-table-language' => 'Dil',
 	'phalanx-stats-table-wiki-name' => 'Viki adı',
 	'phalanx-stats-table-wiki-url' => 'Viki URL',
+);
+
+/** Bashkir (башҡортса)
+ * @author Haqmar
+ */
+$messages['ba'] = array(
+	'phalanx-all-languages' => 'Бөтә телдәр',
+	'phalanx-type-content' => 'мәҡәлә эстәлеге',
+	'phalanx-type-summary' => 'резюме бите',
+	'phalanx-type-title' => 'мәҡәлә исеме',
+	'phalanx-type-user' => 'ҡатнашыусы',
+	'phalanx-type-user-email' => 'e-mail',
+	'phalanx-type-answers-question-title' => 'һорау исеме',
+	'phalanx-type-answers-recent-questions' => 'яңы һорауҙар',
+	'phalanx-type-wiki-creation' => 'вики яһау',
+	'phalanx-add-block' => 'Блоклауҙы ҡулланырға',
+	'phalanx-edit-block' => 'Блокты һаҡларға',
+	'phalanx-label-filter' => 'Һөҙгөс:',
+	'phalanx-label-reason' => 'Сәбәп:',
+	'phalanx-label-expiry' => 'Тамамлана:',
+	'phalanx-label-type' => 'Төрө:',
+	'phalanx-label-lang' => 'Тел:',
+	'phalanx-view-type' => 'Блоклау төрө...',
+	'phalanx-view-blocker' => 'Фильтр тексты буйынса эҙләргә',
+	'phalanx-view-blocks' => 'Эҙләү фильтрҙары',
+	'phalanx-yes' => 'Эйе',
+	'phalanx-no' => 'Юҡ',
+	'phalanx-stats-table-id' => 'Блок идентификаторы',
+	'phalanx-stats-table-user' => 'Өҫтәүсе',
+	'phalanx-stats-table-type' => 'Төрө',
+	'phalanx-stats-table-text' => 'Текст',
+	'phalanx-stats-table-create' => 'Яһалған',
+	'phalanx-stats-table-expire' => 'Тамамлана',
+	'phalanx-stats-table-exact' => 'Ҡәтғи',
+	'phalanx-stats-table-regex' => 'Даими',
+	'phalanx-stats-table-case' => 'Осраҡта',
+	'phalanx-stats-table-reason' => 'Сәбәп',
+	'phalanx-stats-table-language' => 'Тел',
 );
 
 /** Bulgarian (български)
@@ -498,6 +537,16 @@ $messages['diq'] = array(
 	'phalanx-stats-table-text' => 'nuşte',
 	'phalanx-stats-table-create' => 'Vıraziya',
 	'phalanx-stats-table-language' => 'Zıwan',
+);
+
+/** Esperanto (Esperanto)
+ * @author Yekrats
+ */
+$messages['eo'] = array(
+	'phalanx-type-user-email' => 'retadreso',
+	'phalanx-expire-durations' => '1 horo,2 horoj,4 horoj,6 horoj,1 tago,3 tagoj,1 semajno,2 semajnoj,1 monato,3 monatoj,6 monatoj,1 jaro,senfinite',
+	'phalanx-link-unblock' => 'malforbari',
+	'phalanx-link-modify' => 'modifi',
 );
 
 /** Spanish (español)
@@ -2495,6 +2544,55 @@ $messages['pt-br'] = array(
 	'phalanx-stats-table-language' => 'Língua',
 );
 
+/** Romanian (română)
+ * @author Minisarm
+ * @author Stelistcristi
+ */
+$messages['ro'] = array(
+	'phalanx' => 'Phalanx - Mecanism integrat de apărare împotriva spamului',
+	'phalanx-desc' => 'Mecanism integrat de apărare împotriva spamului',
+	'phalanx-ui-description' => 'Interfața de gestionare a mecanismului integrat de apărare împotriva spamului',
+	'phalanx-all-languages' => 'Toate limbile',
+	'phalanx-type-content' => 'conținutul articolului',
+	'phalanx-type-summary' => 'rezumatul articolului',
+	'phalanx-type-title' => 'titlul articolului',
+	'phalanx-type-user' => 'utilizator',
+	'phalanx-type-user-email' => 'e-mail',
+	'phalanx-type-answers-question-title' => 'titlul întrebării',
+	'phalanx-type-answers-recent-questions' => 'întrebări recente',
+	'phalanx-type-wiki-creation' => 'creare de wiki',
+	'phalanx-add-block' => 'Aplică blocarea',
+	'phalanx-edit-block' => 'Salvează blocarea',
+	'phalanx-label-filter' => 'Filtru:',
+	'phalanx-label-reason' => 'Motiv:',
+	'phalanx-label-expiry' => 'Durată:',
+	'phalanx-label-type' => 'Tip:',
+	'phalanx-label-lang' => 'Limbă:',
+	'phalanx-view-type' => 'Tipul blocării...',
+	'phalanx-view-blocker' => 'Căutare după textul filtrului:',
+	'phalanx-view-blocks' => 'Caută filtre',
+	'phalanx-view-id' => 'Obținere filtru după ID:',
+	'phalanx-view-id-submit' => 'Obține filtru',
+	'phalanx-expire-durations' => '1 oră,2 ore,4 ore,6 ore,1 zi,3 zile,1 săptămână,2 săptămâni,1 lună,3 luni,6 luni,1 an,infinit',
+	'phalanx-format-text' => 'text simplu',
+	'phalanx-format-regex' => 'expresie regulată',
+	'phalanx-format-case' => 'sensibil la majuscule',
+	'phalanx-format-exact' => 'exact',
+	'phalanx-tab-main' => 'Gestionare filtre',
+	'phalanx-tab-secondary' => 'Testare filtre',
+	'phalanx-link-stats' => 'statistici',
+	'phalanx-legend-input' => 'Creare sau modificare filtru',
+	'phalanx-legend-listing' => 'Filtre utilizate în prezent',
+	'phalanx-yes' => 'Da',
+	'phalanx-no' => 'Nu',
+	'phalanx-stats-table-text' => 'Text',
+	'phalanx-stats-table-reason' => 'Motiv',
+	'phalanx-stats-table-language' => 'Limbă',
+	'phalanx-stats-table-wiki-name' => 'Numele wikiului',
+	'phalanx-stats-table-wiki-url' => 'Adresa URL a wikiului',
+	'phalanx-stats-example' => 'Exemplu:',
+);
+
 /** Russian (русский)
  * @author Byulent
  * @author DCamer
@@ -2639,6 +2737,7 @@ $messages['si'] = array(
 	'phalanx-stats-table-expire' => 'ඉකුත් වන්නේ',
 	'phalanx-stats-table-reason' => 'හේතුව',
 	'phalanx-stats-table-language' => 'භාෂාව',
+	'phalanx-stats-table-wiki-id' => 'විකි හැඳුනුම',
 	'phalanx-stats-table-wiki-name' => 'විකි නාමය',
 	'phalanx-stats-table-wiki-url' => 'විකි URL',
 	'phalanx-stats-load-btn' => 'පූරණය',
@@ -2778,6 +2877,29 @@ Anmärkning: fungerar endast på Svar-typ wikier.',
 	'phalanx-rule-log-details' => 'Filter: "$1", typ: "$2", orsak: "$3"',
 	'right-phalanx' => 'Kan hantera globala blockeringar och spamfilter',
 	'right-phalanxemailblock' => 'Kan ordna, visa och hantera e-postbaserade blockeringar',
+);
+
+/** Tamil (தமிழ்)
+ * @author Shanmugamp7
+ */
+$messages['ta'] = array(
+	'phalanx-all-languages' => 'அனைத்து மொழிகள்',
+	'phalanx-type-content' => 'கட்டுரை உள்ளடக்கம்',
+	'phalanx-type-summary' => 'கட்டுரை சுருக்கம்',
+	'phalanx-type-title' => 'கட்டுரைத் தலைப்பு',
+	'phalanx-type-user' => 'பயனர்',
+	'phalanx-type-user-email' => 'மின்னஞ்சல்',
+	'phalanx-type-answers-question-title' => 'கேள்வித் தலைப்பு',
+	'phalanx-type-answers-recent-questions' => 'அண்மைய கேள்விகள்',
+	'phalanx-type-wiki-creation' => 'விக்கி உருவாக்குதல்',
+	'phalanx-add-block' => 'தடையைச் செயற்படுத்தவும்',
+	'phalanx-edit-block' => 'தடையை சேமிக்கவும்',
+	'phalanx-label-filter' => 'வடிகட்டி:',
+	'phalanx-label-reason' => 'காரணம்:',
+	'phalanx-label-expiry' => 'முடிவுறுதல்:',
+	'phalanx-label-type' => 'வகை:',
+	'phalanx-label-lang' => 'மொழி:',
+	'phalanx-view-type' => 'தடையின் வகை ...',
 );
 
 /** Telugu (తెలుగు)
@@ -2931,10 +3053,13 @@ $messages['tt-cyrl'] = array(
  * @author Base
  * @author Olvin
  * @author Steve.rusyn
+ * @author Ата
  * @author Тест
  */
 $messages['uk'] = array(
+	'phalanx' => 'Phalanx — комплексний механізм захисту від спаму',
 	'phalanx-desc' => 'Phalanx - комплексний механізм виявлення спаму',
+	'phalanx-ui-description' => 'Інтерфейс управління комплексним механізмом спам-контролю',
 	'phalanx-all-languages' => 'Усі мови',
 	'phalanx-type-content' => 'зміст сторінки',
 	'phalanx-type-summary' => 'стислий опис сторінки',
@@ -2967,7 +3092,9 @@ $messages['uk'] = array(
 	'phalanx-block-failure' => 'Помилка під час додавання блоку',
 	'phalanx-modify-success' => 'Блок успішно змінено',
 	'phalanx-modify-failure' => 'Сталася помилка під час зміни блоку',
+	'phalanx-modify-warning' => 'Ви редагуєте блок ID #$1. Натисніть "{{int:phalanx-edit-block}}" щоб зберегти свої зміни.',
 	'phalanx-test-submit' => 'Тест',
+	'phalanx-content-spam-summary' => 'Текст знайдено у резюме сторінки.',
 	'phalanx-link-unblock' => 'розблокувати',
 	'phalanx-link-modify' => 'змінити',
 	'phalanx-link-stats' => 'статистика',
@@ -2976,7 +3103,10 @@ $messages['uk'] = array(
 	'phalanx-legend-listing' => 'Поточні фільтри',
 	'phalanx-unblock-message' => 'Блок ID #$1  успішно вилучено',
 	'phalanx-help-type-content' => 'Цей фільтр запобігає збереженню змін, зміст яких відповідає якій-небудь із заборонених фраз.',
+	'phalanx-help-type-summary' => 'Фільтр не дає зберігати редагування, якщо подане резюме містить щось із чорного списку фраз.',
+	'phalanx-help-type-user-email' => 'Цей фільтр запобігає створенню облікових записів з використанням блокованих адрес електронної пошти.',
 	'phalanx-user-block-new-account' => "Це ім'я користувача не доступно для реєстрації. Будь ласка, оберіть інше.",
+	'phalanx-blacklisted-email' => 'Адреса електронної пошти з чорного списку',
 	'phalanx-plain-text' => 'звичайний текст',
 	'phalanx-list-regex' => 'регулярний вираз',
 	'phalanx-display-row-blocks' => 'блоки: $1',
@@ -3004,6 +3134,7 @@ $messages['uk'] = array(
 	'phalanx-stats-load-btn' => 'Завантажити',
 	'phalanx-stats-id' => 'ID: $1',
 	'phalanx-stats-example' => 'Приклад:',
+	'phalanx-rule-log-name' => 'Журнал правил Phalanx',
 );
 
 /** Simplified Chinese (中文（简体）‎)
