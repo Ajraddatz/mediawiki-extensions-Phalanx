@@ -1443,12 +1443,17 @@ $messages['id'] = array(
 /** Italian (italiano)
  * @author F. Cosoleto
  * @author Gianfranco
+ * @author පසිඳු කාවින්ද
  */
 $messages['it'] = array(
 	'phalanx-all-languages' => 'Tutte le lingue',
 	'phalanx-type-user' => 'utente',
 	'phalanx-type-user-email' => 'e-mail',
 	'phalanx-type-wiki-creation' => 'creazione wiki',
+	'phalanx-label-filter' => 'Filtro:',
+	'phalanx-label-reason' => 'Motivo:',
+	'phalanx-label-expiry' => 'Scadenza del blocco:',
+	'phalanx-label-type' => 'Tipo:',
 	'phalanx-label-lang' => 'Lingua:',
 	'phalanx-format-exact' => 'esatto',
 	'phalanx-test-submit' => 'Test',
@@ -1457,6 +1462,12 @@ $messages['it'] = array(
 	'phalanx-user-block-reason-ip' => "A questo indirizzo IP è impedito di compiere modifiche a causa di vandalismo o altri atti di disturbo, riconducibili a te o a qualcuno con cui si condivide l'indirizzo IP. In caso questo sia un errore, potete [[Special:Contact|contattarci]]",
 	'phalanx-blacklisted-email' => 'Indirizzo email bloccato',
 	'phalanx-blacklisted-email-text' => "Questo indirizzo email è attualmente bloccato per l'invio di email ad altri utenti.",
+	'phalanx-yes' => 'Sì',
+	'phalanx-no' => 'No',
+	'phalanx-stats-table-type' => 'Tipo',
+	'phalanx-stats-table-text' => 'Testo',
+	'phalanx-stats-table-reason' => 'Motivo',
+	'phalanx-stats-table-language' => 'Lingua',
 );
 
 /** Japanese (日本語)
@@ -2834,10 +2845,13 @@ $messages['saz'] = array(
  */
 $messages['si'] = array(
 	'phalanx-all-languages' => 'සියලුම භාෂාවන්',
+	'phalanx-type-content' => 'ලිපියේ අන්තර්ගතය',
 	'phalanx-type-summary' => 'ලිපි සාරාංශය',
 	'phalanx-type-title' => 'ලිපි ශීර්ෂය',
 	'phalanx-type-user' => 'පරිශීලක',
 	'phalanx-type-user-email' => 'විද්‍යුත්-තැපෑල',
+	'phalanx-type-answers-question-title' => 'ප්‍රශ්නයේ මාතෘකාව',
+	'phalanx-type-answers-recent-questions' => 'මෑත ප්‍රශ්න',
 	'phalanx-type-wiki-creation' => 'විකි තැනුම',
 	'phalanx-label-filter' => 'පෙරහන:',
 	'phalanx-label-reason' => 'හේතුව:',
@@ -2846,7 +2860,9 @@ $messages['si'] = array(
 	'phalanx-label-lang' => 'භාෂාව:',
 	'phalanx-view-blocks' => 'පෙරහන් සොයන්න',
 	'phalanx-view-id-submit' => 'පෙරහන ගන්න',
+	'phalanx-format-regex' => 'සවිධිප්‍රකාශනය',
 	'phalanx-format-case' => 'අවස්ථා සංවේදී',
+	'phalanx-format-exact' => 'තථ්‍ය',
 	'phalanx-tab-main' => 'පෙරහන් කළමනාකරණය කරන්න',
 	'phalanx-tab-secondary' => 'පෙරහන් පරික්ෂා කරන්න',
 	'phalanx-test-submit' => 'පරීක්ෂණය',
@@ -2854,16 +2870,20 @@ $messages['si'] = array(
 	'phalanx-link-modify' => 'වෙනස් කරන්න',
 	'phalanx-link-stats' => 'තත්වය',
 	'phalanx-plain-text' => 'සාමාන්‍ය පෙළ',
+	'phalanx-list-regex' => 'සවිධිප්‍රකාශනය',
+	'phalanx-display-row-blocks' => 'වාරක: $1',
 	'phalanx-test-results-legend' => 'පරීක්ෂණ ප්‍රතිඑල',
 	'phalanx-no-matches' => 'කිසිදු ගැලපුමක් සමුනොවිනි.',
 	'phalanx-yes' => 'ඔව්',
 	'phalanx-no' => 'නැත',
+	'phalanx-stats-table-id' => 'වාරක හැඳුනුම',
 	'phalanx-stats-table-user' => 'එක් කරන ලද්දේ',
 	'phalanx-stats-table-type' => 'වර්ගය',
 	'phalanx-stats-table-text' => 'පෙළ',
 	'phalanx-stats-table-create' => 'තනන ලද',
 	'phalanx-stats-table-expire' => 'ඉකුත් වන්නේ',
 	'phalanx-stats-table-exact' => 'තථ්‍ය',
+	'phalanx-stats-table-regex' => 'සවිධිප්‍රකාශනය',
 	'phalanx-stats-table-case' => 'අවස්ථාව',
 	'phalanx-stats-table-reason' => 'හේතුව',
 	'phalanx-stats-table-language' => 'භාෂාව',
@@ -3290,6 +3310,10 @@ $messages['uk'] = array(
 	'phalanx-stats-id' => 'ID: $1',
 	'phalanx-stats-example' => 'Приклад:',
 	'phalanx-rule-log-name' => 'Журнал правил Phalanx',
+	'phalanx-rule-log-add' => 'Правило Phalanx додане: $1',
+	'phalanx-rule-log-edit' => 'Правило Phalanx відредаговане: $1',
+	'phalanx-rule-log-delete' => 'Правило Phalanx вилучене: $1',
+	'phalanx-rule-log-details' => 'Фільтр: "$1", тип: "$2", причина: "$3"',
 );
 
 /** Simplified Chinese (中文（简体）‎)
