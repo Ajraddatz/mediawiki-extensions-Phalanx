@@ -383,6 +383,23 @@ $messages['br'] = array(
 	'phalanx-stats-table-wiki-name' => 'Anv ar wiki',
 );
 
+/** Czech (česky)
+ * @author Vks
+ */
+$messages['cs'] = array(
+	'phalanx-yes' => 'Ano',
+	'phalanx-stats-table-create' => 'Vytvořeno',
+	'phalanx-stats-table-expire' => 'Platná do',
+	'phalanx-stats-table-exact' => 'Přesně',
+	'phalanx-stats-table-regex' => 'Regex',
+	'phalanx-stats-table-case' => 'Případ',
+	'phalanx-stats-table-reason' => 'Důvod',
+	'phalanx-stats-table-language' => 'Jazyk',
+	'phalanx-stats-table-wiki-url' => 'Adresa URL wiki',
+	'phalanx-stats-id' => 'ID: $1',
+	'phalanx-stats-example' => 'Příklad:',
+);
+
 /** German (Deutsch)
  * @author Claudia Hattitten
  * @author DaSch
@@ -2719,8 +2736,10 @@ $messages['ro'] = array(
 	'phalanx-link-stats' => 'statistici',
 	'phalanx-legend-input' => 'Creare sau modificare filtru',
 	'phalanx-legend-listing' => 'Filtre utilizate în prezent',
+	'phalanx-plain-text' => 'text simplu',
 	'phalanx-yes' => 'Da',
 	'phalanx-no' => 'Nu',
+	'phalanx-stats-table-type' => 'Tip',
 	'phalanx-stats-table-text' => 'Text',
 	'phalanx-stats-table-reason' => 'Motiv',
 	'phalanx-stats-table-language' => 'Limbă',
@@ -2853,13 +2872,19 @@ $messages['si'] = array(
 	'phalanx-type-answers-question-title' => 'ප්‍රශ්නයේ මාතෘකාව',
 	'phalanx-type-answers-recent-questions' => 'මෑත ප්‍රශ්න',
 	'phalanx-type-wiki-creation' => 'විකි තැනුම',
+	'phalanx-add-block' => 'අවහිරය අයදින්න',
+	'phalanx-edit-block' => 'අවහිරය සුරකින්න',
 	'phalanx-label-filter' => 'පෙරහන:',
 	'phalanx-label-reason' => 'හේතුව:',
 	'phalanx-label-expiry' => 'කල් ඉකුත්වීම:',
 	'phalanx-label-type' => 'වර්ගය:',
 	'phalanx-label-lang' => 'භාෂාව:',
+	'phalanx-view-type' => 'අවහිරයේ වර්ගය...',
+	'phalanx-view-blocker' => 'පෙරහන් පාඨය අනුව සොයන්න:',
 	'phalanx-view-blocks' => 'පෙරහන් සොයන්න',
+	'phalanx-view-id' => 'හැඳුනුම අනුව පෙරහන ලබා ගන්න:',
 	'phalanx-view-id-submit' => 'පෙරහන ගන්න',
+	'phalanx-format-text' => 'සාමාන්‍ය පෙළ',
 	'phalanx-format-regex' => 'සවිධිප්‍රකාශනය',
 	'phalanx-format-case' => 'අවස්ථා සංවේදී',
 	'phalanx-format-exact' => 'තථ්‍ය',
@@ -2869,11 +2894,16 @@ $messages['si'] = array(
 	'phalanx-link-unblock' => 'ආවාරණය',
 	'phalanx-link-modify' => 'වෙනස් කරන්න',
 	'phalanx-link-stats' => 'තත්වය',
+	'phalanx-reset-form' => 'ආකෘතිපත්‍රය යළි සකසන්න',
+	'phalanx-legend-input' => 'පෙරහන තනන්න හෝ වෙනස් කරන්න',
+	'phalanx-legend-listing' => 'දැනට අයදින ලද පෙරහන්',
+	'phalanx-unblock-message' => 'අවහිර හැඳුනුම #$1 සාර්ථකව ඉවත් කරන ලදී',
 	'phalanx-plain-text' => 'සාමාන්‍ය පෙළ',
 	'phalanx-list-regex' => 'සවිධිප්‍රකාශනය',
 	'phalanx-display-row-blocks' => 'වාරක: $1',
 	'phalanx-test-results-legend' => 'පරීක්ෂණ ප්‍රතිඑල',
 	'phalanx-no-matches' => 'කිසිදු ගැලපුමක් සමුනොවිනි.',
+	'phalanxstats' => 'සේනාබ්‍යුහ සංඛ්‍යාන දත්ත',
 	'phalanx-yes' => 'ඔව්',
 	'phalanx-no' => 'නැත',
 	'phalanx-stats-table-id' => 'වාරක හැඳුනුම',
@@ -2887,12 +2917,14 @@ $messages['si'] = array(
 	'phalanx-stats-table-case' => 'අවස්ථාව',
 	'phalanx-stats-table-reason' => 'හේතුව',
 	'phalanx-stats-table-language' => 'භාෂාව',
+	'phalanx-stats-block-notfound' => 'වාරණ හැඳුනුම හමු නොවුණි',
 	'phalanx-stats-table-wiki-id' => 'විකි හැඳුනුම',
 	'phalanx-stats-table-wiki-name' => 'විකි නාමය',
 	'phalanx-stats-table-wiki-url' => 'විකි URL',
 	'phalanx-stats-load-btn' => 'පූරණය',
 	'phalanx-stats-id' => 'ID: $1',
 	'phalanx-stats-example' => 'නිදසුන:',
+	'phalanx-rule-log-name' => 'සේනාබ්‍යුහ රීති ලොගය',
 );
 
 /** Serbian (Cyrillic script) (српски (ћирилица)‎)
