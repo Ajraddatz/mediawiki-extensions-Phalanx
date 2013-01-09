@@ -165,9 +165,11 @@ $messages['qqq'] = array(
 	'phalanx-type-wiki-creation' => 'Keep this short! This is used to indicate that a filter blocks the creation of a new wiki.',
 	'phalanx-add-block' => 'Button text; click on this button to add a new Phalanx filter; refer to the [[:File:Phalanx MediaWiki extension UI.png|extension screenshot]] for details',
 	'phalanx-edit-block' => 'Button text',
-	'phalanx-label-filter' => 'Refer to the [[:File:Phalanx MediaWiki extension UI.png|extension screenshot]] for details',
+	'phalanx-label-filter' => 'Refer to the [[:File:Phalanx MediaWiki extension UI.png|extension screenshot]] for details
+{{Identical|Filter}}',
 	'phalanx-label-reason' => 'Refer to the [[:File:Phalanx MediaWiki extension UI.png|extension screenshot]] for details',
-	'phalanx-label-expiry' => 'Refer to the [[:File:Phalanx MediaWiki extension UI.png|extension screenshot]] for details',
+	'phalanx-label-expiry' => 'Refer to the [[:File:Phalanx MediaWiki extension UI.png|extension screenshot]] for details.
+{{Identical|Expiry}}',
 	'phalanx-label-type' => 'Refer to the [[:File:Phalanx MediaWiki extension UI.png|extension screenshot]] for details',
 	'phalanx-label-lang' => 'Refer to the [[:File:Phalanx MediaWiki extension UI.png|extension screenshot]] for details',
 	'phalanx-view-type' => 'This message might be unused.',
