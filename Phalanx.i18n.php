@@ -170,7 +170,8 @@ $messages['qqq'] = array(
 	'phalanx-label-reason' => 'Refer to the [[:File:Phalanx MediaWiki extension UI.png|extension screenshot]] for details',
 	'phalanx-label-expiry' => 'Refer to the [[:File:Phalanx MediaWiki extension UI.png|extension screenshot]] for details.
 {{Identical|Expiry}}',
-	'phalanx-label-type' => 'Refer to the [[:File:Phalanx MediaWiki extension UI.png|extension screenshot]] for details',
+	'phalanx-label-type' => 'Refer to the [[:File:Phalanx MediaWiki extension UI.png|extension screenshot]] for details.
+{{Identical|Type}}',
 	'phalanx-label-lang' => 'Refer to the [[:File:Phalanx MediaWiki extension UI.png|extension screenshot]] for details',
 	'phalanx-view-type' => 'This message might be unused.',
 	'phalanx-view-blocker' => 'Refer to the [[:File:Phalanx MediaWiki extension UI.png|extension screenshot]] for details',
@@ -228,7 +229,8 @@ $messages['qqq'] = array(
 	'phalanx-no' => 'Used on the table in Special:PhalanxStats; refer to the [[:File:Phalanx MediaWiki extension - statistics interface for a given block.png|extension screenshot]] for details',
 	'phalanx-stats-table-id' => 'Used on the table in Special:PhalanxStats; refer to the [[:File:Phalanx MediaWiki extension - statistics interface for a given block.png|extension screenshot]] for details',
 	'phalanx-stats-table-user' => 'Used on the table in Special:PhalanxStats; refer to the [[:File:Phalanx MediaWiki extension - statistics interface for a given block.png|extension screenshot]] for details',
-	'phalanx-stats-table-type' => 'Used on the table in Special:PhalanxStats; refer to the [[:File:Phalanx MediaWiki extension - statistics interface for a given block.png|extension screenshot]] for details',
+	'phalanx-stats-table-type' => 'Used on the table in Special:PhalanxStats; refer to the [[:File:Phalanx MediaWiki extension - statistics interface for a given block.png|extension screenshot]] for details.
+{{Identical|Type}}',
 	'phalanx-stats-table-text' => 'Used on the table in Special:PhalanxStats; refer to the [[:File:Phalanx MediaWiki extension - statistics interface for a given block.png|extension screenshot]] for details',
 	'phalanx-stats-table-create' => 'Used on the table in Special:PhalanxStats; refer to the [[:File:Phalanx MediaWiki extension - statistics interface for a given block.png|extension screenshot]] for details',
 	'phalanx-stats-table-expire' => 'Used on the table in Special:PhalanxStats; refer to the [[:File:Phalanx MediaWiki extension - statistics interface for a given block.png|extension screenshot]] for details',
@@ -236,7 +238,8 @@ $messages['qqq'] = array(
 	'phalanx-stats-table-regex' => 'Used on the table in Special:PhalanxStats; refer to the [[:File:Phalanx MediaWiki extension - statistics interface for a given block.png|extension screenshot]] for details',
 	'phalanx-stats-table-case' => 'Used on the table in Special:PhalanxStats; refer to the [[:File:Phalanx MediaWiki extension - statistics interface for a given block.png|extension screenshot]] for details',
 	'phalanx-stats-table-reason' => 'Used on the table in Special:PhalanxStats; refer to the [[:File:Phalanx MediaWiki extension - statistics interface for a given block.png|extension screenshot]] for details',
-	'phalanx-stats-table-language' => 'Used on the table in Special:PhalanxStats; refer to the [[:File:Phalanx MediaWiki extension - statistics interface for a given block.png|extension screenshot]] for details',
+	'phalanx-stats-table-language' => 'Used on the table in Special:PhalanxStats; refer to the [[:File:Phalanx MediaWiki extension - statistics interface for a given block.png|extension screenshot]] for details.
+{{Identical|Language}}',
 	'phalanx-stats-entry' => 'Entry on Special:PhalanxStats/some-block-ID-goes-here
 * $1 is the filter type, such as "content" ({{msg-mw|Phalanx-type-content}})
 * $2 is the user name or IP address who triggered the filter
