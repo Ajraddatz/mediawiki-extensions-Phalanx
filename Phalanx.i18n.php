@@ -3347,9 +3347,9 @@ $messages['uk'] = array(
 	'phalanx-stats-id' => 'ID: $1',
 	'phalanx-stats-example' => 'Приклад:',
 	'phalanx-rule-log-name' => 'Журнал правил Phalanx',
-	'phalanx-rule-log-add' => 'Правило Phalanx додане: $1',
-	'phalanx-rule-log-edit' => 'Правило Phalanx відредаговане: $1',
-	'phalanx-rule-log-delete' => 'Правило Phalanx вилучене: $1',
+	'phalanx-rule-log-add' => 'Правило Phalanx додано: $1',
+	'phalanx-rule-log-edit' => 'Правило Phalanx відредаговано: $1',
+	'phalanx-rule-log-delete' => 'Правило Phalanx вилучено: $1',
 	'phalanx-rule-log-details' => 'Фільтр: "$1", тип: "$2", причина: "$3"',
 );
 
