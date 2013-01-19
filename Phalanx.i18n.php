@@ -2753,6 +2753,39 @@ $messages['ro'] = array(
 	'phalanx-stats-example' => 'Exemplu:',
 );
 
+/** tarandíne (tarandíne)
+ * @author Joetaras
+ */
+$messages['roa-tara'] = array(
+	'phalanx' => "Falange - Meccanisme de Difese Integrate condre 'u Spam",
+	'phalanx-desc' => "Meccanisme de condrolle indegrate condre a 'u spam",
+	'phalanx-all-languages' => 'Tutte le lènghe',
+	'phalanx-type-title' => "titole d'a vôsce",
+	'phalanx-type-user' => 'utende',
+	'phalanx-type-user-email' => 'e-mail',
+	'phalanx-label-filter' => 'Filtre:',
+	'phalanx-label-reason' => 'Mutive:',
+	'phalanx-label-expiry' => 'Scadenze:',
+	'phalanx-label-type' => 'Tipe:',
+	'phalanx-label-lang' => 'Lènghe:',
+	'phalanx-format-text' => 'teste semblice',
+	'phalanx-test-submit' => 'Test',
+	'phalanx-plain-text' => 'teste semblice',
+	'phalanx-yes' => 'Sìne',
+	'phalanx-no' => 'None',
+	'phalanx-stats-table-type' => 'Tipe',
+	'phalanx-stats-table-text' => 'Teste',
+	'phalanx-stats-table-create' => 'Ccrejate',
+	'phalanx-stats-table-reason' => 'Mutive',
+	'phalanx-stats-table-language' => 'Lènghe',
+	'phalanx-stats-table-wiki-id' => "ID d'a Uicchi",
+	'phalanx-stats-table-wiki-name' => "Nome d'a Uicchi",
+	'phalanx-stats-table-wiki-url' => "URL d'a Uicchi",
+	'phalanx-stats-load-btn' => 'Careche',
+	'phalanx-stats-id' => 'ID: $1',
+	'phalanx-stats-example' => 'Esembie:',
+);
+
 /** Russian (русский)
  * @author Byulent
  * @author DCamer
