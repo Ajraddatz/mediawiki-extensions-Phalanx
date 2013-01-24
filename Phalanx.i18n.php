@@ -2770,6 +2770,7 @@ $messages['roa-tara'] = array(
 	'phalanx-label-lang' => 'Lènghe:',
 	'phalanx-format-text' => 'teste semblice',
 	'phalanx-test-submit' => 'Test',
+	'phalanx-link-stats' => 'stat',
 	'phalanx-plain-text' => 'teste semblice',
 	'phalanx-yes' => 'Sìne',
 	'phalanx-no' => 'None',
