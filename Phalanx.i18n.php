@@ -3388,10 +3388,18 @@ $messages['uk'] = array(
 );
 
 /** Simplified Chinese (中文（简体）‎)
+ * @author Yfdyh000
  */
 $messages['zh-hans'] = array(
+	'phalanx' => 'Phalanx - 集成化垃圾信息防御机制',
+	'phalanx-desc' => '集成化垃圾信息控制机制',
+	'phalanx-ui-description' => '集成化垃圾信息控制机制管理接口',
+	'phalanx-all-languages' => '所有语言',
+	'phalanx-type-content' => '条目内容',
+	'phalanx-type-summary' => '条目摘要',
 	'phalanx-type-title' => '页面标题',
 	'phalanx-type-user' => '用户',
+	'phalanx-type-user-email' => '电子邮件',
 	'phalanx-type-answers-question-title' => '问题标题',
 	'phalanx-type-answers-recent-questions' => '最新问题',
 	'phalanx-label-reason' => '原因：',
