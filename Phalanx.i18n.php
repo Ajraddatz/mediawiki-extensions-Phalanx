@@ -2427,30 +2427,32 @@ $messages['pms'] = array(
 	'phalanx-tab-secondary' => 'Filtr ëd Preuva',
 	'phalanx-block-success' => "Ël blocagi a l'é stàit giontà da bin",
 	'phalanx-block-failure' => "A l'é staje n'eror durant la gionta dël blocagi",
-	'phalanx-modify-success' => "Ël blòch a l'é stàit modificà da bin",
-	'phalanx-modify-failure' => "A l'é stàit-ie n'eron an modificand ël blòch",
-	'phalanx-modify-warning' => 'It të stas modificand l\'ID blòch #$1. Sgnaca "{{int:phalanx-edit-block}}" për salvé ij tò cambi.',
-	'phalanx-test-description' => 'Preuva ël test dàit con ij blòch corent.',
+	'phalanx-modify-success' => "Ël blocagi a l'é stàit modificà për da bin",
+	'phalanx-modify-failure' => "A-i é staje n'eror durant la modìfica dël blocagi",
+	'phalanx-modify-warning' => "A l'é an camin ch'a modìfica ël blocagi d'identificativ #$1. Ch'a sgnaca su «{{int:phalanx-edit-block}}» për salvé soe modìfiche.",
+	'phalanx-test-description' => 'Test fornì për la preuva contra ij blocagi corent.',
 	'phalanx-test-submit' => 'Preuva',
-	'phalanx-content-spam-summary' => "Ël test a l'é stàit trovà ant ël somari dla pàgina.",
+	'phalanx-content-spam-summary' => "Ël test a l'é stàit trovà ant ël resumé dla pàgina.",
 	'phalanx-link-unblock' => 'dësbloché',
 	'phalanx-link-modify' => 'modìfica',
 	'phalanx-link-stats' => 'statìstiche',
 	'phalanx-reset-form' => "Formolari d'Anulament",
-	'phalanx-legend-input' => 'Crea o Modìfica Filtr',
+	'phalanx-legend-input' => 'Creé o modifiché ël Filtr',
 	'phalanx-legend-listing' => 'Filtr aplicà al moment',
-	'phalanx-unblock-message' => "L'ID blòch #$1 a l'é stàit gavà da bin",
-	'phalanx-help-type-content' => 'Sto filtr a vieta che na modìfica a sia salvà, se sò contnù a corispond a quaich fras dla lista nèira.',
-	'phalanx-help-type-summary' => 'Sto filtr a vieta che na modìfica a sia salvà, se ël resumé dàit a corispond a quaich fras dla lista nèira.',
-	'phalanx-help-type-title' => 'Sto filtr a vieta che na pagina a sia creà, se sò tìtol a corisponde a quaich fras dla lista nèira.
+	'phalanx-unblock-message' => "Ël blocagi d'identificativ #$1 a l'é stàit gavà për da bin",
+	'phalanx-help-type-content' => 'Sto filtr a ampediss che na modìfica a sia salvà, se sò contnù a corispond a chèich fras ant la lista nèira.',
+	'phalanx-help-type-summary' => 'Ës filtr a ampediss che na modìfica a sia salvà, se ël resumé dàit a corispond a chèich fras ant la lista nèira.',
+	'phalanx-help-type-title' => 'Ës filtr a ampediss che na pàgina a sia creà, se sò tìtol a corëspond a chèich fras ant la lista nèira.
 
-A vieta pa che na pagina pre-esistenta a sia modificà.',
-	'phalanx-help-type-user' => "Sto filtr a bloca n'utent (propi l'istess com un blòch local MediaWiki), se ël nòm o l'IP a corispond a un dij nòm o IP dla lista nèira.",
-	'phalanx-help-type-wiki-creation' => 'Ël filtr a vieta che na wiki a sia creà, se sò nòm o anliura a corispond a quaich fras dla lista nèira.',
-	'phalanx-help-type-answers-question-title' => 'Sto filtr a blòca la creassion ëd na custion (pagina), se sò tìtol a corispond a quaich fras dla lista nèira.',
-	'phalanx-help-type-answers-recent-questions' => 'Sto filtr a vieta ëd visualisé na custion (pagina) ant un nùmer dë stampo (widget, liste, liste generà da tichëtte). A vieta pa che cost artìcoj a sio creà.
+A ampediss pa che na pàgina pre-esistenta a sia modificà.',
+	'phalanx-help-type-user' => "Ës filtr a bloca n'utent (propi l'istess com un blocagi local MediaWiki), se ël nòm o l'IP a corëspond a un dij nòm o IP an sla lista nèira.",
+	'phalanx-help-type-wiki-creation' => 'Ës filtr a ampediss che na wiki a sia creà, se sò nòm o anliura a corëspond a chèich fras ant la lista nèira.',
+	'phalanx-help-type-answers-question-title' => 'Ës filtr a blòca la creassion ëd na chestion (pàgina), se sò tìtol a corëspond a chèich fras dla lista nèira.
 
-Nòta: a travaja mach dzor le wiki ëd sòrt Arspòste',
+Nòta: a marcia mach an sle wiki ëd tipo Answers',
+	'phalanx-help-type-answers-recent-questions' => 'Ës filtr a ampediss ëd visualisé dle chestion (pàgine) an vàire stamp (widget, liste, liste generà da tichëtte). A ampediss pa che costi artìcoj a sio creà.
+
+Nòta: a marcia mach an sle wiki ëd sòrt Rispòste',
 	'phalanx-help-type-user-email' => "Sto filtr a vieta la creassion ëd cont dovrand n'adressa ëd corel blocà.",
 	'phalanx-user-block-new-account' => "Ël nòm utent a l'é pa disponìbil për la registrassion. Për piasì sern-ne n'àutr.",
 	'phalanx-user-block-reason-ip' => "St'adrëssa IP-sì a peul pa modifiché për vandalism o àutr dann fàit da ti o da cheicun che a condivid  toa adrëssa IP.
