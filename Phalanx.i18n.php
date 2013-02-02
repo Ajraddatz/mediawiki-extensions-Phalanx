@@ -2511,9 +2511,9 @@ Për piasì, [[Special:Contact|ch'an contata]] për parlé dël problema.<br />C
 	'phalanx-rule-log-delete' => 'Régola Phalanx sganfà: $1',
 	'phalanx-rule-log-details' => 'Filtr: "$1", sòrt: "$2", rason: "$3"',
 	'action-phalanx' => 'dovré ël Mecanism Antegrà ëd Difèisa da la rumenta',
-	'right-phalanx' => 'Gionta, modìfica o gava diferent filtr dë spam',
-	'right-phalanxexempt' => 'Esempi da filtr Phalanx dë spam',
-	'right-phalanxemailblock' => 'As peul archiviesse, vëdde e gestì blòch basà su e-mail',
+	'right-phalanx' => 'Gionté, modifiché e gavé vàire filtr ëd rumenta',
+	'right-phalanxexempt' => 'Esonerà dai filtr Phalanx ëd la rumenta',
+	'right-phalanxemailblock' => 'A peul archivié, vëdde e gestì ij blocagi basà an sla pòsta eletrònica',
 );
 
 /** Pashto (پښتو)
