@@ -151,7 +151,7 @@ Please [[Special:Contact|contact us]] about the problem.<br />The blocker also g
  * @author Siebrand
  */
 $messages['qqq'] = array(
-	'phalanx' => 'Special page title, shown on Special:SpecialPages',
+	'phalanx' => 'Special page title, shown on [[Special:SpecialPages]].',
 	'phalanx-desc' => '{{desc|name=Phalanx|url=http://www.mediawiki.org/wiki/Extension:Phalanx}}',
 	'phalanx-ui-description' => '{{desc}}',
 	'phalanx-all-languages' => 'Drop-down menu item on Special:Phalanx; if a user wants to block something for all languages (as opposed to blocking for one specific language), they will select this option',
@@ -260,9 +260,9 @@ $messages['qqq'] = array(
 * $3 is the ID number of the Phalanx filter that was triggered; it also contains a link to the Special:Phalanx special page
 * $4 is the timestamp (time and date)
 * $5 is {{msg-mw|Phalanx-link-stats}}, containing a link to ''Special:PhalanxStats/$3''",
-	'phalanx-rule-log-name' => 'Title of the private Phalanx log, shown on Special:Log',
+	'phalanx-rule-log-name' => 'Title of the private Phalanx log, shown on [[Special:Log]].',
 	'phalanx-rule-log-header' => 'Explanation text, shown on Special:Log/phalanx',
-	'phalanx-email-rule-log-name' => 'Title of the private Phalanx e-mail log, shown on Special:Log',
+	'phalanx-email-rule-log-name' => 'Title of the private Phalanx e-mail log, shown on [[Special:Log]].',
 	'phalanx-email-rule-log-header' => 'Explanation text, shown on Special:Log/phalanxemail',
 	'phalanx-rule-log-add' => 'Log entry; $1 is something like Special:PhalanxStats/123 (Filter: "127.0.0.1", type: "user", reason: "spamming on foo")',
 	'phalanx-rule-log-edit' => 'Log entry; $1 is something like Special:PhalanxStats/123 (Filter: "127.0.0.1", type: "user", reason: "spamming on foo")',
