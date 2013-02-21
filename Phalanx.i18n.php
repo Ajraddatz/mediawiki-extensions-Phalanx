@@ -231,7 +231,8 @@ $messages['qqq'] = array(
 	'phalanx-stats-table-user' => 'Used on the table in Special:PhalanxStats; refer to the [[:File:Phalanx MediaWiki extension - statistics interface for a given block.png|extension screenshot]] for details',
 	'phalanx-stats-table-type' => 'Used on the table in Special:PhalanxStats; refer to the [[:File:Phalanx MediaWiki extension - statistics interface for a given block.png|extension screenshot]] for details.
 {{Identical|Type}}',
-	'phalanx-stats-table-text' => 'Used on the table in Special:PhalanxStats; refer to the [[:File:Phalanx MediaWiki extension - statistics interface for a given block.png|extension screenshot]] for details',
+	'phalanx-stats-table-text' => 'Used on the table in Special:PhalanxStats; refer to the [[:File:Phalanx MediaWiki extension - statistics interface for a given block.png|extension screenshot]] for details.
+{{Identical|Text}}',
 	'phalanx-stats-table-create' => 'Used on the table in Special:PhalanxStats; refer to the [[:File:Phalanx MediaWiki extension - statistics interface for a given block.png|extension screenshot]] for details',
 	'phalanx-stats-table-expire' => 'Used on the table in Special:PhalanxStats; refer to the [[:File:Phalanx MediaWiki extension - statistics interface for a given block.png|extension screenshot]] for details',
 	'phalanx-stats-table-exact' => 'Used on the table in Special:PhalanxStats; refer to the [[:File:Phalanx MediaWiki extension - statistics interface for a given block.png|extension screenshot]] for details',
@@ -1707,6 +1708,16 @@ $messages['km'] = array(
 	'phalanx-display-row-blocks' => 'ការរាំងខ្ទប់៖ $1',
 	'phalanx-display-row-created' => "បង្កើតដោយ '''$1''' នៅ $2",
 	'phalanx-test-results-legend' => 'លទ្ធផលតេស្ត',
+);
+
+/** Kurdish (Latin script) (Kurdî (latînî)‎)
+ * @author George Animal
+ */
+$messages['ku-latn'] = array(
+	'phalanx-type-user' => 'bikarhêner',
+	'phalanx-type-user-email' => 'e-name',
+	'phalanx-yes' => 'Erê',
+	'phalanx-stats-table-language' => 'Ziman',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
