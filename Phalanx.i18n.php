@@ -190,7 +190,8 @@ $messages['qqq'] = array(
 	'phalanx-modify-failure' => 'Shown if an error happened when trying to edit a pre-existing Phalanx block',
 	'phalanx-modify-warning' => 'Shown when editing a pre-existing Phalanx block',
 	'phalanx-test-description' => 'This is followed by an input where the user can enter some text and see if that text would trigger any of the available Phalanx filters',
-	'phalanx-test-submit' => 'Button text',
+	'phalanx-test-submit' => 'Button text.
+{{Identical|Test}}',
 	'phalanx-content-spam-summary' => 'If an edit summary contains something blocked by a Phalanx filter, this error message is then shown to the user.',
 	'phalanx-link-unblock' => 'Link text, clicking on this link removes a Phalanx block; refer to the [[:File:Phalanx MediaWiki extension UI.png|extension screenshot]] for details',
 	'phalanx-link-modify' => 'Link text, clicking on this link loads the details about a given block into the Phalanx editing form so that you can modify the block options; refer to the [[:File:Phalanx MediaWiki extension UI.png|extension screenshot]] for details',
@@ -250,7 +251,8 @@ $messages['qqq'] = array(
 	'phalanx-stats-table-wiki-id' => 'Table header on Special:PhalanxStats',
 	'phalanx-stats-table-wiki-name' => "Table header on Special:PhalanxStats; name refers to the wiki's sitename here",
 	'phalanx-stats-table-wiki-url' => 'Table header on Special:PhalanxStats',
-	'phalanx-stats-load-btn' => 'Button text; shown on Special:PhalanxStats when that special page is accessed without parameters',
+	'phalanx-stats-load-btn' => 'Button text; shown on Special:PhalanxStats when that special page is accessed without parameters.
+{{Identical|Load}}',
 	'phalanx-stats-id' => '$1 is the block ID number',
 	'phalanx-stats-recent-triggers' => 'Legend text, shown on Special:PhalanxStats when that special page is accessed without parameters',
 	'phalanx-stats-recent-blocks' => 'Legend text, shown on Special:PhalanxStats when that special page is accessed without parameters',
