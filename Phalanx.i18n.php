@@ -365,30 +365,47 @@ $messages['bg'] = array(
 );
 
 /** Breton (brezhoneg)
+ * @author Fohanno
  * @author Fulup
  * @author Y-M D
  */
 $messages['br'] = array(
+	'phalanx-all-languages' => 'An holl yezhoù',
+	'phalanx-type-content' => 'danvez ar pennad',
+	'phalanx-type-summary' => 'diverradur ar pennad',
 	'phalanx-type-title' => 'anv ar bajenn',
 	'phalanx-type-user' => 'implijer',
+	'phalanx-type-user-email' => 'postel',
+	'phalanx-type-answers-question-title' => 'titl ar goulenn',
+	'phalanx-type-answers-recent-questions' => 'goulennoù graet nevez zo',
 	'phalanx-label-filter' => 'Sil :',
 	'phalanx-label-reason' => 'Abeg :',
 	'phalanx-label-expiry' => 'Termen :',
 	'phalanx-label-type' => 'Seurt :',
 	'phalanx-label-lang' => 'Yezh :',
+	'phalanx-view-blocks' => 'Klask siloù',
 	'phalanx-format-exact' => 'rik',
 	'phalanx-test-submit' => 'Amprouiñ',
 	'phalanx-link-unblock' => 'distankañ',
 	'phalanx-link-modify' => 'kemmañ',
 	'phalanx-link-stats' => 'stadegoù',
+	'phalanx-plain-text' => 'testenn blaen',
 	'phalanx-display-row-blocks' => 'stankadennoù : $1',
+	'phalanx-yes' => 'Ya',
+	'phalanx-no' => 'Ket',
 	'phalanx-stats-table-id' => 'Stankañ an ID',
+	'phalanx-stats-table-user' => 'Ouzhpennet gant',
 	'phalanx-stats-table-type' => 'Seurt',
 	'phalanx-stats-table-text' => 'Testenn',
 	'phalanx-stats-table-create' => 'Krouet',
 	'phalanx-stats-table-reason' => 'Abeg',
 	'phalanx-stats-table-language' => 'Yezh',
+	'phalanx-stats-table-wiki-id' => 'ID ar wiki',
 	'phalanx-stats-table-wiki-name' => 'Anv ar wiki',
+	'phalanx-stats-table-wiki-url' => 'URL ar wiki',
+	'phalanx-stats-load-btn' => 'Kargañ',
+	'phalanx-stats-id' => 'ID : $1',
+	'phalanx-stats-example' => 'Skouer :',
 );
 
 /** Czech (česky)
