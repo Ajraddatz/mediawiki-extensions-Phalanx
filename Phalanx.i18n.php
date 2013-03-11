@@ -220,8 +220,23 @@ $messages['qqq'] = array(
 	'phalanx-title-move-summary' => 'Error message shown to the user if they tried to move a page and the move summary contained a phrase that has been blocked via Phalanx.',
 	'phalanx-plain-text' => 'Used in the PhalanxStats special page; keep this short! Used when a filter has the "plain text" option (as opposed to the "regex" option) checked',
 	'phalanx-list-regex' => 'Used in the PhalanxStats special page; keep this short! "Regex" refers to [[wikipedia:Regular expression|regular expressions]]',
-	'phalanx-display-row-blocks' => '$1 is the filter type, one or more of the following (comma-separated if multiple): {{msg-mw|Phalanx-type-content]], {{msg-mw|Phalanx-type-summary}}, {{msg-mw|Phalanx-type-title}}, {{msg-mw|Phalanx-type-user}}, {{msg-mw|Phalanx-type-user-email}}, {{msg-mw|Phalanx-type-answers-question-title}}, {{msg-mw|Phalanx-type-answers-recent-questions}}, {{msg-mw|Phalanx-type-wiki-creation}}',
-	'phalanx-display-row-created' => '$1 is a user name, $2 is a timestamp',
+	'phalanx-display-row-blocks' => 'This message is followed by "&bull;" and {{msg-mw|Phalanx-display-row-created}}.
+
+Parameters:
+* $1 - the filter type. one or more of the following (comma-separated if multiple):
+** {{msg-mw|Phalanx-type-content}}
+** {{msg-mw|Phalanx-type-summary}}
+** {{msg-mw|Phalanx-type-title}}
+** {{msg-mw|Phalanx-type-user}}
+** {{msg-mw|Phalanx-type-user-email}}
+** {{msg-mw|Phalanx-type-answers-question-title}}
+** {{msg-mw|Phalanx-type-answers-recent-questions}}
+** {{msg-mw|Phalanx-type-wiki-creation}}',
+	'phalanx-display-row-created' => 'This message follows the message {{msg-mw|Phalanx-display-row-blocks}} and "&bull;".
+
+Parameters:
+* $1 - a username
+* $2 - a timestamp (time and date)',
 	'phalanx-test-results-legend' => 'Shown in the testing interface',
 	'phalanx-no-matches' => "Shown in the testing interface when the given text does not trigger any of Phalanx's filters",
 	'phalanxstats' => 'Page title of Special:PhalanxStats',
@@ -385,10 +400,12 @@ $messages['br'] = array(
 	'phalanx-label-lang' => 'Yezh :',
 	'phalanx-view-blocks' => 'Klask siloù',
 	'phalanx-format-exact' => 'rik',
+	'phalanx-tab-main' => 'Merañ ar siloù',
 	'phalanx-test-submit' => 'Amprouiñ',
 	'phalanx-link-unblock' => 'distankañ',
 	'phalanx-link-modify' => 'kemmañ',
 	'phalanx-link-stats' => 'stadegoù',
+	'phalanx-legend-input' => 'Krouiñ pe gemmañ ur sil',
 	'phalanx-plain-text' => 'testenn blaen',
 	'phalanx-display-row-blocks' => 'stankadennoù : $1',
 	'phalanx-yes' => 'Ya',
@@ -1569,6 +1586,7 @@ $messages['ja'] = array(
 	'phalanx-plain-text' => 'プレーンテキスト',
 	'phalanx-list-regex' => '正規表現',
 	'phalanx-display-row-blocks' => 'ブロック: $1',
+	'phalanx-display-row-created' => '[[User:$1|$1]] が $2 に作成',
 	'phalanx-test-results-legend' => 'テストの結果',
 	'phalanx-no-matches' => '該当するものはありません。',
 	'phalanxstats' => 'Phalanx の統計',
