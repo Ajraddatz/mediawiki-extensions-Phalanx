@@ -426,9 +426,14 @@ $messages['br'] = array(
 );
 
 /** Czech (česky)
+ * @author Reaperman
  * @author Vks
  */
 $messages['cs'] = array(
+	'phalanx-all-languages' => 'Všechny jazyky',
+	'phalanx-label-filter' => 'Filtr:',
+	'phalanx-label-reason' => 'Důvod:',
+	'phalanx-label-lang' => 'Jazyk:',
 	'phalanx-yes' => 'Ano',
 	'phalanx-stats-table-create' => 'Vytvořeno',
 	'phalanx-stats-table-expire' => 'Platná do',
