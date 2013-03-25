@@ -151,7 +151,7 @@ Please [[Special:Contact|contact us]] about the problem.<br />The blocker also g
  * @author Siebrand
  */
 $messages['qqq'] = array(
-	'phalanx' => 'Special page title, shown on [[Special:SpecialPages]].',
+	'phalanx' => '{{doc-special|Phalanx}}',
 	'phalanx-desc' => '{{desc|name=Phalanx|url=http://www.mediawiki.org/wiki/Extension:Phalanx}}',
 	'phalanx-ui-description' => '{{desc}}',
 	'phalanx-all-languages' => 'Drop-down menu item on Special:Phalanx; if a user wants to block something for all languages (as opposed to blocking for one specific language), they will select this option',
@@ -193,7 +193,8 @@ $messages['qqq'] = array(
 	'phalanx-test-submit' => 'Button text.
 {{Identical|Test}}',
 	'phalanx-content-spam-summary' => 'If an edit summary contains something blocked by a Phalanx filter, this error message is then shown to the user.',
-	'phalanx-link-unblock' => 'Link text, clicking on this link removes a Phalanx block; refer to the [[:File:Phalanx MediaWiki extension UI.png|extension screenshot]] for details',
+	'phalanx-link-unblock' => 'Link text, clicking on this link removes a Phalanx block; refer to the [[:File:Phalanx MediaWiki extension UI.png|extension screenshot]] for details.
+{{Identical|Unblock}}',
 	'phalanx-link-modify' => 'Link text, clicking on this link loads the details about a given block into the Phalanx editing form so that you can modify the block options; refer to the [[:File:Phalanx MediaWiki extension UI.png|extension screenshot]] for details',
 	'phalanx-link-stats' => 'Link text, clicking on this link takes you to the Phalanx statistics page for a given block; refer to the [[:File:Phalanx MediaWiki extension UI.png|extension screenshot]] for details',
 	'phalanx-reset-form' => 'Button text; refer to the [[:File:Phalanx MediaWiki extension UI.png|extension screenshot]] for details',
