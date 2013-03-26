@@ -178,6 +178,8 @@ $messages['qqq'] = array(
 	'phalanx-view-blocks' => 'Button text; refer to the [[:File:Phalanx MediaWiki extension UI.png|extension screenshot]] for details',
 	'phalanx-view-id' => 'Refer to the [[:File:Phalanx MediaWiki extension UI.png|extension screenshot]] for details',
 	'phalanx-view-id-submit' => 'Button text; refer to the [[:File:Phalanx MediaWiki extension UI.png|extension screenshot]] for details',
+	'phalanx-expire-durations' => '{{doc-important|Do not change commas.}}
+Used as list of expire durations.',
 	'phalanx-format-text' => 'Keep this short! Used when a filter has the "plain text" option (as opposed to the "regex" option) checked',
 	'phalanx-format-regex' => 'Keep this short! "Regex" refers to [[wikipedia:Regular expression|regular expressions]]',
 	'phalanx-format-case' => 'Keep this short! This is used when a filter has the case-sensitive option checked, i.e. if "FoO" is blocked with case-sensitive option, then it will not block "foo" or "fOO" or "FOO", only "FoO"',
