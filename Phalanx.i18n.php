@@ -242,7 +242,7 @@ Parameters:
 * $2 - a timestamp (time and date)',
 	'phalanx-test-results-legend' => 'Shown in the testing interface',
 	'phalanx-no-matches' => "Shown in the testing interface when the given text does not trigger any of Phalanx's filters",
-	'phalanxstats' => 'Page title of Special:PhalanxStats',
+	'phalanxstats' => '{{doc-special|PhalanxStats|unlisted=1}}',
 	'phalanx-email-filter-hidden' => 'Shown on Special:Phalanx if the user does not have the <code>phalanxemailblock</code> user right and the list of blocked entries contains an entry that is an e-mail address',
 	'phalanx-yes' => 'Used on the table in Special:PhalanxStats; refer to the [[:File:Phalanx MediaWiki extension - statistics interface for a given block.png|extension screenshot]] for details',
 	'phalanx-no' => 'Used on the table in Special:PhalanxStats; refer to the [[:File:Phalanx MediaWiki extension - statistics interface for a given block.png|extension screenshot]] for details',
