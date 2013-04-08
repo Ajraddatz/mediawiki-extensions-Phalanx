@@ -3482,6 +3482,7 @@ $messages['uk'] = array(
 );
 
 /** Simplified Chinese (中文（简体）‎)
+ * @author Kuailong
  * @author Yfdyh000
  */
 $messages['zh-hans'] = array(
@@ -3500,15 +3501,28 @@ $messages['zh-hans'] = array(
 	'phalanx-label-expiry' => '截止日期：',
 	'phalanx-label-type' => '类型：',
 	'phalanx-label-lang' => '语言：',
+	'phalanx-format-text' => '纯文本',
+	'phalanx-format-regex' => '正则表达式',
+	'phalanx-test-submit' => '测试',
+	'phalanx-link-modify' => '修改',
+	'phalanx-blacklisted-email-text' => '您的电子邮件地址目前已被列入黑名单，禁止向其他用户发送电子邮件。',
+	'phalanx-plain-text' => '纯文本',
+	'phalanx-list-regex' => '正则表达式',
+	'phalanx-test-results-legend' => '测试结果',
+	'phalanx-no-matches' => '找不到匹配项目。',
+	'phalanx-yes' => '是',
+	'phalanx-no' => '否',
 	'phalanx-stats-table-type' => '类型',
 	'phalanx-stats-table-text' => '文字',
 	'phalanx-stats-table-create' => '以创造',
 	'phalanx-stats-table-expire' => '到期',
+	'phalanx-stats-table-regex' => '正则表达式',
 	'phalanx-stats-table-reason' => '原因',
 	'phalanx-stats-table-language' => '语言',
 	'phalanx-stats-table-wiki-id' => '维基 ID',
 	'phalanx-stats-table-wiki-name' => '维基名字',
 	'phalanx-stats-table-wiki-url' => '维基 URL',
+	'phalanx-stats-load-btn' => '载入',
 );
 
 /** Traditional Chinese (中文（繁體）‎)
