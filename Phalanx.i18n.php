@@ -245,7 +245,8 @@ Parameters:
 	'phalanxstats' => '{{doc-special|PhalanxStats|unlisted=1}}',
 	'phalanx-email-filter-hidden' => 'Shown on Special:Phalanx if the user does not have the <code>phalanxemailblock</code> user right and the list of blocked entries contains an entry that is an e-mail address',
 	'phalanx-yes' => 'Used on the table in Special:PhalanxStats; refer to the [[:File:Phalanx MediaWiki extension - statistics interface for a given block.png|extension screenshot]] for details',
-	'phalanx-no' => 'Used on the table in Special:PhalanxStats; refer to the [[:File:Phalanx MediaWiki extension - statistics interface for a given block.png|extension screenshot]] for details',
+	'phalanx-no' => 'Used on the table in [[Special:PhalanxStats]]; refer to the [[:File:Phalanx MediaWiki extension - statistics interface for a given block.png|extension screenshot]] for details.
+{{Identical|No}}',
 	'phalanx-stats-table-id' => 'Used on the table in Special:PhalanxStats; refer to the [[:File:Phalanx MediaWiki extension - statistics interface for a given block.png|extension screenshot]] for details',
 	'phalanx-stats-table-user' => 'Used on the table in Special:PhalanxStats; refer to the [[:File:Phalanx MediaWiki extension - statistics interface for a given block.png|extension screenshot]] for details',
 	'phalanx-stats-table-type' => 'Used on the table in Special:PhalanxStats; refer to the [[:File:Phalanx MediaWiki extension - statistics interface for a given block.png|extension screenshot]] for details.
