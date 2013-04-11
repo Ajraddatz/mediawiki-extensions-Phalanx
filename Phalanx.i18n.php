@@ -522,7 +522,7 @@ Hinweis: Er funktioniert nur bei Wikis vom Typ Antworten.',
 	'phalanx-help-type-answers-recent-questions' => 'Dieser Filter verhindert die Anzeige einer Frage (Seite) bei einer Vielzahl von Anzeigemöglichkeiten (Widgets, Listen, Tag-generierte Auflistungen).
 
 Hinweise: Er funktioniert nur bei Wikis vom Typ Antworten und er verhindert nicht das Erstellen einer neuen Seite.',
-	'phalanx-help-type-user-email' => 'Dieser Filter verhindert die Kontoerstellung bei der eine gesperrte E-Mail-Adresse angegeben wird.',
+	'phalanx-help-type-user-email' => 'Dieser Filter verhindert die Kontoerstellung, bei der eine gesperrte E-Mail-Adresse angegeben wird.',
 	'phalanx-user-block-new-account' => 'Mit diesem Benutzernamen kann man sich nicht registrieren. Bitte wähle einen anderen aus.',
 	'phalanx-user-block-reason-ip' => 'Aufgrund von Vandalismus oder anderem Fehlverhalten durch dich oder jemanden, der diese IP-Adresse mitbenutzt, wurde dieser IP-Adresse das Schreibrecht entzogen. [[Special:Contact|Kontaktiere uns]] bitte, sofern du denkst, dass es sich hierbei um einen Fehler handelt.',
 	'phalanx-user-block-reason-exact' => 'Aufgrund von Vandalismus oder anderem Fehlverhalten wurde diesem Benutzernamen oder dieser IP-Adresse das Schreibrecht entzogen. [[Special:Contact|Kontaktiere uns]] bitte, sofern du denkst, dass es sich hierbei um einen Fehler handelt.',
