@@ -567,7 +567,7 @@ Hinweise: Er funktioniert nur bei Wikis vom Typ Antworten und er verhindert nich
 	'phalanx-stats-row-per-wiki' => "Benutzer '''$2''' wurde am '''$4''' von Filter mit der Kennnummer '''$3''' ($5) gesperrt (Art: '''$1''')",
 	'phalanx-rule-log-name' => 'Phalanx Regeln-Logbuch',
 	'phalanx-rule-log-header' => 'Dies ist ein Logbuch der Änderungen an Phalanx-Regeln.',
-	'phalanx-email-rule-log-name' => 'Phalanx E-Mail-Regeln-Logbuch',
+	'phalanx-email-rule-log-name' => 'Phalanx-Mailregellogbuch',
 	'phalanx-email-rule-log-header' => 'Dies ist ein Logbuch zu Änderungen an Phalanx-Regeln für E-Mails.',
 	'phalanx-rule-log-add' => 'Phalanx-Regel hinzugefügt: $1',
 	'phalanx-rule-log-edit' => 'Phalanx-Regel bearbeitet: $1',
@@ -576,7 +576,7 @@ Hinweise: Er funktioniert nur bei Wikis vom Typ Antworten und er verhindert nich
 	'action-phalanx' => 'den integrierten Spamverteidigungsmechanismus zu verwenden',
 	'right-phalanx' => 'Kann globale Benutzersperren und Spamfilter verwalten',
 	'right-phalanxexempt' => 'Von Phalanx-Spamfiltern ausgenommen',
-	'right-phalanxemailblock' => 'Kann E-Mail-bezogene Sperren ordnen, einsehen und bearbeiten',
+	'right-phalanxemailblock' => 'Kann auf E-Mails bezogene Sperren ordnen, einsehen und bearbeiten',
 );
 
 /** German (formal address) (Deutsch (Sie-Form)‎)
