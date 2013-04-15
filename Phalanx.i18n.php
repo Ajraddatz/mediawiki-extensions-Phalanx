@@ -600,8 +600,10 @@ $messages['de-formal'] = array(
 
 /** Zazaki (Zazaki)
  * @author Erdemaslancan
+ * @author Mirzali
  */
 $messages['diq'] = array(
+	'phalanx-no' => 'Nê',
 	'phalanx-stats-table-text' => 'nuşte',
 	'phalanx-stats-table-create' => 'Vıraziya',
 	'phalanx-stats-table-language' => 'Zıwan',
