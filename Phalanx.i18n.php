@@ -172,7 +172,8 @@ $messages['qqq'] = array(
 {{Identical|Expiry}}',
 	'phalanx-label-type' => 'Refer to the [[:File:Phalanx MediaWiki extension UI.png|extension screenshot]] for details.
 {{Identical|Type}}',
-	'phalanx-label-lang' => 'Refer to the [[:File:Phalanx MediaWiki extension UI.png|extension screenshot]] for details',
+	'phalanx-label-lang' => 'Refer to the [[:File:Phalanx MediaWiki extension UI.png|extension screenshot]] for details.
+{{Identical|Language}}',
 	'phalanx-view-type' => 'This message might be unused.',
 	'phalanx-view-blocker' => 'Refer to the [[:File:Phalanx MediaWiki extension UI.png|extension screenshot]] for details',
 	'phalanx-view-blocks' => 'Button text; refer to the [[:File:Phalanx MediaWiki extension UI.png|extension screenshot]] for details',
