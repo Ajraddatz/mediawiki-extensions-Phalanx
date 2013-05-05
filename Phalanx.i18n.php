@@ -2744,6 +2744,7 @@ Se acredita que este bloqueio foi feito em erro [[Special:Contact|contacte-nos]]
 );
 
 /** Brazilian Portuguese (português do Brasil)
+ * @author Luckas
  * @author Luckas Blade
  */
 $messages['pt-br'] = array(
@@ -2756,7 +2757,7 @@ $messages['pt-br'] = array(
 	'phalanx-type-answers-recent-questions' => 'perguntas recentes',
 	'phalanx-type-wiki-creation' => 'criação de wiki',
 	'phalanx-add-block' => 'Aplicar bloqueio',
-	'phalanx-edit-block' => 'Gravar bloqueio',
+	'phalanx-edit-block' => 'Salvar bloqueio',
 	'phalanx-label-filter' => 'Filtro:',
 	'phalanx-label-reason' => 'Motivo:',
 	'phalanx-label-expiry' => 'Expiração:',
