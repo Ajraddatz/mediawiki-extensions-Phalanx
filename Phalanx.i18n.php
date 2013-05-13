@@ -1773,6 +1773,7 @@ $messages['ku-latn'] = array(
  * @author Robby
  */
 $messages['lb'] = array(
+	'phalanx' => 'Phalanx - Integréierte Verdeedegungsmechanismus géint Spam',
 	'phalanx-all-languages' => 'All Sproochen',
 	'phalanx-type-content' => 'Inhalt vum Artikel',
 	'phalanx-type-summary' => 'Resumé vum Artikel',
@@ -1787,7 +1788,9 @@ $messages['lb'] = array(
 	'phalanx-label-reason' => 'Grond:',
 	'phalanx-label-type' => 'Typ:',
 	'phalanx-label-lang' => 'Sprooch:',
+	'phalanx-expire-durations' => '1 Stonn,2 Stonnen,4 Stonnen,6 Stonnen,1 Dag,3 Deeg,1 Woch,2 Wochen,1 Mount,3 Méint,6 Méint,onbegrenzt',
 	'phalanx-format-exact' => 'genee',
+	'phalanx-tab-main' => 'Filtere geréieren',
 	'phalanx-tab-secondary' => 'Filteren testen',
 	'phalanx-block-success' => "D'Spär gouf derbäigesat",
 	'phalanx-modify-success' => "D'Spär gouf geännert",
@@ -1818,6 +1821,7 @@ $messages['lb'] = array(
 	'phalanx-stats-table-wiki-url' => 'Wiki-URL',
 	'phalanx-stats-load-btn' => 'Lueden',
 	'phalanx-stats-example' => 'Beispill:',
+	'phalanx-rule-log-add' => 'Phalanx-Regel derbäigesat: $1',
 	'phalanx-rule-log-details' => 'Filter: "$1", Typ: "$2", Grond: "$3"',
 );
 
