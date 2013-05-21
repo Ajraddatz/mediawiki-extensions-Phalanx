@@ -1788,6 +1788,7 @@ $messages['lb'] = array(
 	'phalanx-label-reason' => 'Grond:',
 	'phalanx-label-type' => 'Typ:',
 	'phalanx-label-lang' => 'Sprooch:',
+	'phalanx-view-type' => 'Typ vun der Spär...',
 	'phalanx-expire-durations' => '1 Stonn,2 Stonnen,4 Stonnen,6 Stonnen,1 Dag,3 Deeg,1 Woch,2 Wochen,1 Mount,3 Méint,6 Méint,onbegrenzt',
 	'phalanx-format-exact' => 'genee',
 	'phalanx-tab-main' => 'Filtere geréieren',
@@ -1820,6 +1821,7 @@ $messages['lb'] = array(
 	'phalanx-stats-table-wiki-name' => 'Numm vun der Wiki',
 	'phalanx-stats-table-wiki-url' => 'Wiki-URL',
 	'phalanx-stats-load-btn' => 'Lueden',
+	'phalanx-stats-recent-blocks' => 'Rezent Spären op enger Wiki',
 	'phalanx-stats-example' => 'Beispill:',
 	'phalanx-rule-log-add' => 'Phalanx-Regel derbäigesat: $1',
 	'phalanx-rule-log-details' => 'Filter: "$1", Typ: "$2", Grond: "$3"',
@@ -3492,6 +3494,7 @@ $messages['uk'] = array(
 
 /** Simplified Chinese (中文（简体）‎)
  * @author Kuailong
+ * @author Li3939108
  * @author Yfdyh000
  */
 $messages['zh-hans'] = array(
@@ -3512,6 +3515,7 @@ $messages['zh-hans'] = array(
 	'phalanx-label-lang' => '语言：',
 	'phalanx-format-text' => '纯文本',
 	'phalanx-format-regex' => '正则表达式',
+	'phalanx-format-case' => '大小写敏感',
 	'phalanx-test-submit' => '测试',
 	'phalanx-link-modify' => '修改',
 	'phalanx-blacklisted-email-text' => '您的电子邮件地址目前已被列入黑名单，禁止向其他用户发送电子邮件。',
@@ -3532,6 +3536,8 @@ $messages['zh-hans'] = array(
 	'phalanx-stats-table-wiki-name' => '维基名字',
 	'phalanx-stats-table-wiki-url' => '维基 URL',
 	'phalanx-stats-load-btn' => '载入',
+	'phalanx-stats-id' => 'ID：$1',
+	'phalanx-stats-example' => '示例：',
 );
 
 /** Traditional Chinese (中文（繁體）‎)
