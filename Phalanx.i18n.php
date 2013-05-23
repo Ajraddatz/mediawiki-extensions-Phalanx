@@ -310,6 +310,57 @@ $messages['ar'] = array(
 	'phalanx-stats-table-reason' => 'السبب',
 );
 
+/** Asturian (asturianu)
+ * @author Xuacu
+ */
+$messages['ast'] = array(
+	'phalanx' => "Phalanx - Mecanismu integráu de defensa escontra'l spam",
+	'phalanx-desc' => 'Mecanismu integráu de control del spam',
+	'phalanx-ui-description' => "Interfaz d'alministración del mecanismu integráu de control del spam",
+	'phalanx-all-languages' => 'Toles llingües',
+	'phalanx-type-content' => 'conteníu del artículu',
+	'phalanx-type-summary' => 'resume del artículu',
+	'phalanx-type-title' => 'títulu de artículu',
+	'phalanx-type-user' => 'usuariu',
+	'phalanx-type-user-email' => 'corréu electrónicu',
+	'phalanx-type-answers-question-title' => 'títulu de la pregunta',
+	'phalanx-type-answers-recent-questions' => 'preguntes de recién',
+	'phalanx-type-wiki-creation' => 'creación de wiki',
+	'phalanx-add-block' => 'Aplicar bloquéu',
+	'phalanx-edit-block' => 'Guardar bloquéu',
+	'phalanx-label-filter' => 'Filtru:',
+	'phalanx-label-reason' => 'Motivu:',
+	'phalanx-label-expiry' => 'Caducidá:',
+	'phalanx-label-type' => 'Triba:',
+	'phalanx-label-lang' => 'Llingua:',
+	'phalanx-view-type' => 'Triba de bloquéu...',
+	'phalanx-view-blocker' => 'Buscar por testu de filtru:',
+	'phalanx-view-blocks' => 'Buscar filtros',
+	'phalanx-view-id' => 'Alcontrar filtru por ID:',
+	'phalanx-view-id-submit' => 'Alcontrar filtru',
+	'phalanx-expire-durations' => '1 hora,2 hores,4 hores,6 hores,1 día,3 díes,1 selmana,2 selmanes,1 mes,3 meses,6 meses,1 añu,infinitu',
+	'phalanx-format-text' => 'testu simple',
+	'phalanx-format-regex' => 'espresión regular',
+	'phalanx-format-case' => 'distinción ente mayúscules y minúscules',
+	'phalanx-format-exact' => 'exactu',
+	'phalanx-tab-main' => 'Alministrar filtros',
+	'phalanx-tab-secondary' => 'Probar filtros',
+	'phalanx-block-success' => 'El bloquéu amestóse correutamente',
+	'phalanx-block-failure' => 'Hebo un error al amestar el bloquéu',
+	'phalanx-modify-success' => 'El bloquéu camudóse correutamente',
+	'phalanx-modify-failure' => 'Hebo un error al camudar el bloquéu',
+	'phalanx-modify-warning' => 'Ta editando\'l bloquéu cola ID nº$1.
+Calque "{{int:phalanx-edit-block}}" pa guardar los cambios.',
+	'phalanx-test-description' => 'Probar el testu proporcionáu escontra los bloqueos actuales.',
+	'phalanx-test-submit' => 'Probar',
+	'phalanx-content-spam-summary' => 'El testu atopóse nel resume de la páxina.',
+	'phalanx-link-unblock' => 'desbloquiar',
+	'phalanx-link-modify' => 'camudar',
+	'phalanx-link-stats' => 'estadístiques',
+	'phalanx-reset-form' => 'Reaniciar el formulariu',
+	'phalanx-legend-input' => 'Crear o camudar filtru',
+);
+
 /** Azerbaijani (azərbaycanca)
  * @author Cekli829
  */
