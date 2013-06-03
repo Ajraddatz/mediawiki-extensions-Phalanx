@@ -554,6 +554,14 @@ $messages['br'] = array(
 	'phalanx-stats-example' => 'Skouer :',
 );
 
+/** Chechen (нохчийн)
+ * @author Умар
+ */
+$messages['ce'] = array(
+	'phalanx-label-lang' => 'Мотт:',
+	'phalanx-stats-table-language' => 'Мотт',
+);
+
 /** Czech (česky)
  * @author Reaperman
  * @author Vks
@@ -1918,8 +1926,10 @@ $messages['lb'] = array(
 	'phalanx-tab-main' => 'Filtere geréieren',
 	'phalanx-tab-secondary' => 'Filteren testen',
 	'phalanx-block-success' => "D'Spär gouf derbäigesat",
+	'phalanx-block-failure' => 'Beim Derbäisetze vun der Spär ass e Feeler geschitt',
 	'phalanx-modify-success' => "D'Spär gouf geännert",
 	'phalanx-modify-failure' => 'Beim Änere vun der Spär ass e Feeler geschitt',
+	'phalanx-test-description' => 'Den Text den uginn ass géint déi aktuell Spären testen',
 	'phalanx-test-submit' => 'Test',
 	'phalanx-content-spam-summary' => 'Dësen Text gouf am Resumé vun der Säit fonnt',
 	'phalanx-link-unblock' => 'Spär ophiewen',
@@ -1928,10 +1938,13 @@ $messages['lb'] = array(
 	'phalanx-reset-form' => 'Formulair zurécksetzen',
 	'phalanx-legend-input' => 'Filteren uleeën oder änneren',
 	'phalanx-legend-listing' => 'Filteren, déi elo benotzt ginn',
+	'phalanx-unblock-message' => "D'Spär mat der Nummer #$1 gouf opgehuewen",
+	'phalanx-help-type-user-email' => 'Dëse Filter verhënnert datt mat enger gespaarter E-Mail-Adress e Benotzerkont opgemaach ka ginn.',
 	'phalanx-user-block-new-account' => 'De Benotzernumm kann net benotzt ginn. Sicht Iech w.e.g. een Aneren.',
 	'phalanx-blacklisted-email' => 'Gespaart Mail-Adressen',
 	'phalanx-display-row-blocks' => 'Spären: $1',
 	'phalanx-test-results-legend' => 'Testresultater',
+	'phalanx-no-matches' => 'Et goufe keng Iwwerteneestëmmunge fonnt.',
 	'phalanxstats' => 'Phalanx Statistiken',
 	'phalanx-yes' => 'Jo',
 	'phalanx-no' => 'Neen',
@@ -1942,13 +1955,17 @@ $messages['lb'] = array(
 	'phalanx-stats-table-exact' => 'Genee',
 	'phalanx-stats-table-reason' => 'Grond',
 	'phalanx-stats-table-language' => 'Sprooch',
+	'phalanx-stats-block-notfound' => "D'Spärnummer gouf net fonnt.",
 	'phalanx-stats-table-wiki-name' => 'Numm vun der Wiki',
 	'phalanx-stats-table-wiki-url' => 'Wiki-URL',
 	'phalanx-stats-load-btn' => 'Lueden',
+	'phalanx-stats-id' => 'ID: $1',
 	'phalanx-stats-recent-blocks' => 'Rezent Spären op enger Wiki',
 	'phalanx-stats-example' => 'Beispill:',
+	'phalanx-rule-log-name' => 'Logbuch vun de Phalanx-Regelen',
 	'phalanx-rule-log-add' => 'Phalanx-Regel derbäigesat: $1',
 	'phalanx-rule-log-details' => 'Filter: "$1", Typ: "$2", Grond: "$3"',
+	'right-phalanx' => 'Verschidde Spamfilteren derbäisetzen, änneren an ewechhuelen',
 );
 
 /** Macedonian (македонски)
