@@ -2242,7 +2242,7 @@ Perhatian: Berkesan di wiki jenis Soal Jawab (Answers) sahaja.',
 	'right-phalanxemailblock' => 'Boleh memfailkan, melihat dan mengurus sekatan berasaskan e-mel',
 );
 
-/** Norwegian Bokmål (norsk (bokmål)‎)
+/** Norwegian Bokmål (norsk bokmål)
  * @author Audun
  * @author Nghtwlkr
  */
