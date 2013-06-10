@@ -1939,6 +1939,7 @@ $messages['lb'] = array(
 	'phalanx-legend-input' => 'Filteren uleeën oder änneren',
 	'phalanx-legend-listing' => 'Filteren, déi elo benotzt ginn',
 	'phalanx-unblock-message' => "D'Spär mat der Nummer #$1 gouf opgehuewen",
+	'phalanx-help-type-summary' => 'Dëse Filter verhënnert datt eng Ännerung gespäichert gëtt, wann de Resumé deen ugi gouf mat engem vun Sätz vun der schwaarzer Lëscht identesch ass.',
 	'phalanx-help-type-user-email' => 'Dëse Filter verhënnert datt mat enger gespaarter E-Mail-Adress e Benotzerkont opgemaach ka ginn.',
 	'phalanx-user-block-new-account' => 'De Benotzernumm kann net benotzt ginn. Sicht Iech w.e.g. een Aneren.',
 	'phalanx-blacklisted-email' => 'Gespaart Mail-Adressen',
