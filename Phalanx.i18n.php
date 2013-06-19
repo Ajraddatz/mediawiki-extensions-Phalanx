@@ -558,6 +558,7 @@ $messages['br'] = array(
  * @author Умар
  */
 $messages['ce'] = array(
+	'phalanx-type-title' => 'агӀона цӀе',
 	'phalanx-label-lang' => 'Мотт:',
 	'phalanx-stats-table-language' => 'Мотт',
 );
