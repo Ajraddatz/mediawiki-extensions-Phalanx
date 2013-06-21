@@ -269,7 +269,8 @@ Parameters:
 * $4 is the timestamp (time and date)',
 	'phalanx-stats-block-notfound' => 'Shown when you are trying to access a block via its ID number but such a block was not found on the database',
 	'phalanx-stats-table-wiki-id' => 'Table header on Special:PhalanxStats',
-	'phalanx-stats-table-wiki-name' => "Table header on Special:PhalanxStats; name refers to the wiki's sitename here",
+	'phalanx-stats-table-wiki-name' => "Table header on [[Special:PhalanxStats]]; name refers to the wiki's sitename here.
+{{Identical|Wiki name}}",
 	'phalanx-stats-table-wiki-url' => 'Table header on Special:PhalanxStats',
 	'phalanx-stats-load-btn' => 'Button text; shown on Special:PhalanxStats when that special page is accessed without parameters.
 {{Identical|Load}}',
