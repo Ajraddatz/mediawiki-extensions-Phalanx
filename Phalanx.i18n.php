@@ -158,7 +158,8 @@ $messages['qqq'] = array(
 	'phalanx-type-content' => 'Keep this short! This is used to indicate that a filter blocks something in an article (i.e. prevents that word or phrase from being added into an article)',
 	'phalanx-type-summary' => 'Keep this short! This is used to indicate that a filter blocks an edit summary or a page move summary.',
 	'phalanx-type-title' => 'Keep this short! This is used to indicate that a filter blocks the creation of a page with a blocked ttle',
-	'phalanx-type-user' => 'Keep this short! This is used to indicate that a filter blocks a registered user or an IP address',
+	'phalanx-type-user' => 'Keep this short! This is used to indicate that a filter blocks a registered user or an IP address.
+{{Identical|User}}',
 	'phalanx-type-user-email' => 'Keep this short! This is used to indicate that a filter blocks an e-mail address, preventing it from being used to create new accounts as well as preventing e-mailing from any and all pre-existing accounts that have been registered with a blocked e-mail address.',
 	'phalanx-type-answers-question-title' => 'Keep this short! This is used to indicate that a filter blocks page title on Answer-like wikis',
 	'phalanx-type-answers-recent-questions' => 'Keep this short! This is used to indicate that a filter blocks something from showing up on the list of recent questions on Answers-like wikis',
@@ -246,7 +247,8 @@ Parameters:
 	'phalanx-no-matches' => "Shown in the testing interface when the given text does not trigger any of Phalanx's filters",
 	'phalanxstats' => '{{doc-special|PhalanxStats|unlisted=1}}',
 	'phalanx-email-filter-hidden' => 'Shown on Special:Phalanx if the user does not have the <code>phalanxemailblock</code> user right and the list of blocked entries contains an entry that is an e-mail address',
-	'phalanx-yes' => 'Used on the table in Special:PhalanxStats; refer to the [[:File:Phalanx MediaWiki extension - statistics interface for a given block.png|extension screenshot]] for details',
+	'phalanx-yes' => 'Used on the table in [[Special:PhalanxStats]]; refer to the [[:File:Phalanx MediaWiki extension - statistics interface for a given block.png|extension screenshot]] for details.
+{{Identical|Yes}}',
 	'phalanx-no' => 'Used on the table in [[Special:PhalanxStats]]; refer to the [[:File:Phalanx MediaWiki extension - statistics interface for a given block.png|extension screenshot]] for details.
 {{Identical|No}}',
 	'phalanx-stats-table-id' => 'Used on the table in Special:PhalanxStats; refer to the [[:File:Phalanx MediaWiki extension - statistics interface for a given block.png|extension screenshot]] for details',
@@ -1928,7 +1930,10 @@ $messages['lb'] = array(
 	'phalanx-label-type' => 'Typ:',
 	'phalanx-label-lang' => 'Sprooch:',
 	'phalanx-view-type' => 'Typ vun der Spär...',
+	'phalanx-view-blocks' => 'Filtere fir ze sichen',
+	'phalanx-view-id' => 'Filteren no ID:',
 	'phalanx-expire-durations' => '1 Stonn,2 Stonnen,4 Stonnen,6 Stonnen,1 Dag,3 Deeg,1 Woch,2 Wochen,1 Mount,3 Méint,6 Méint,onbegrenzt',
+	'phalanx-format-case' => 'Ënnerscheed tëschent groussen a klenge Buschtawen',
 	'phalanx-format-exact' => 'genee',
 	'phalanx-tab-main' => 'Filtere geréieren',
 	'phalanx-tab-secondary' => 'Filteren testen',
@@ -1953,6 +1958,7 @@ $messages['lb'] = array(
 	'phalanx-user-block-new-account' => 'De Benotzernumm kann net benotzt ginn. Sicht Iech w.e.g. een Aneren.',
 	'phalanx-blacklisted-email' => 'Gespaart Mail-Adressen',
 	'phalanx-display-row-blocks' => 'Spären: $1',
+	'phalanx-display-row-created' => 'vum [[User:$1|$1]] den $2 ugeluecht',
 	'phalanx-test-results-legend' => 'Testresultater',
 	'phalanx-no-matches' => 'Et goufe keng Iwwerteneestëmmunge fonnt.',
 	'phalanxstats' => 'Phalanx Statistiken',
@@ -1976,6 +1982,8 @@ $messages['lb'] = array(
 	'phalanx-stats-row-per-wiki' => "Benotzer '''$2''' gouf den '''$4''' gespaart duerch de Filternummer '''$3''' ($5) (Typ: '''$1''')",
 	'phalanx-rule-log-name' => 'Logbuch vun de Phalanx-Regelen',
 	'phalanx-rule-log-add' => 'Phalanx-Regel derbäigesat: $1',
+	'phalanx-rule-log-edit' => 'Phalanx-Regel geännert: $1',
+	'phalanx-rule-log-delete' => 'Phalanx-Regel geläscht: $1',
 	'phalanx-rule-log-details' => 'Filter: "$1", Typ: "$2", Grond: "$3"',
 	'right-phalanx' => 'Verschidde Spamfilteren derbäisetzen, änneren an ewechhuelen',
 );
