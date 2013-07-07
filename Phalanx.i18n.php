@@ -566,6 +566,7 @@ $messages['br'] = array(
  */
 $messages['ce'] = array(
 	'phalanx-type-title' => 'агӀона цӀе',
+	'phalanx-type-answers-recent-questions' => 'керла хаттарш',
 	'phalanx-label-lang' => 'Мотт:',
 	'phalanx-stats-table-expire' => 'Чекхйолу',
 	'phalanx-stats-table-language' => 'Мотт',
