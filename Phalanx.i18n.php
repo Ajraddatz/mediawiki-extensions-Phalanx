@@ -1955,6 +1955,9 @@ $messages['lb'] = array(
 	'phalanx-unblock-message' => "D'Spär mat der Nummer #$1 gouf opgehuewen",
 	'phalanx-help-type-content' => "Dëse Filter verhënnert datt eng Ännerung gespäichert gëtt, wann den Inhalt mat engem vun de Sätz op der 'Schwaarzer Lëscht' identesch ass.",
 	'phalanx-help-type-summary' => 'Dëse Filter verhënnert datt eng Ännerung gespäichert gëtt, wann de Resumé deen ugi gouf mat engem vun Sätz vun der schwaarzer Lëscht identesch ass.',
+	'phalanx-help-type-title' => "Dëse Filter verhënnert datt eng Säit ugeluecht gëtt, wann hiren Numm d'selwecht ass wéi an op der schwaarzer Lëscht.
+
+Et verhënnert allerdéngs net datt eng Säit déi et scho gëtt geännert gëtt.",
 	'phalanx-help-type-user' => "Dëse Filter spärt e Benotzer (genee esou wéi eng lokal MediaWiki-Spär), wann den Numm oder d'IP d'selwecht ass wéi ee vun den Nimm oder eng vun den IP'en vun der schwaarzer Lëscht.",
 	'phalanx-help-type-user-email' => 'Dëse Filter verhënnert datt mat enger gespaarter E-Mail-Adress e Benotzerkont opgemaach ka ginn.',
 	'phalanx-user-block-new-account' => 'De Benotzernumm kann net benotzt ginn. Sicht Iech w.e.g. een Aneren.',
