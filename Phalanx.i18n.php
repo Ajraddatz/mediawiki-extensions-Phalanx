@@ -184,7 +184,8 @@ $messages['qqq'] = array(
 	'phalanx-expire-durations' => '{{doc-important|Do not change commas.}}
 Used as list of expire durations.',
 	'phalanx-format-text' => 'Keep this short! Used when a filter has the "plain text" option (as opposed to the "regex" option) checked',
-	'phalanx-format-regex' => 'Keep this short! "Regex" refers to [[wikipedia:Regular expression|regular expressions]]',
+	'phalanx-format-regex' => 'Keep this short! "Regex" refers to [[wikipedia:Regular expression|regular expressions]].
+{{Identical|Regex}}',
 	'phalanx-format-case' => 'Keep this short! This is used when a filter has the case-sensitive option checked, i.e. if "FoO" is blocked with case-sensitive option, then it will not block "foo" or "fOO" or "FOO", only "FoO"',
 	'phalanx-format-exact' => 'Keep this short! This is used when a filter does exact matching, as opposed to regex matching',
 	'phalanx-tab-main' => 'Title of the main tab on Special:Phalanx; refer to the [[:File:Phalanx MediaWiki extension UI.png|extension screenshot]] for details',
@@ -225,7 +226,8 @@ Used as list of expire durations.',
 	'phalanx-blacklisted-email-text' => 'Shown as the actual error message on [[Special:EmailUser/Foo]] if a user whose e-mail is on the Phalanx blacklist tries to e-mail another user',
 	'phalanx-title-move-summary' => 'Error message shown to the user if they tried to move a page and the move summary contained a phrase that has been blocked via Phalanx.',
 	'phalanx-plain-text' => 'Used in the PhalanxStats special page; keep this short! Used when a filter has the "plain text" option (as opposed to the "regex" option) checked',
-	'phalanx-list-regex' => 'Used in the PhalanxStats special page; keep this short! "Regex" refers to [[wikipedia:Regular expression|regular expressions]]',
+	'phalanx-list-regex' => 'Used in the PhalanxStats special page; keep this short! "Regex" refers to [[wikipedia:Regular expression|regular expressions]].
+{{Identical|Regex}}',
 	'phalanx-display-row-blocks' => 'This message is followed by "&bull;" and {{msg-mw|Phalanx-display-row-created}}.
 
 Parameters:
@@ -262,7 +264,8 @@ Parameters:
 	'phalanx-stats-table-expire' => 'Used on the table in [[Special:PhalanxStats]]; refer to the [[:File:Phalanx MediaWiki extension - statistics interface for a given block.png|extension screenshot]] for details.
 {{Identical|Expire}}',
 	'phalanx-stats-table-exact' => 'Used on the table in Special:PhalanxStats; refer to the [[:File:Phalanx MediaWiki extension - statistics interface for a given block.png|extension screenshot]] for details',
-	'phalanx-stats-table-regex' => 'Used on the table in Special:PhalanxStats; refer to the [[:File:Phalanx MediaWiki extension - statistics interface for a given block.png|extension screenshot]] for details',
+	'phalanx-stats-table-regex' => 'Used on the table in [[Special:PhalanxStats]]; refer to the [[:File:Phalanx MediaWiki extension - statistics interface for a given block.png|extension screenshot]] for details.
+{{Identical|Regex}}',
 	'phalanx-stats-table-case' => 'Used on the table in Special:PhalanxStats; refer to the [[:File:Phalanx MediaWiki extension - statistics interface for a given block.png|extension screenshot]] for details',
 	'phalanx-stats-table-reason' => 'Used on the table in [[Special:PhalanxStats]]; refer to the [[:File:Phalanx MediaWiki extension - statistics interface for a given block.png|extension screenshot]] for details.
 {{Identical|Reason}}',
