@@ -597,6 +597,16 @@ $messages['cs'] = array(
 	'phalanx-stats-example' => 'Příklad:',
 );
 
+/** Church Slavic (словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
+ * @author ОйЛ
+ */
+$messages['cu'] = array(
+	'phalanx-label-lang' => 'ѩꙁꙑкъ :',
+	'phalanx-yes' => 'да',
+	'phalanx-no' => 'нѣтъ',
+	'phalanx-stats-table-language' => 'ѩꙁꙑкъ',
+);
+
 /** German (Deutsch)
  * @author Claudia Hattitten
  * @author DaSch
