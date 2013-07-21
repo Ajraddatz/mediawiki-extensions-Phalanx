@@ -601,6 +601,7 @@ $messages['cs'] = array(
  * @author ОйЛ
  */
 $messages['cu'] = array(
+	'phalanx-type-user' => 'польꙃєватєл҄ь',
 	'phalanx-label-lang' => 'ѩꙁꙑкъ :',
 	'phalanx-yes' => 'да',
 	'phalanx-no' => 'нѣтъ',
