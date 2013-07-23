@@ -2827,6 +2827,7 @@ $messages['ps'] = array(
 
 /** Portuguese (português)
  * @author Hamilton Abreu
+ * @author Luckas
  * @author SandroHc
  */
 $messages['pt'] = array(
@@ -2862,7 +2863,7 @@ $messages['pt'] = array(
 	'phalanx-modify-failure' => 'Ocorreu um erro durante a modificação do bloqueio',
 	'phalanx-modify-warning' => 'Está a editar o bloqueio com o ID Nº $1.
 Clicar "{{int:phalanx-add-block}}" grava as suas alterações!',
-	'phalanx-test-description' => 'Texto fornecido pelo teste contra bloqueios actuais.',
+	'phalanx-test-description' => 'Texto fornecido pelo teste contra bloqueios atuais.',
 	'phalanx-test-submit' => 'Testar',
 	'phalanx-content-spam-summary' => 'O texto foi encontrado no resumo da página.',
 	'phalanx-link-unblock' => 'desbloquear',
