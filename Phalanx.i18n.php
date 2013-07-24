@@ -183,7 +183,8 @@ $messages['qqq'] = array(
 	'phalanx-view-id-submit' => 'Button text; refer to the [[:File:Phalanx MediaWiki extension UI.png|extension screenshot]] for details',
 	'phalanx-expire-durations' => '{{doc-important|Do not change commas.}}
 Used as list of expire durations.',
-	'phalanx-format-text' => 'Keep this short! Used when a filter has the "plain text" option (as opposed to the "regex" option) checked',
+	'phalanx-format-text' => 'Keep this short! Used when a filter has the "plain text" option (as opposed to the "regex" option) checked.
+{{Identical|Plain text}}',
 	'phalanx-format-regex' => 'Keep this short! "Regex" refers to [[wikipedia:Regular expression|regular expressions]].
 {{Identical|Regex}}',
 	'phalanx-format-case' => 'Keep this short! This is used when a filter has the case-sensitive option checked, i.e. if "FoO" is blocked with case-sensitive option, then it will not block "foo" or "fOO" or "FOO", only "FoO"',
@@ -225,7 +226,8 @@ Used as list of expire durations.',
 	'phalanx-blacklisted-email' => 'Shown as the page title on [[Special:EmailUser/Foo]] if a user whose e-mail is on the Phalanx blacklist tries to e-mail another user',
 	'phalanx-blacklisted-email-text' => 'Shown as the actual error message on [[Special:EmailUser/Foo]] if a user whose e-mail is on the Phalanx blacklist tries to e-mail another user',
 	'phalanx-title-move-summary' => 'Error message shown to the user if they tried to move a page and the move summary contained a phrase that has been blocked via Phalanx.',
-	'phalanx-plain-text' => 'Used in the PhalanxStats special page; keep this short! Used when a filter has the "plain text" option (as opposed to the "regex" option) checked',
+	'phalanx-plain-text' => 'Used in the PhalanxStats special page; keep this short! Used when a filter has the "plain text" option (as opposed to the "regex" option) checked.
+{{Identical|Plain text}}',
 	'phalanx-list-regex' => 'Used in the PhalanxStats special page; keep this short! "Regex" refers to [[wikipedia:Regular expression|regular expressions]].
 {{Identical|Regex}}',
 	'phalanx-display-row-blocks' => 'This message is followed by "&bull;" and {{msg-mw|Phalanx-display-row-created}}.
@@ -570,7 +572,10 @@ $messages['br'] = array(
 $messages['ce'] = array(
 	'phalanx-type-title' => 'агӀона цӀе',
 	'phalanx-type-answers-recent-questions' => 'керла хаттарш',
+	'phalanx-label-filter' => 'Литтар:',
 	'phalanx-label-lang' => 'Мотт:',
+	'phalanx-view-id' => 'Лела йаь литтар ID цан:',
+	'phalanx-legend-input' => 'Кхолла я хийца литтар',
 	'phalanx-stats-table-expire' => 'Чекхйолу',
 	'phalanx-stats-table-language' => 'Мотт',
 );
@@ -3305,6 +3310,7 @@ $messages['sr-el'] = array(
 );
 
 /** Swedish (svenska)
+ * @author Jopparn
  * @author VickyC
  * @author WikiPhoenix
  */
@@ -3361,10 +3367,15 @@ Anmärkning: fungerar endast på Svar-typ wikier.',
 	'phalanx-help-type-user-email' => 'Detta filter förhindrar att konton skapas med en blockerad e-postadress.',
 	'phalanx-user-block-new-account' => 'Användarnamnet är inte tillgängligt för registrering. Välj ett annat.',
 	'phalanx-title-move-summary' => 'Anledningen du skrev in innehöll en blockerad fras.',
+	'phalanx-plain-text' => 'ren text',
 	'phalanx-display-row-blocks' => 'blockeringar: $1',
 	'phalanx-display-row-created' => 'skapades av [[User:$1|$1]] den $2',
 	'phalanx-test-results-legend' => 'Testresultat',
+	'phalanx-no-matches' => 'Inga träffar hittades.',
+	'phalanxstats' => 'Phalanx-statistik',
 	'phalanx-email-filter-hidden' => 'E-postfilter dolt. Du har inte behörighet att visa texten.',
+	'phalanx-yes' => 'Ja',
+	'phalanx-no' => 'Nej',
 	'phalanx-stats-table-id' => 'Blockerings-ID',
 	'phalanx-stats-table-user' => 'Lades till av',
 	'phalanx-stats-table-type' => 'Typ',
@@ -3378,6 +3389,11 @@ Anmärkning: fungerar endast på Svar-typ wikier.',
 	'phalanx-stats-table-wiki-id' => 'Wiki-ID',
 	'phalanx-stats-table-wiki-name' => 'Wiki-namn',
 	'phalanx-stats-table-wiki-url' => 'Wiki-URL',
+	'phalanx-stats-load-btn' => 'Ladda',
+	'phalanx-stats-id' => 'ID: $1',
+	'phalanx-stats-recent-triggers' => 'Senaste utlösare av en blockering',
+	'phalanx-stats-recent-blocks' => 'Senaste blockeringar på en wiki',
+	'phalanx-stats-example' => 'Exempel:',
 	'phalanx-stats-row-per-wiki' => "användaren '''$2''' blockerades den '''$4''' av filter-ID '''$3''' ($5) (typ: '''$1''')",
 	'phalanx-rule-log-add' => 'Phalanx-regel lades till: $1',
 	'phalanx-rule-log-edit' => 'Phalanx-regel redigerades: $1',
