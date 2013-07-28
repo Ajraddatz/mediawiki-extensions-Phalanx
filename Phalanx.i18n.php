@@ -2893,18 +2893,18 @@ Não impede a criação dessas páginas.
 
 Nota: só funciona nas wikis de Perguntas e Respostas.',
 	'phalanx-user-block-new-account' => 'O nome de utilizador não está disponível para registo. Escolha outro, por favor.',
-	'phalanx-user-block-reason-ip' => 'O seu endereço IP está impedido de editar, devido a actividades de vandalismo ou perturbação originadas por si ou por outra pessoa que partilha o seu endereço IP actual.
-Se acredita que este bloqueio foi feito em erro [[Special:Contact|contacte-nos]], por favor.',
-	'phalanx-user-block-reason-exact' => 'Este utilizador ou endereço IP está impedido de editar, devido a actividades de vandalismo ou outras formas de perturbação.
-Se acredita que este bloqueio foi feito em erro [[Special:Contact|contacte-nos]], por favor.',
-	'phalanx-user-block-reason-similar' => 'Este nome de utilizador está impedido de editar, devido a actividades de vandalismo ou outras formas de perturbação exercidas por outro utilizador com um nome semelhante.
-[[Special:Contact|Contacte-nos]] acerca deste problema, por favor.',
-	'phalanx-user-block-withreason-ip' => 'Este endereço IP está impedido de editar, devido a actividades de vandalismo ou outra forma de perturbação conduzidas por si ou por outra pessoa que partilha o seu endereço IP actual.
-Se acredita que este bloqueio foi feito em erro, [[Special:Contact|contacte-nos]], por favor.<br />O autor do bloqueio apresentou também este motivo adicional: $1.',
-	'phalanx-user-block-withreason-exact' => 'Este nome de utilizador ou endereço IP estão impedidos de editar, devido a actividades de vandalismo ou outra forma de perturbação.
-Se acredita que este bloqueio foi feito em erro [[Special:Contact|contacte-nos]], por favor.<br />O autor do bloqueio apresentou também este motivo adicional: $1.',
-	'phalanx-user-block-withreason-similar' => 'Este nome de utilizador está impedido de editar, devido a actividades de vandalismo ou outras formas de perturbação exercidas por outro utilizador com um nome semelhante.
-[[Special:Contact|Contacte-nos]] acerca deste problema, por favor.<br />O autor do bloqueio apresentou também este motivo adicional: $1.',
+	'phalanx-user-block-reason-ip' => 'O seu endereço IP está impedido de editar, devido a atividades de vandalismo ou perturbação originadas por si ou por outra pessoa que partilha o seu endereço IP atual.
+Se acredita que este bloqueio foi feito em erro [[Special:Contact|contate-nos]], por favor.',
+	'phalanx-user-block-reason-exact' => 'Este utilizador ou endereço IP está impedido de editar, devido a atividades de vandalismo ou outras formas de perturbação.
+Se acredita que este bloqueio foi feito em erro [[Special:Contact|contate-nos]], por favor.',
+	'phalanx-user-block-reason-similar' => 'Este nome de utilizador está impedido de editar, devido a atividades de vandalismo ou outras formas de perturbação exercidas por outro utilizador com um nome semelhante.
+[[Special:Contact|Contate-nos]] acerca deste problema, por favor.',
+	'phalanx-user-block-withreason-ip' => 'Este endereço IP está impedido de editar, devido a atividades de vandalismo ou outra forma de perturbação conduzidas por si ou por outra pessoa que partilha o seu endereço IP atual.
+Se acredita que este bloqueio foi feito em erro, [[Special:Contact|contate-nos]], por favor.<br />O autor do bloqueio apresentou também este motivo adicional: $1.',
+	'phalanx-user-block-withreason-exact' => 'Este nome de utilizador ou endereço IP estão impedidos de editar, devido a atividades de vandalismo ou outra forma de perturbação.
+Se acredita que este bloqueio foi feito em erro [[Special:Contact|contate-nos]], por favor.<br />O autor do bloqueio apresentou também este motivo adicional: $1.',
+	'phalanx-user-block-withreason-similar' => 'Este nome de utilizador está impedido de editar, devido a atividades de vandalismo ou outras formas de perturbação exercidas por outro utilizador com um nome semelhante.
+[[Special:Contact|Contate-nos]] acerca deste problema, por favor.<br />O autor do bloqueio apresentou também este motivo adicional: $1.',
 	'phalanx-title-move-summary' => 'O motivo que introduziu continha uma frase bloqueada.',
 	'phalanx-display-row-blocks' => 'bloqueios: $1',
 	'phalanx-display-row-created' => 'criado por [[User:$1|$1]] em $2',
