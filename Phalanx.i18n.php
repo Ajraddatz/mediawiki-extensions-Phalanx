@@ -783,6 +783,7 @@ $messages['eo'] = array(
 
 /** Spanish (español)
  * @author Armando-Martin
+ * @author Fitoschido
  * @author Mor
  * @author VegaDark
  */
@@ -809,7 +810,7 @@ $messages['es'] = array(
 	'phalanx-view-type' => 'Tipo de bloqueo...',
 	'phalanx-view-blocker' => 'Buscar por texto de filtro:',
 	'phalanx-view-blocks' => 'Buscar filtros',
-	'phalanx-view-id' => 'Obtener filtro por ID:',
+	'phalanx-view-id' => 'Obtener filtro por id.:',
 	'phalanx-view-id-submit' => 'Obtener filtro',
 	'phalanx-expire-durations' => '1 hora,2 horas,4 horas,6 horas,1 día,3 días,1 semana,2 semanas,1 mes,3 meses,6 meses,1 año,infinito',
 	'phalanx-format-text' => 'texto plano',
@@ -874,7 +875,7 @@ Si crees que es un error, por favor [[Special:Contact|contacto nosotros]].<br />
 	'phalanx-email-filter-hidden' => 'Filtro de correo ocultado. No tienes permisos para ver el texto.',
 	'phalanx-yes' => 'Sí',
 	'phalanx-no' => 'No',
-	'phalanx-stats-table-id' => 'ID de bloqueo',
+	'phalanx-stats-table-id' => 'Id. de bloqueo',
 	'phalanx-stats-table-user' => 'Añadido por',
 	'phalanx-stats-table-type' => 'Tipo',
 	'phalanx-stats-table-text' => 'Texto',
@@ -887,11 +888,11 @@ Si crees que es un error, por favor [[Special:Contact|contacto nosotros]].<br />
 	'phalanx-stats-table-language' => 'Idioma',
 	'phalanx-stats-entry' => '<b>$4</b> El tipo de filtro <b>$1</b>ha  bloqueado al usuario <b>$2</b> en <a href="http://$3.shoutwiki.com/">$3</a>',
 	'phalanx-stats-block-notfound' => 'ID de bloqueo no encontrado',
-	'phalanx-stats-table-wiki-id' => 'ID de wiki',
+	'phalanx-stats-table-wiki-id' => 'Id. del wiki',
 	'phalanx-stats-table-wiki-name' => 'Nombre de wiki',
 	'phalanx-stats-table-wiki-url' => 'URL de wiki',
 	'phalanx-stats-load-btn' => 'Cargar',
-	'phalanx-stats-id' => 'ID: $1',
+	'phalanx-stats-id' => 'Id.: $1',
 	'phalanx-stats-recent-triggers' => 'Recientes desencadenadores de un bloque',
 	'phalanx-stats-recent-blocks' => 'Bloqueos recientes hechos en un wiki',
 	'phalanx-stats-example' => 'Ejemplo:',
