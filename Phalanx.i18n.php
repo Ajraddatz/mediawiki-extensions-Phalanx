@@ -153,7 +153,7 @@ Please [[Special:Contact|contact us]] about the problem.<br />The blocker also g
 $messages['qqq'] = array(
 	'phalanx' => '{{doc-special|Phalanx}}',
 	'phalanx-desc' => '{{desc|name=Phalanx|url=http://www.mediawiki.org/wiki/Extension:Phalanx}}',
-	'phalanx-ui-description' => '{{desc}}',
+	'phalanx-ui-description' => 'Unused at this time.',
 	'phalanx-all-languages' => 'Drop-down menu item on Special:Phalanx; if a user wants to block something for all languages (as opposed to blocking for one specific language), they will select this option',
 	'phalanx-type-content' => 'Keep this short! This is used to indicate that a filter blocks something in an article (i.e. prevents that word or phrase from being added into an article)',
 	'phalanx-type-summary' => 'Keep this short! This is used to indicate that a filter blocks an edit summary or a page move summary.',
