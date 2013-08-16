@@ -3628,9 +3628,11 @@ $messages['tt-cyrl'] = array(
 
 /** Ukrainian (українська)
  * @author A1
+ * @author Andriykopanytsia
  * @author Base
  * @author Olvin
  * @author Steve.rusyn
+ * @author SteveR
  * @author Ата
  * @author Тест
  */
@@ -3671,6 +3673,7 @@ $messages['uk'] = array(
 	'phalanx-modify-success' => 'Блок успішно змінено',
 	'phalanx-modify-failure' => 'Сталася помилка під час зміни блоку',
 	'phalanx-modify-warning' => 'Ви редагуєте блок ID #$1. Натисніть "{{int:phalanx-edit-block}}" щоб зберегти свої зміни.',
+	'phalanx-test-description' => 'Тест надав текст про поточні блоки.',
 	'phalanx-test-submit' => 'Тест',
 	'phalanx-content-spam-summary' => 'Текст знайдено у резюме сторінки.',
 	'phalanx-link-unblock' => 'розблокувати',
@@ -3682,9 +3685,35 @@ $messages['uk'] = array(
 	'phalanx-unblock-message' => 'Блок ID #$1  успішно вилучено',
 	'phalanx-help-type-content' => 'Цей фільтр запобігає збереженню змін, зміст яких відповідає якій-небудь із заборонених фраз.',
 	'phalanx-help-type-summary' => 'Фільтр не дає зберігати редагування, якщо подане резюме містить щось із чорного списку фраз.',
+	'phalanx-help-type-title' => 'Цей фільтр запобігає створенню сторінки, коли її назва відповідає будь-якому слову з чорного списку.
+
+Це не заважає редагуванню сторінки.',
+	'phalanx-help-type-user' => "Цей фільтр блокує учасника (те саме що блокування на самій вікі), якщо його ім'я або IP-адреса відповідає імені або IP-адресі з чорного списку.",
+	'phalanx-help-type-wiki-creation' => 'Якщо назва або URL-адреса вікі відповідає тому, що перебуває у чорному списку, то цей фільтр забороняє створення такої вікі.',
+	'phalanx-help-type-answers-question-title' => 'Цей фільтр блокує створення питання (сторінки), якщо його назва відповідає слову з чорного списку фільтра.
+
+Примітка: працює тільки на вікі-відповідях.',
+	'phalanx-help-type-answers-recent-questions' => 'Цей фільтр запобігає відображенню питань (сторінок) на екрані в ряді випадків (віджети, списки, генеровані тегами списки).
+Це не заважає створенню даних сторінок.
+
+Примітка: працює тільки на вікі-відповідях.',
 	'phalanx-help-type-user-email' => 'Цей фільтр запобігає створенню облікових записів з використанням блокованих адрес електронної пошти.',
 	'phalanx-user-block-new-account' => "Це ім'я користувача не доступно для реєстрації. Будь ласка, оберіть інше.",
+	'phalanx-user-block-reason-ip' => "Цю IP-адресу було заблоковано для редагування усієї Wikii через вандалізму або порушень правил іншого типу, зроблених вами або будь-якою іншою особою, яка розділяє вашу IP-адресу.
+Якщо ви вважаєте, що це помилка, то, будь ласка, [[Special:Contact|зв'яжіться з нами]].",
+	'phalanx-user-block-reason-exact' => "Цей користувач або учасник з даною IP-адресою не може редагувати через вандалізм або інші порушення.
+Якщо Ви вважаєте, що сталася помилка, то, будь ласка, [[Special:Contact|зв'яжіться із нами]].",
+	'phalanx-user-block-reason-similar' => "Користувачу з цим іменем заблоковано редагування всього вікі через вандалізм або інші порушення правил користувачем з таким самим іменем.
+Будь ласка, створіть інше ім'я користувача або [[Special:Contact|зв'яжіться з нами]] стосовно цієї проблеми.",
+	'phalanx-user-block-withreason-ip' => 'Користувач з цією IP-адресою не може редагувати через вандалізм або інші порушення, які вчинив він або хтось з тією ж IP-адресою.
+Якщо Ви вважаєте, що сталася помилка, будь ласка,[[Special:Contact|зверніться до нас]].<br />Блокувач так пояснив свій крок: $1.',
+	'phalanx-user-block-withreason-exact' => "Користувач з цим ім'ям або IP-адресою не може редагувати  через вандалізм або інші порушення, які вчинив він або хтось з тією ж IP-адресою.
+Якщо Ви вважаєте, що сталася помилка, будь ласка,[[Special:Contact|зверніться до нас]].<br />Блокувач так пояснив свій крок: $1.",
+	'phalanx-user-block-withreason-similar' => "Користувач з цим ім'ям не може редагувати через вандалізм або інші порушення, які вчинив він або хтось з тією ж IP-адресою.
+Якщо Ви вважаєте, що сталася помилка, будь ласка,[[Special:Contact|зверніться до нас]].<br />Блокувач так пояснив свій крок: $1.",
 	'phalanx-blacklisted-email' => 'Адреса електронної пошти з чорного списку',
+	'phalanx-blacklisted-email-text' => 'Ваша адреса електронної пошти в даний час знаходиться в чорному списку, тому ви не можете надсилати повідомлення іншим користувачам.',
+	'phalanx-title-move-summary' => 'Причина, по якій ви додаєте цю фразу для блокування.',
 	'phalanx-plain-text' => 'звичайний текст',
 	'phalanx-list-regex' => 'регулярний вираз',
 	'phalanx-display-row-blocks' => 'блоки: $1',
@@ -3692,6 +3721,7 @@ $messages['uk'] = array(
 	'phalanx-test-results-legend' => 'Результати тесту',
 	'phalanx-no-matches' => 'Не знайдено збігів.',
 	'phalanxstats' => 'Статистика Phalanx',
+	'phalanx-email-filter-hidden' => 'Фільтр пошти прихований. Ви не маєте дозвіл на перегляд тексту.',
 	'phalanx-yes' => 'Так',
 	'phalanx-no' => 'Ні',
 	'phalanx-stats-table-id' => 'ID блокування',
@@ -3705,18 +3735,29 @@ $messages['uk'] = array(
 	'phalanx-stats-table-case' => 'У разі',
 	'phalanx-stats-table-reason' => 'Причина',
 	'phalanx-stats-table-language' => 'Мова',
+	'phalanx-stats-entry' => '<b>$4</b> фільтр типу <b>$1</b> заблокував користувача <b>$2</b> на <a href="http://$3.shoutwiki.com/">$3</a>',
 	'phalanx-stats-block-notfound' => 'ID блокування не знайдено',
 	'phalanx-stats-table-wiki-id' => 'ID вікі',
 	'phalanx-stats-table-wiki-name' => 'Назва вікі',
 	'phalanx-stats-table-wiki-url' => 'URL-адреса вікі',
 	'phalanx-stats-load-btn' => 'Завантажити',
 	'phalanx-stats-id' => 'ID: $1',
+	'phalanx-stats-recent-triggers' => 'Останні тригери блоку',
+	'phalanx-stats-recent-blocks' => 'Останні блоки на вікі',
 	'phalanx-stats-example' => 'Приклад:',
+	'phalanx-stats-row-per-wiki' => "користувач '''$2''' заблокований на '''$4''' з ID фільтром '''$3''' ($5) (тип: '''$1''')",
 	'phalanx-rule-log-name' => 'Журнал правил Phalanx',
+	'phalanx-rule-log-header' => 'Це журнал змін правил phalanx.',
+	'phalanx-email-rule-log-name' => 'Журнал правил Phalanx для ел.пошти',
+	'phalanx-email-rule-log-header' => 'Це журнал змін правил Phalanx для ел.пошти.',
 	'phalanx-rule-log-add' => 'Правило Phalanx додано: $1',
 	'phalanx-rule-log-edit' => 'Правило Phalanx відредаговано: $1',
 	'phalanx-rule-log-delete' => 'Правило Phalanx вилучено: $1',
 	'phalanx-rule-log-details' => 'Фільтр: "$1", тип: "$2", причина: "$3"',
+	'action-phalanx' => 'використовувати комплексний механізм захисту від спаму',
+	'right-phalanx' => 'Додавати, змінювати і видаляти різні спам-фільтри',
+	'right-phalanxexempt' => 'Звільнено від фільтрів спаму Phalanx',
+	'right-phalanxemailblock' => 'Можна звернутися, переглянути і управляти ел.поштою на основі блоків',
 );
 
 /** Simplified Chinese (中文（简体）‎)
