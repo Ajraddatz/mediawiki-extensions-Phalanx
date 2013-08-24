@@ -22,7 +22,7 @@ $messages['en'] = array(
 	'phalanx-type-summary' => 'article summary',
 	'phalanx-type-title' => 'article title',
 	'phalanx-type-user' => 'user',
-	'phalanx-type-user-email' => 'e-mail',
+	'phalanx-type-user-email' => 'email',
 	'phalanx-type-answers-question-title' => 'question title',
 	'phalanx-type-answers-recent-questions' => 'recent questions',
 	'phalanx-type-wiki-creation' => 'wiki creation',
@@ -75,7 +75,7 @@ Note: only works on Answers-type wikis',
 	'phalanx-help-type-answers-recent-questions' => 'This filter prevents questions (pages) from being displayed in a number of outputs (widgets, lists, tag-generated listings). It does not prevent those articles from being created.
 
 Note: works only on Answers-type wikis',
-	'phalanx-help-type-user-email' => 'This filter prevents account creation using a blocked e-mail address.',
+	'phalanx-help-type-user-email' => 'This filter prevents account creation using a blocked email address.',
 	'phalanx-user-block-new-account' => 'Username is not available for registration. Please choose another one.',
 
 	// block reason overrides, when no block reason was given (original usage)
@@ -91,8 +91,8 @@ If you believe this is in error, please [[Special:Contact|contact us]].<br />The
 	'phalanx-user-block-withreason-similar' => 'This username is prevented from editing due to vandalism or other disruption by a user with a similar name.
 Please [[Special:Contact|contact us]] about the problem.<br />The blocker also gave this additional reason: $1.',
 
-	'phalanx-blacklisted-email' => 'Blacklisted e-mail address',
-	'phalanx-blacklisted-email-text' => 'Your e-mail address is currently blacklisted from sending e-mails to other users.',
+	'phalanx-blacklisted-email' => 'Blacklisted email address',
+	'phalanx-blacklisted-email-text' => 'Your email address is currently blacklisted from sending emails to other users.',
 	'phalanx-title-move-summary' => 'The reason you entered contained a blocked phrase.',
 	'phalanx-plain-text' => 'plain text',
 	'phalanx-list-regex' => 'regex',
@@ -102,7 +102,7 @@ Please [[Special:Contact|contact us]] about the problem.<br />The blocker also g
 	'phalanx-no-matches' => 'No matches found.',
 	// Special:PhalanxStats
 	'phalanxstats' => 'Phalanx statistics',
-	'phalanx-email-filter-hidden' => 'E-mail filter hidden. You do not have permission to view text.',
+	'phalanx-email-filter-hidden' => 'Email filter hidden. You do not have permission to view text.',
 	'phalanx-yes' => 'Yes',
 	'phalanx-no' => 'No',
 	'phalanx-stats-table-id' => 'Block ID',
@@ -131,8 +131,8 @@ Please [[Special:Contact|contact us]] about the problem.<br />The blocker also g
 	// Private logs (Special:Log/phalanx)
 	'phalanx-rule-log-name' => 'Phalanx rules log',
 	'phalanx-rule-log-header' => 'This is a log of changes to Phalanx rules.',
-	'phalanx-email-rule-log-name' => 'Phalanx e-mail rules log',
-	'phalanx-email-rule-log-header' => 'This is a log of changes to Phalanx rules for type e-mail.',
+	'phalanx-email-rule-log-name' => 'Phalanx email rules log',
+	'phalanx-email-rule-log-header' => 'This is a log of changes to Phalanx rules for type email.',
 	'phalanx-rule-log-add' => 'Phalanx rule added: $1',
 	'phalanx-rule-log-edit' => 'Phalanx rule edited: $1',
 	'phalanx-rule-log-delete' => 'Phalanx rule deleted: $1',
@@ -142,7 +142,7 @@ Please [[Special:Contact|contact us]] about the problem.<br />The blocker also g
 	// For Special:ListGroupRights
 	'right-phalanx' => 'Add, modify and remove different spam filters',
 	'right-phalanxexempt' => 'Exempt from Phalanx spam filter',
-	'right-phalanxemailblock' => 'Can file, view and manage e-mail based blocks',
+	'right-phalanxemailblock' => 'Can file, view and manage email based blocks',
 );
 
 /** Message documentation (Message documentation)
