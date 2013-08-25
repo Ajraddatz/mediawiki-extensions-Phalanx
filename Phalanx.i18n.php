@@ -165,7 +165,9 @@ $messages['qqq'] = array(
 	'phalanx-type-answers-recent-questions' => 'Keep this short! This is used to indicate that a filter blocks something from showing up on the list of recent questions on Answers-like wikis',
 	'phalanx-type-wiki-creation' => 'Keep this short! This is used to indicate that a filter blocks the creation of a new wiki.',
 	'phalanx-add-block' => 'Button text; click on this button to add a new Phalanx filter; refer to the [[:File:Phalanx MediaWiki extension UI.png|extension screenshot]] for details',
-	'phalanx-edit-block' => 'Button text',
+	'phalanx-edit-block' => 'Used as label for Save button.
+
+Also used in {{msg-mw|Phalanx-modify-warning}}.',
 	'phalanx-label-filter' => 'Refer to the [[:File:Phalanx MediaWiki extension UI.png|extension screenshot]] for details
 {{Identical|Filter}}',
 	'phalanx-label-reason' => 'Refer to the [[:File:Phalanx MediaWiki extension UI.png|extension screenshot]] for details.
@@ -195,7 +197,10 @@ Used as list of expire durations.',
 	'phalanx-block-failure' => 'Shown if an error of some kind happened when trying to add a new Phalanx block',
 	'phalanx-modify-success' => 'Shown when a pre-existing Phalanx block was successfully edited',
 	'phalanx-modify-failure' => 'Shown if an error happened when trying to edit a pre-existing Phalanx block',
-	'phalanx-modify-warning' => 'Shown when editing a pre-existing Phalanx block',
+	'phalanx-modify-warning' => 'Shown when editing a pre-existing Phalanx block. Parameters:
+* $1 - block ID
+See also:
+* {{msg-mw|Phalanx-edit-block}}',
 	'phalanx-test-description' => 'This is followed by an input where the user can enter some text and see if that text would trigger any of the available Phalanx filters',
 	'phalanx-test-submit' => 'Button text.
 {{Identical|Test}}',
@@ -220,9 +225,24 @@ Used as list of expire durations.',
 	'phalanx-user-block-reason-ip' => "Error message shown to a blocked user or IP address when they've been blocked via Phalanx. This message is displayed if the blocker gave no reason for the block.",
 	'phalanx-user-block-reason-exact' => "Error message shown to a blocked user or IP address when they've been blocked via Phalanx. This message is displayed if the blocker gave no reason for the block.",
 	'phalanx-user-block-reason-similar' => "Error message shown to a blocked user when they've been blocked via Phalanx for having a similar name to that of a pre-existing user. This message is displayed if the blocker gave no reason for the block.",
-	'phalanx-user-block-withreason-ip' => "Error message shown to a IP address when they've been blocked via Phalanx. This message is displayed if the blocker gave a reason for the block.",
-	'phalanx-user-block-withreason-exact' => "Error message shown to a blocked user or IP address when they've been blocked via Phalanx. This message is displayed if the blocker gave a reason for the block.",
-	'phalanx-user-block-withreason-similar' => "Error message shown to a blocked user when they've been blocked via Phalanx for having a similar name to that of a pre-existing user. This message is displayed if the blocker gave a reason for the block.",
+	'phalanx-user-block-withreason-ip' => "Error message shown to a IP address when they've been blocked via Phalanx.
+
+This message is displayed if the blocker gave a reason for the block.
+
+Parameters:
+* $1 - reason",
+	'phalanx-user-block-withreason-exact' => "Error message shown to a blocked user or IP address when they've been blocked via Phalanx.
+
+This message is displayed if the blocker gave a reason for the block.
+
+Parameters:
+* $1 - reason",
+	'phalanx-user-block-withreason-similar' => "Error message shown to a blocked user when they've been blocked via Phalanx for having a similar name to that of a pre-existing user.
+
+This message is displayed if the blocker gave a reason for the block.
+
+Parameters:
+* $1 - reason",
 	'phalanx-blacklisted-email' => 'Shown as the page title on [[Special:EmailUser/Foo]] if a user whose e-mail is on the Phalanx blacklist tries to e-mail another user',
 	'phalanx-blacklisted-email-text' => 'Shown as the actual error message on [[Special:EmailUser/Foo]] if a user whose e-mail is on the Phalanx blacklist tries to e-mail another user',
 	'phalanx-title-move-summary' => 'Error message shown to the user if they tried to move a page and the move summary contained a phrase that has been blocked via Phalanx.',
@@ -2974,6 +2994,9 @@ $messages['pt-br'] = array(
 	'phalanx-block-failure' => 'Ocorreu um erro durante a adição do bloco',
 	'phalanx-modify-success' => 'O bloqueio foi modificado com sucesso',
 	'phalanx-modify-failure' => 'Ocorreu um erro durante a modificação do bloqueio',
+	'phalanx-link-unblock' => 'desbloquear',
+	'phalanx-link-modify' => 'modificar',
+	'phalanx-link-stats' => 'estatísticas',
 	'phalanx-plain-text' => 'texto simples',
 	'phalanx-list-regex' => 'expressão regular',
 	'phalanx-display-row-blocks' => 'bloqueios: $1',
@@ -2994,6 +3017,9 @@ $messages['pt-br'] = array(
 	'phalanx-stats-table-case' => 'Caso',
 	'phalanx-stats-table-reason' => 'Motivo',
 	'phalanx-stats-table-language' => 'Língua',
+	'phalanx-stats-load-btn' => 'Carregar',
+	'phalanx-stats-id' => 'ID: $1',
+	'phalanx-stats-example' => 'Exemplo:',
 );
 
 /** Romanian (română)
