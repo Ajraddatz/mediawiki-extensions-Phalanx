@@ -160,7 +160,8 @@ $messages['qqq'] = array(
 	'phalanx-type-title' => 'Keep this short! This is used to indicate that a filter blocks the creation of a page with a blocked ttle',
 	'phalanx-type-user' => 'Keep this short! This is used to indicate that a filter blocks a registered user or an IP address.
 {{Identical|User}}',
-	'phalanx-type-user-email' => 'Keep this short! This is used to indicate that a filter blocks an e-mail address, preventing it from being used to create new accounts as well as preventing e-mailing from any and all pre-existing accounts that have been registered with a blocked e-mail address.',
+	'phalanx-type-user-email' => 'Keep this short! This is used to indicate that a filter blocks an e-mail address, preventing it from being used to create new accounts as well as preventing e-mailing from any and all pre-existing accounts that have been registered with a blocked e-mail address.
+{{Identical|E-mail}}',
 	'phalanx-type-answers-question-title' => 'Keep this short! This is used to indicate that a filter blocks page title on Answer-like wikis',
 	'phalanx-type-answers-recent-questions' => 'Keep this short! This is used to indicate that a filter blocks something from showing up on the list of recent questions on Answers-like wikis',
 	'phalanx-type-wiki-creation' => 'Keep this short! This is used to indicate that a filter blocks the creation of a new wiki.',
@@ -2008,6 +2009,7 @@ Et verhënnert allerdéngs net datt eng Säit déi et scho gëtt geännert gëtt
 	'phalanx-test-results-legend' => 'Testresultater',
 	'phalanx-no-matches' => 'Et goufe keng Iwwerteneestëmmunge fonnt.',
 	'phalanxstats' => 'Phalanx Statistiken',
+	'phalanx-email-filter-hidden' => "E-Mail-Filter verstoppt. Dir hutt net d'Recht fir den Text ze gesinn.",
 	'phalanx-yes' => 'Jo',
 	'phalanx-no' => 'Neen',
 	'phalanx-stats-table-id' => 'Spärnummer',
