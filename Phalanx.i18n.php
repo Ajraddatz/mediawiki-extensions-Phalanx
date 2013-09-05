@@ -306,7 +306,8 @@ Parameters:
 	'phalanx-stats-table-wiki-url' => 'Table header on Special:PhalanxStats',
 	'phalanx-stats-load-btn' => 'Button text; shown on Special:PhalanxStats when that special page is accessed without parameters.
 {{Identical|Load}}',
-	'phalanx-stats-id' => '$1 is the block ID number',
+	'phalanx-stats-id' => 'Used as label and input box. Parameters:
+* $1 - the "Block ID" or "Wiki ID" input box',
 	'phalanx-stats-recent-triggers' => 'Legend text, shown on Special:PhalanxStats when that special page is accessed without parameters',
 	'phalanx-stats-recent-blocks' => 'Legend text, shown on Special:PhalanxStats when that special page is accessed without parameters',
 	'phalanx-stats-example' => 'Shown on Special:PhalanxStats when that special page is accessed without parameters. Used in two different places on the page, but in similar context: always followed by a list of URLs.',
