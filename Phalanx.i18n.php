@@ -2004,6 +2004,7 @@ Et verhënnert allerdéngs net datt eng Säit déi et scho gëtt geännert gëtt
 	'phalanx-help-type-user-email' => 'Dëse Filter verhënnert datt mat enger gespaarter E-Mail-Adress e Benotzerkont opgemaach ka ginn.',
 	'phalanx-user-block-new-account' => 'De Benotzernumm kann net benotzt ginn. Sicht Iech w.e.g. een Aneren.',
 	'phalanx-blacklisted-email' => 'Gespaart Mail-Adressen',
+	'phalanx-blacklisted-email-text' => 'Är E-Mailadress ass elo gespaart fir anere Benotzer E-Mailen ze schécken.',
 	'phalanx-title-move-summary' => 'Am Grond deen Dir aginn hutt ass e gespaarte Saz.',
 	'phalanx-display-row-blocks' => 'Spären: $1',
 	'phalanx-display-row-created' => 'vum [[User:$1|$1]] den $2 ugeluecht',
