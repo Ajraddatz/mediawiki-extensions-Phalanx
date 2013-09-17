@@ -1955,6 +1955,7 @@ $messages['ku-latn'] = array(
 
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
+ * @author Soued031
  */
 $messages['lb'] = array(
 	'phalanx' => 'Phalanx - Integréierte Verdeedegungsmechanismus géint Spam',
@@ -1996,7 +1997,7 @@ $messages['lb'] = array(
 	'phalanx-legend-listing' => 'Filteren, déi elo benotzt ginn',
 	'phalanx-unblock-message' => "D'Spär mat der Nummer #$1 gouf opgehuewen",
 	'phalanx-help-type-content' => "Dëse Filter verhënnert datt eng Ännerung gespäichert gëtt, wann den Inhalt mat engem vun de Sätz op der 'Schwaarzer Lëscht' identesch ass.",
-	'phalanx-help-type-summary' => 'Dëse Filter verhënnert datt eng Ännerung gespäichert gëtt, wann de Resumé deen ugi gouf mat engem vun Sätz vun der schwaarzer Lëscht identesch ass.',
+	'phalanx-help-type-summary' => 'Dëse Filter verhënnert datt eng Ännerung gespäichert gëtt, wann de Resumé deen ugi gouf mat engem vun de Sätz vun der schwaarzer Lëscht identesch ass.',
 	'phalanx-help-type-title' => "Dëse Filter verhënnert datt eng Säit ugeluecht gëtt, wann hiren Numm d'selwecht ass wéi an op der schwaarzer Lëscht.
 
 Et verhënnert allerdéngs net datt eng Säit déi et scho gëtt geännert gëtt.",
