@@ -2010,7 +2010,7 @@ Et verhënnert allerdéngs net datt eng Säit déi et scho gëtt geännert gëtt
 	'phalanx-display-row-blocks' => 'Spären: $1',
 	'phalanx-display-row-created' => 'vum [[User:$1|$1]] den $2 ugeluecht',
 	'phalanx-test-results-legend' => 'Testresultater',
-	'phalanx-no-matches' => 'Et goufe keng Iwwerteneestëmmunge fonnt.',
+	'phalanx-no-matches' => 'Et goufe keng Iwwereneestëmmunge fonnt.',
 	'phalanxstats' => 'Phalanx Statistiken',
 	'phalanx-email-filter-hidden' => "E-Mail-Filter verstoppt. Dir hutt net d'Recht fir den Text ze gesinn.",
 	'phalanx-yes' => 'Jo',
