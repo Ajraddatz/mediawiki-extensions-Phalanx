@@ -3794,6 +3794,7 @@ $messages['uk'] = array(
 /** Simplified Chinese (中文（简体）‎)
  * @author Kuailong
  * @author Li3939108
+ * @author Liuxinyu970226
  * @author Yfdyh000
  */
 $messages['zh-hans'] = array(
@@ -3817,6 +3818,7 @@ $messages['zh-hans'] = array(
 	'phalanx-format-case' => '大小写敏感',
 	'phalanx-test-submit' => '测试',
 	'phalanx-link-modify' => '修改',
+	'phalanx-blacklisted-email' => '黑名单电子邮件',
 	'phalanx-blacklisted-email-text' => '您的电子邮件地址目前已被列入黑名单，禁止向其他用户发送电子邮件。',
 	'phalanx-plain-text' => '纯文本',
 	'phalanx-list-regex' => '正则表达式',
