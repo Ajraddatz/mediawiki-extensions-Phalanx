@@ -3145,9 +3145,11 @@ $messages['roa-tara'] = array(
  * @author Engineering
  * @author Kuzura
  * @author Lvova
+ * @author Okras
  */
 $messages['ru'] = array(
 	'phalanx-desc' => 'Phalanx - комплексный механизм обнаружения спама',
+	'phalanx-all-languages' => 'Все языки',
 	'phalanx-type-content' => 'содержание страницы',
 	'phalanx-type-summary' => 'страница резюме',
 	'phalanx-type-title' => 'название страницы',
@@ -3210,8 +3212,11 @@ $messages['ru'] = array(
 	'phalanx-display-row-blocks' => 'блоки: $1',
 	'phalanx-display-row-created' => 'создал [[User:$1|$1]] на $2',
 	'phalanx-test-results-legend' => 'Результаты теста',
+	'phalanx-no-matches' => 'Совпадений не найдено.',
 	'phalanxstats' => 'Статистика Phalanx',
 	'phalanx-email-filter-hidden' => 'Фильтр для e-mail скрыт. У вас нет разрешения на просмотр текста.',
+	'phalanx-yes' => 'Да',
+	'phalanx-no' => 'Нет',
 	'phalanx-stats-table-id' => 'ID блока',
 	'phalanx-stats-table-user' => 'Добавить',
 	'phalanx-stats-table-type' => 'Тип',
@@ -3227,6 +3232,8 @@ $messages['ru'] = array(
 	'phalanx-stats-table-wiki-id' => 'ID вики',
 	'phalanx-stats-table-wiki-name' => 'Имя вики',
 	'phalanx-stats-table-wiki-url' => 'URL-адрес вики',
+	'phalanx-stats-id' => 'ID: $1',
+	'phalanx-stats-example' => 'Пример:',
 	'phalanx-stats-row-per-wiki' => "участник '''$2''' был заблокирован на '''$4''' с ID фильтра '''$3''' ($5) (тип: '''$1''')",
 	'phalanx-rule-log-name' => 'журнал правил Phalanx',
 	'phalanx-rule-log-header' => 'Это журнал изменений правил phalanx.',
