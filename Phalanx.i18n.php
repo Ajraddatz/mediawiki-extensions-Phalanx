@@ -1943,6 +1943,28 @@ $messages['km'] = array(
 	'phalanx-test-results-legend' => 'លទ្ធផលតេស្ត',
 );
 
+/** Korean (한국어)
+ * @author Kwj2772
+ */
+$messages['ko'] = array(
+	'phalanx' => 'Phalanx - 통합 스팸 방어 매커니즘',
+	'phalanx-desc' => '통합 스팸 제어 매커니즘',
+	'phalanx-ui-description' => '통합 스펨 제어 매커니즘 인터페이스 관리',
+	'phalanx-all-languages' => '모든 언어',
+	'phalanx-type-content' => '문서 내용',
+	'phalanx-type-summary' => '편집 요약',
+	'phalanx-type-title' => '문서 제목',
+	'phalanx-type-user' => '사용자',
+	'phalanx-type-user-email' => '이메일',
+	'phalanx-type-answers-question-title' => '질문 제목',
+	'phalanx-type-answers-recent-questions' => '최근 질문',
+	'phalanx-type-wiki-creation' => '위키 생성',
+	'phalanx-label-filter' => '필터:',
+	'phalanx-label-reason' => '이유:',
+	'phalanx-format-regex' => '정규 표현식',
+	'phalanx-format-case' => '대소문자 구별',
+);
+
 /** Kurdish (Latin script) (Kurdî (latînî)‎)
  * @author George Animal
  */
