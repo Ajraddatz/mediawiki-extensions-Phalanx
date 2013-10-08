@@ -154,7 +154,8 @@ $messages['qqq'] = array(
 	'phalanx' => '{{doc-special|Phalanx}}',
 	'phalanx-desc' => '{{desc|name=Phalanx|url=http://www.mediawiki.org/wiki/Extension:Phalanx}}',
 	'phalanx-ui-description' => 'Unused at this time.',
-	'phalanx-all-languages' => 'Drop-down menu item on Special:Phalanx; if a user wants to block something for all languages (as opposed to blocking for one specific language), they will select this option',
+	'phalanx-all-languages' => 'Drop-down menu item on [[Special:Phalanx]]; if a user wants to block something for all languages (as opposed to blocking for one specific language), they will select this option.
+{{Identical|All languages}}',
 	'phalanx-type-content' => 'Keep this short! This is used to indicate that a filter blocks something in an article (i.e. prevents that word or phrase from being added into an article)',
 	'phalanx-type-summary' => 'Keep this short! This is used to indicate that a filter blocks an edit summary or a page move summary.',
 	'phalanx-type-title' => 'Keep this short! This is used to indicate that a filter blocks the creation of a page with a blocked ttle',
@@ -3231,6 +3232,7 @@ $messages['ru'] = array(
 	'phalanx-help-type-user-email' => 'Этот фильтр предотвращает создание учетной записи, с использованием заблокированного электронного адреса.',
 	'phalanx-user-block-new-account' => 'Это имя пользователя не доступно для регистрации. Пожалуйста, выберите другое.',
 	'phalanx-title-move-summary' => 'Причина, по которой вы добавляете эту фразу для блокировки.',
+	'phalanx-plain-text' => 'обычный текст',
 	'phalanx-display-row-blocks' => 'блоки: $1',
 	'phalanx-display-row-created' => 'создал [[User:$1|$1]] на $2',
 	'phalanx-test-results-legend' => 'Результаты теста',
