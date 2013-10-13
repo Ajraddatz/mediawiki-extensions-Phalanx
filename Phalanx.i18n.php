@@ -2858,7 +2858,7 @@ Për piasì, [[Special:Contact|ch'an contata]] për parlé dël problema.<br />C
  */
 $messages['ps'] = array(
 	'phalanx-all-languages' => 'ټولې ژبې',
-	'phalanx-type-content' => 'د مخ منځپانګه',
+	'phalanx-type-content' => 'د مخ منځپانگه',
 	'phalanx-type-summary' => 'د مخ لنډيز',
 	'phalanx-type-title' => 'د مخ سرليک',
 	'phalanx-type-user' => 'کارن',
