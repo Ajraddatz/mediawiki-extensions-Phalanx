@@ -278,7 +278,8 @@ Parameters:
 	'phalanx-no' => 'Used on the table in [[Special:PhalanxStats]]; refer to the [[:File:Phalanx MediaWiki extension - statistics interface for a given block.png|extension screenshot]] for details.
 {{Identical|No}}',
 	'phalanx-stats-table-id' => 'Used on the table in Special:PhalanxStats; refer to the [[:File:Phalanx MediaWiki extension - statistics interface for a given block.png|extension screenshot]] for details',
-	'phalanx-stats-table-user' => 'Used on the table in Special:PhalanxStats; refer to the [[:File:Phalanx MediaWiki extension - statistics interface for a given block.png|extension screenshot]] for details',
+	'phalanx-stats-table-user' => 'Used on the table in [[Special:PhalanxStats]]; refer to the [[:File:Phalanx MediaWiki extension - statistics interface for a given block.png|extension screenshot]] for details.
+{{Identical|Added by}}',
 	'phalanx-stats-table-type' => 'Used on the table in Special:PhalanxStats; refer to the [[:File:Phalanx MediaWiki extension - statistics interface for a given block.png|extension screenshot]] for details.
 {{Identical|Type}}',
 	'phalanx-stats-table-text' => 'Used on the table in Special:PhalanxStats; refer to the [[:File:Phalanx MediaWiki extension - statistics interface for a given block.png|extension screenshot]] for details.
