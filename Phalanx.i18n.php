@@ -3458,6 +3458,8 @@ Filtret förhindrar inte att dessa sidor skapas.
 Anmärkning: fungerar endast på Svar-typ wikier.',
 	'phalanx-help-type-user-email' => 'Detta filter förhindrar att konton skapas med en blockerad e-postadress.',
 	'phalanx-user-block-new-account' => 'Användarnamnet är inte tillgängligt för registrering. Välj ett annat.',
+	'phalanx-blacklisted-email' => 'Svartlistad e-mailadress',
+	'phalanx-blacklisted-email-text' => 'Din e-maildress är för närvarande svartlistad från att skicka e-post till andra användare.',
 	'phalanx-title-move-summary' => 'Anledningen du skrev in innehöll en blockerad fras.',
 	'phalanx-plain-text' => 'ren text',
 	'phalanx-display-row-blocks' => 'blockeringar: $1',
