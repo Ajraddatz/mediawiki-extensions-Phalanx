@@ -2001,7 +2001,7 @@ $messages['lb'] = array(
 	'phalanx-view-blocks' => 'Filtere fir ze sichen',
 	'phalanx-view-id' => 'Filteren no ID:',
 	'phalanx-expire-durations' => '1 Stonn,2 Stonnen,4 Stonnen,6 Stonnen,1 Dag,3 Deeg,1 Woch,2 Wochen,1 Mount,3 Méint,6 Méint,onbegrenzt',
-	'phalanx-format-case' => 'Ënnerscheed tëschent groussen a klenge Buschtawen',
+	'phalanx-format-case' => 'Ënnerscheed tëscht groussen a klenge Buschtawen',
 	'phalanx-format-exact' => 'genee',
 	'phalanx-tab-main' => 'Filtere geréieren',
 	'phalanx-tab-secondary' => 'Filteren testen',
@@ -2025,7 +2025,7 @@ $messages['lb'] = array(
 	'phalanx-help-type-title' => "Dëse Filter verhënnert datt eng Säit ugeluecht gëtt, wann hiren Numm d'selwecht ass wéi an op der schwaarzer Lëscht.
 
 Et verhënnert allerdéngs net datt eng Säit déi et scho gëtt geännert gëtt.",
-	'phalanx-help-type-user' => "Dëse Filter spärt e Benotzer (genee esou wéi eng lokal MediaWiki-Spär), wann den Numm oder d'IP d'selwecht ass wéi ee vun den Nimm oder eng vun den IP'en vun der schwaarzer Lëscht.",
+	'phalanx-help-type-user' => "Dëse Filter spärt e Benotzer (genee sou wéi eng lokal MediaWiki-Spär), wann den Numm oder d'IP d'selwecht ass wéi ee vun den Nimm oder eng vun den IP'en vun der schwaarzer Lëscht.",
 	'phalanx-help-type-user-email' => 'Dëse Filter verhënnert datt mat enger gespaarter E-Mail-Adress e Benotzerkont opgemaach ka ginn.',
 	'phalanx-user-block-new-account' => 'De Benotzernumm kann net benotzt ginn. Sicht Iech w.e.g. een Aneren.',
 	'phalanx-blacklisted-email' => 'Gespaart Mail-Adressen',
