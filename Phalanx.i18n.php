@@ -3710,6 +3710,13 @@ $messages['tt-cyrl'] = array(
 	'phalanx-stats-table-wiki-name' => 'Wiki исеме',
 );
 
+/** Uyghur (Arabic script) (ئۇيغۇرچە)
+ * @author Tel'et
+ */
+$messages['ug-arab'] = array(
+	'phalanx-expire-durations' => '1 سائەت,2 سائەت,4 سائەت,6 سائەت,1 كۈن,3 كۈن,1 ھەپتە,2 ھەپتە,1 ئاي,3 ئاي,6 ئاي,1 يىل,چەكسىز',
+);
+
 /** Ukrainian (українська)
  * @author A1
  * @author Andriykopanytsia
