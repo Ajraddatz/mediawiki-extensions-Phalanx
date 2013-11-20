@@ -1698,6 +1698,7 @@ $messages['id'] = array(
 );
 
 /** Italian (italiano)
+ * @author Beta16
  * @author F. Cosoleto
  * @author Gianfranco
  * @author පසිඳු කාවින්ද
@@ -1712,19 +1713,40 @@ $messages['it'] = array(
 	'phalanx-label-expiry' => 'Scadenza del blocco:',
 	'phalanx-label-type' => 'Tipo:',
 	'phalanx-label-lang' => 'Lingua:',
+	'phalanx-expire-durations' => '1 ora,2 ore,4 ore,6 ore,1 giorno,3 giorni,1 settimana,2 settimane,1 mese,3 mesi,6 mesi,1 anno,infinito',
+	'phalanx-format-text' => 'testo normale',
 	'phalanx-format-exact' => 'esatto',
 	'phalanx-test-submit' => 'Test',
+	'phalanx-link-unblock' => 'sblocca',
+	'phalanx-link-modify' => 'modifica',
 	'phalanx-link-stats' => 'statistiche',
 	'phalanx-user-block-new-account' => 'Nome utente non è disponibile per la registrazione.',
 	'phalanx-user-block-reason-ip' => "A questo indirizzo IP è impedito di compiere modifiche a causa di vandalismo o altri atti di disturbo, riconducibili a te o a qualcuno con cui si condivide l'indirizzo IP. In caso questo sia un errore, potete [[Special:Contact|contattarci]]",
 	'phalanx-blacklisted-email' => 'Indirizzo email bloccato',
 	'phalanx-blacklisted-email-text' => "Questo indirizzo email è attualmente bloccato per l'invio di email ad altri utenti.",
+	'phalanx-plain-text' => 'testo normale',
+	'phalanx-display-row-blocks' => 'blocchi: $1',
+	'phalanx-display-row-created' => 'creato da [[User:$1|$1]] il $2',
+	'phalanx-no-matches' => 'Nessun risultato trovato.',
+	'phalanxstats' => 'Statistiche Phalanx',
 	'phalanx-yes' => 'Sì',
 	'phalanx-no' => 'No',
+	'phalanx-stats-table-id' => 'ID blocco',
+	'phalanx-stats-table-user' => 'Aggiunto da',
 	'phalanx-stats-table-type' => 'Tipo',
 	'phalanx-stats-table-text' => 'Testo',
+	'phalanx-stats-table-create' => 'Creato',
+	'phalanx-stats-table-expire' => 'Scade',
+	'phalanx-stats-table-exact' => 'Esatto',
 	'phalanx-stats-table-reason' => 'Motivo',
 	'phalanx-stats-table-language' => 'Lingua',
+	'phalanx-stats-block-notfound' => 'ID blocco non trovato',
+	'phalanx-stats-table-wiki-id' => 'ID wiki',
+	'phalanx-stats-table-wiki-name' => 'Nome wiki',
+	'phalanx-stats-table-wiki-url' => 'URL wiki',
+	'phalanx-stats-load-btn' => 'Carica',
+	'phalanx-stats-id' => 'ID: $1',
+	'phalanx-stats-example' => 'Esempio:',
 );
 
 /** Japanese (日本語)
