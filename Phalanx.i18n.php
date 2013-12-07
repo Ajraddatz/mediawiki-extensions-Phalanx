@@ -604,7 +604,7 @@ $messages['ce'] = array(
 	'phalanx-stats-table-language' => 'Мотт',
 );
 
-/** Czech (česky)
+/** Czech (čeština)
  * @author Reaperman
  * @author Vks
  */
@@ -626,7 +626,7 @@ $messages['cs'] = array(
 	'phalanx-stats-example' => 'Příklad:',
 );
 
-/** Church Slavic (словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
+/** Church Slavic (словѣньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
  * @author ОйЛ
  */
 $messages['cu'] = array(
