@@ -602,6 +602,7 @@ $messages['ce'] = array(
 	'phalanx-legend-input' => 'Кхолла я хийца литтар',
 	'phalanx-stats-table-expire' => 'Чекхйолу',
 	'phalanx-stats-table-language' => 'Мотт',
+	'phalanx-stats-load-btn' => 'Чуяккха',
 );
 
 /** Czech (čeština)
@@ -911,7 +912,7 @@ Si crees que es un error, por favor [[Special:Contact|contacto nosotros]].<br />
 	'phalanx-stats-table-reason' => 'Motivo',
 	'phalanx-stats-table-language' => 'Idioma',
 	'phalanx-stats-entry' => '<b>$4</b> El tipo de filtro <b>$1</b>ha  bloqueado al usuario <b>$2</b> en <a href="http://$3.shoutwiki.com/">$3</a>',
-	'phalanx-stats-block-notfound' => 'ID de bloqueo no encontrado',
+	'phalanx-stats-block-notfound' => 'No se encontró el id. del bloqueo',
 	'phalanx-stats-table-wiki-id' => 'Id. del wiki',
 	'phalanx-stats-table-wiki-name' => 'Nombre de wiki',
 	'phalanx-stats-table-wiki-url' => 'URL de wiki',
