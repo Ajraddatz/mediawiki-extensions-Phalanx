@@ -97,7 +97,7 @@ Please [[Special:Contact|contact us]] about the problem.<br />The blocker also g
 	'phalanx-plain-text' => 'plain text',
 	'phalanx-list-regex' => 'regex',
 	'phalanx-display-row-blocks' => 'blocks: $1',
-	'phalanx-display-row-created' => 'created by [[User:$1|$1]] on $2',
+	'phalanx-display-row-created' => '{{GENDER:$1|created by}} [[User:$1|$1]] on $2',
 	'phalanx-test-results-legend' => 'Test results',
 	'phalanx-no-matches' => 'No matches found.',
 	// Special:PhalanxStats
