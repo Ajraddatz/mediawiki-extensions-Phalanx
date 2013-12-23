@@ -600,6 +600,7 @@ $messages['ce'] = array(
 	'phalanx-label-lang' => 'Мотт:',
 	'phalanx-view-id' => 'Лела йаь литтар ID цан:',
 	'phalanx-legend-input' => 'Кхолла я хийца литтар',
+	'phalanx-stats-table-user' => 'ТӀетоха',
 	'phalanx-stats-table-expire' => 'Чекхйолу',
 	'phalanx-stats-table-language' => 'Мотт',
 	'phalanx-stats-load-btn' => 'Чуяккха',
