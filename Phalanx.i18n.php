@@ -974,13 +974,18 @@ $messages['et'] = array(
 
 /** Persian (فارسی)
  * @author Mjbmr
+ * @author Reza1615
  */
 $messages['fa'] = array(
+	'phalanx-all-languages' => 'همۀ زبان‌ها',
 	'phalanx-type-title' => 'عنوان مقاله',
 	'phalanx-type-user' => 'کاربر',
+	'phalanx-type-user-email' => 'رایانامه',
+	'phalanx-label-filter' => 'فیلتر:',
 	'phalanx-label-reason' => 'دلیل:',
 	'phalanx-label-expiry' => 'زمان سرآمدن:',
 	'phalanx-label-type' => 'نوع:',
+	'phalanx-label-lang' => 'زبان:',
 	'phalanx-format-regex' => 'عبارت باقاعده',
 	'phalanx-test-submit' => 'آزمایش',
 	'phalanx-link-unblock' => 'آزادسازی',
@@ -992,6 +997,8 @@ $messages['fa'] = array(
 	'phalanx-no' => 'خیر',
 	'phalanx-stats-table-type' => 'نوع',
 	'phalanx-stats-table-text' => 'متن',
+	'phalanx-stats-table-create' => 'ایجاد شده',
+	'phalanx-stats-table-expire' => 'انقضا',
 	'phalanx-stats-table-regex' => 'عبارت باقاعده',
 	'phalanx-stats-table-reason' => 'دلیل',
 	'phalanx-stats-table-language' => 'زبان',
@@ -1219,7 +1226,7 @@ Veuillez [[Special:Contact|contactez-nous]] à propos de ce problème.<br />La p
 	'phalanx-plain-text' => 'texte brut',
 	'phalanx-list-regex' => 'expression rationnelle',
 	'phalanx-display-row-blocks' => 'blocages : $1',
-	'phalanx-display-row-created' => 'créé par [[User:$1|$1]] sur $2',
+	'phalanx-display-row-created' => '{{GENDER:$1|créé par}} [[User:$1|$1]] sur $2',
 	'phalanx-test-results-legend' => 'Résultats des essais',
 	'phalanx-no-matches' => 'Aucun résultat trouvé.',
 	'phalanxstats' => 'Statistiques Phalanx',
@@ -2188,7 +2195,7 @@ $messages['mk'] = array(
 	'phalanx-plain-text' => 'прост текст',
 	'phalanx-list-regex' => 'рег. изрази',
 	'phalanx-display-row-blocks' => 'блокови: $1',
-	'phalanx-display-row-created' => 'создадено од [[User:$1|$1]] на $2',
+	'phalanx-display-row-created' => '{{GENDER:$1|создадено}} од [[User:$1|$1]] на $2',
 	'phalanx-test-results-legend' => 'Исход од испробувањето',
 	'phalanx-no-matches' => 'Нема совпаѓања.',
 	'phalanxstats' => 'Статистики за Phalanx',
