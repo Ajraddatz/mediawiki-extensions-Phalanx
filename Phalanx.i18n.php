@@ -3900,6 +3900,7 @@ $messages['uk'] = array(
 /** Simplified Chinese (中文（简体）‎)
  * @author Kuailong
  * @author Li3939108
+ * @author Linxue9786
  * @author Liuxinyu970226
  * @author Yfdyh000
  */
@@ -3950,6 +3951,7 @@ $messages['zh-hans'] = array(
 	'phalanx-blacklisted-email-text' => '您的电子邮件地址目前已被列入黑名单，禁止向其他用户发送电子邮件。',
 	'phalanx-plain-text' => '纯文本',
 	'phalanx-list-regex' => '正则表达式',
+	'phalanx-display-row-created' => '{{GENDER:$1|已由[[User:$1\\$1]]创建}}在$2上', # Fuzzy
 	'phalanx-test-results-legend' => '测试结果',
 	'phalanx-no-matches' => '找不到匹配项目。',
 	'phalanx-yes' => '是',
