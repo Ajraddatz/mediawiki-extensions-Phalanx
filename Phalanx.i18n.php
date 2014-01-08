@@ -427,7 +427,7 @@ Por favor [[Special:Contact|comuniquese con nós]] sobro'l problema.<br />La per
 	'phalanx-plain-text' => 'testu simple',
 	'phalanx-list-regex' => 'espresión regular',
 	'phalanx-display-row-blocks' => 'bloqueos: $1',
-	'phalanx-display-row-created' => 'creáu por [[User:$1|$1]] el $2',
+	'phalanx-display-row-created' => '{{GENDER:$1|creáu por}} [[User:$1|$1]] el $2',
 	'phalanx-test-results-legend' => 'Resultaos de la prueba',
 	'phalanx-no-matches' => "Nun s'atoparon coincidencies.",
 	'phalanxstats' => 'Estadístiques de Phalanx',
@@ -1660,7 +1660,7 @@ Nota: functiona solmente in wikis del typo Answers.',
 	'phalanx-help-type-user-email' => 'Iste filtro impedi le creation de contos con un adresse de e-mail blocate.',
 	'phalanx-title-move-summary' => 'Le motivo que tu entrava contineva un phrase blocate.',
 	'phalanx-display-row-blocks' => 'blocadas: $1',
-	'phalanx-display-row-created' => 'create per [[User:$1|$1]] le $2',
+	'phalanx-display-row-created' => '{{GENDER:$1|create per}} [[User:$1|$1]] le $2',
 	'phalanx-test-results-legend' => 'Resultatos del test',
 	'phalanxstats' => 'Statisticas de Phalanx',
 	'phalanx-email-filter-hidden' => 'Le filtro de e-mail es celate. Tu non ha le permission de vider le texto.',
@@ -3213,6 +3213,7 @@ $messages['roa-tara'] = array(
  * @author Byulent
  * @author DCamer
  * @author Engineering
+ * @author Kaganer
  * @author Kuzura
  * @author Lvova
  * @author Okras
@@ -3295,7 +3296,7 @@ $messages['ru'] = array(
 	'phalanx-plain-text' => 'обычный текст',
 	'phalanx-list-regex' => 'рег.выр.',
 	'phalanx-display-row-blocks' => 'блоки: $1',
-	'phalanx-display-row-created' => 'создал [[User:$1|$1]] на $2',
+	'phalanx-display-row-created' => '{{GENDER:$1|создал|создала}} [[User:$1|$1]] в $2',
 	'phalanx-test-results-legend' => 'Результаты теста',
 	'phalanx-no-matches' => 'Совпадений не найдено.',
 	'phalanxstats' => 'Статистика Phalanx',
