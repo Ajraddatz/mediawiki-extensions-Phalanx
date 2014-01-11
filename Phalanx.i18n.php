@@ -811,6 +811,7 @@ $messages['eo'] = array(
 
 /** Spanish (español)
  * @author Armando-Martin
+ * @author Ciencia Al Poder
  * @author Fitoschido
  * @author Mor
  * @author VegaDark
@@ -896,7 +897,7 @@ Si crees que es un error, por favor [[Special:Contact|contacto nosotros]].<br />
 	'phalanx-plain-text' => 'texto simple',
 	'phalanx-list-regex' => 'expresión regular',
 	'phalanx-display-row-blocks' => 'bloqueos: $1',
-	'phalanx-display-row-created' => 'creado por [[User:$1|$1]] a las $2',
+	'phalanx-display-row-created' => '{{GENDER:$1|creado}} por [[User:$1|$1]] el $2',
 	'phalanx-test-results-legend' => 'Resultados de la prueba',
 	'phalanx-no-matches' => 'No se encontraron coincidencias',
 	'phalanxstats' => 'Estadísticas de Phalanx',
